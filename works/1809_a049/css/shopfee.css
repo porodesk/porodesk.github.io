@@ -1,0 +1,109 @@
+﻿body { margin: 0px; background:url(../images/bday_bg.jpg) #fff;}
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+img{ border:0; }
+
+
+/* 到首頁 ----------------------*/
+.TOindex { display:block; position:fixed; right:2%; bottom:2.5%; z-index:99;}
+.TOindex:hover{ opacity:0.8;}
+
+/* wrapper */
+.wrapper{ width:1050px; margin:0 auto; }
+
+/* 分享 */
+.nav_sidearea_m { margin:0 0 -28px 0; float:right; font-family:"微軟正黑體"; font-weight:bold; color:#5098e5; font-size:15px; position: relative; right:470px; top:4px; z-index:2;}
+.nav_sidearea_m .nav_sidecol { margin:0; padding:0; display:flex; -webkit-display:flex; -moz-display:flex; -o-display:flex;}
+.nav_sidearea_m li{ list-style:none; float:left; }
+.nav_sidearea_m li:first-child{ position:relative; top:2px;}
+.nav_sidearea_m li:nth-child(2) img{ width:60px; vertical-align:bottom;}/*FB*/
+.nav_sidearea_m li:nth-child(3) span{ display:none; }/*LINE*/
+.nav_sidearea_m li:last-child{ display:none;}
+.nav_sidearea_m img { margin:0 4px 0 0;}
+
+/* 刊頭 */
+.head{ width:100%; margin:0 auto; }
+.headbg{ width:100%; position:relative; z-index:0;}
+.headbg .index{ width:358px; position: absolute; left:38%; top:14%; z-index:1;}
+.headbg .title{ width:551px; position: absolute; left:30%; top:30%; z-index:1;}
+
+/* 活動內容 */
+.ACcontent{ width:782px; margin:-1% auto 5%; padding:2.5% 4%; box-sizing:border-box; background:url(../images/shopfee_linebg.png); font-family:"微軟正黑體"; letter-spacing:0.06em; position:relative;}
+.ACcontent .txt1{ width:100%; margin:0 auto 4%; font-size:20px; line-height:1.5em; }
+.txt1 p{ margin:0 0 10px;}
+.txt1 p a{ color:#1080df; text-decoration:underline;}
+.txt1 ul{ width:90%; margin:5% 0 5% 5%; padding:0; font-size:24px; font-weight:bold; color:#fa1b78;}
+.txt1 li{ list-style-type:none; margin:0 0 2.5% 0; padding:0;}
+.txt1 li a{ color:#1080df; text-decoration:underline; font-weight: normal;}
+.txt1 img{ height:30px;}
+
+.goArea{ width:75%; margin:0 auto; padding:2% 4% 4% 4%; background:#fff; border:dotted 7px #ff86c5; border-radius:12px; text-align:center;}
+.goArea:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.goArea .number{ margin:0 3% 0 0; font-size:50px; font-weight:bold; letter-spacing:0.04em; display:inline-block;}
+.number span{ font-size:70px; color:#eb1c4c;}
+.joinBN{ width:230px; height:77px; line-height:77px; margin:0 auto; padding:0 0 0 6%; box-sizing:border-box; background:#ed2679; border-radius:8px; font-size:36px; color:#fff; text-align:center; display:inline-block;}
+.joinBN img{ width:95px; float:right; margin:10px -50px 0 0; }
+.joinBN:hover{ position:relative; top:-5px;}
+.no{ background:#CCC; margin:0 auto; padding:0;}
+.ACcontent a{ text-decoration:none; color:#fff;}
+
+.txtNOTE{ width:96%; margin:5% 0 0 4%;}
+.txtNOTE li{ list-style-type: disc; margin:0 auto 1.5%; font-size:15px; line-height:1.4em;}
+.ACcontent .pic1{ position: absolute; left:-12%; bottom:21%; z-index:0;}
+.ACcontent .pic2{ position: absolute; right:-10%; bottom:6%; z-index:0;}
+
+
+
+/*===================================================================================================================================*/
+@media screen and (max-width:767px) {
+body { background-size:50% auto;}
+.pcfloor { display:none;}
+
+/* 到首頁 ----------------------*/
+.TOindex { display:none;}
+
+/* wrapper */
+.wrapper{ width:100%; overflow-x: hidden;}
+
+/* 分享 */
+.nav_sidearea_m { display:block; float:none; margin:0; padding:0; position:fixed; top:auto; bottom:0; left:0; right:0; width:100%; height:auto; z-index:1000; opacity:0.9; }
+.nav_sidearea_m .nav_sidecol li { width:23%; height:auto; margin:0; padding:1% 0 ;  text-align:center; 
+border-right:1px solid #fff; background-color:#1aaa9e; color:#fff; font-size:13px; 
+text-align:center; display: flex; flex-direction: column; justify-content: center; }
+.nav_sidearea_m .nav_sidecol li:first-child{ display:none;}
+.nav_sidearea_m .nav_sidecol li:nth-child(2) { background-color:#4b6dad;}/*FB*/
+.nav_sidearea_m .nav_sidecol li:nth-child(3) { background-color:#00C300;}/*LINE*/
+.nav_sidearea_m .nav_sidecol li:nth-child(3) span{ display:block; }/*LINE*/
+.nav_sidearea_m .nav_sidecol li:nth-child(3) img{ display:none;}/*LINE*/
+.nav_sidearea_m .nav_sidecol li:nth-child(4) { background-color:#DB4437; padding-left:3%;}/*google+*/
+.nav_sidearea_m .nav_sidecol li:last-child{ width:31%; margin-right:0;border-right:none;}
+.nav_sidearea_m .nav_sidecol li a { display:block; vertical-align:middle; color:#FFF; text-decoration:none;}
+.nav_sidearea_m img{ width:auto; height:24px; margin:0 auto; }
+
+/* 刊頭 */
+.headbg{ overflow:hidden; }
+.headbg img{ width:115%; margin:0 0 0 -7%;}
+.headbg .index{ width:42%; position: absolute; left:0; right:0; top:6%; margin:0 auto;}
+.headbg .title{ width:53%; position: absolute; left:32%; top:30%; z-index:1;}
+
+/* 活動內容 */
+.ACcontent{ width:90%; padding:4% 5%; position:static;}
+.ACcontent .txt1{ font-size:15px; line-height:1.3em; }
+.txt1 p{ margin:0 0 3%;}
+.txt1 ul{ width:100%; margin:7% 0 5% 0; font-size:18px; line-height:1.45em;}
+.txt1 li{ margin:0 0 2% 0; }
+.txt1 img{ height:20px;}
+
+.goArea .number{ font-size:30px;}
+.number span{ font-size:50px;}
+
+.txtNOTE li{ font-size:13px; line-height:1.3em;}
+.ACcontent .pic1,
+.ACcontent .pic2{ display:none;}
+
+}
+

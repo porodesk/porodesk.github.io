@@ -1,0 +1,306 @@
+﻿body { margin: 0px; background:url(../images/049_bg.jpg) fixed #fff ;}
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+img{ border:0; -moz-transition: 0.5s;-webkit-transition: 0.5s;-o-transition: 0.5s;-ms-transition: 0.5s;}
+#NOhover{ -moz-transform: none;-webkit-transform: none;-o-transform: none;-ms-transform: none;}
+.pcimg{ display:block;}
+.mobileimg{ display:none;}
+
+/*浮動選單*/
+.sideNAV { display:none; z-index:999; position:fixed; right:1%; bottom:8%;}
+.smenuPic { width:130px; margin:20px auto -13px auto;}
+.sitemenu { width:130px; padding:15px 15px 0 15px; box-sizing:border-box; background-color: rgba(1,179,164,0.75); border-radius:6px;}
+.sitemenu p { border-bottom:#bff5f1 2px dotted; margin:0 auto; }
+.sitemenu p a { display:block; padding:12px 0; font-size:15px; font-weight:bold; color:#fff; text-decoration:none; text-align:center; font-family:"微軟正黑體";}
+.sitemenu p:last-child{ border-bottom:none;}
+.sitemenu p a:hover { background-color:#1abaad; color:#fffc06;}
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:none; }
+
+/* wrapper */
+.wrapper{ width:100%; margin:0 auto; font-family: "微軟正黑體";}
+
+/* 刊頭 */
+.head{ width:100%; margin:0 auto; }
+.headbg{ width:100%; height:654px; position:relative; z-index:0; text-align:center; }
+.headbg .headCenter{ width:780px; height:654px; margin:0 auto; position: absolute; left:0; right:0; top:0; z-index:1;}
+.headCenter .title{ width:100%; margin:0 auto; position: absolute; left:0; right:0; top:0; z-index:1;}
+.headCenter .phone{ width:206px; margin:0 auto; position: absolute; right:0; top:46%; z-index:2;}
+.headCenter .date{ position:absolute; left:0; right:0; top:8%; font-size:14px; font-family: "Calibri","微軟正黑體"; color:#666; letter-spacing:0.2em; z-index:1; }
+.phone img:hover{ -moz-transform: translateY(-7px);-webkit-transform: translateY(-7px);-o-transform: translateY(-7px);-ms-transform: translateY(-7px);}
+.mobilehead{ display:none;}
+
+.menulist{ margin:0 auto; text-align:center; }
+.menulist li { list-style-type:none; display:inline-block; margin:0 4px;}
+.menulist li:nth-child(odd){ position:relative; top:-20px; }/*單數*/
+.menulist span{ display:none;}
+.menulist img{ width:114px; }
+.menulist img:hover{ -moz-transform: scale(1.15);-webkit-transform: scale(1.15);-o-transform: scale(1.15);-ms-transform: scale(1.15);}
+
+/* Area共用 */
+.freebn img:hover,
+.bnPIC img:hover{ -moz-transform: translateY(-7px);-webkit-transform: translateY(-7px);-o-transform: translateY(-7px);-ms-transform: translateY(-7px);}
+.Area_A{ width:100%; margin:0 auto; background:url(../images/049_bg2.jpg) top; }/*自由換酷碰+品牌同樂券+天天66折*/
+.Area_B{ width:100%; margin:0 auto; }/*折更多紅利+Freedom精神*/
+.AreaContent{ width:980px; margin:0 auto; padding:3.5% 0 0; text-align:center;}
+.AreaContent .title{ width:100%; margin:0 auto 3%;}
+.AreaContent .bnPIC{ width:100%; margin:0 auto 8%;}
+
+/* FreeArea 送免運+尋找19 */
+.FreeArea{ width:100%; margin:3% auto 0;}
+.FreeArea .AreaContent{ width:1220px; margin:0 auto; padding:0; background:url(../images/049_free_bg.png) no-repeat center 70px; text-align:center;}
+.FreeArea img{ width:980px;}
+.freebn{ margin:4% auto 0; }
+.freebn img{ margin:0 auto 4%;}
+img.flip{ /*垂直翻轉*/
+    -moz-transform:scaleY(-1);
+    -webkit-transform:scaleY(-1);
+    -o-transform:scaleY(-1);
+    transform:scaleY(-1);
+    filter:FlipV;/*IE*/
+	transform: rotateX(180deg);/*基於webkit核心的瀏覽器*/
+}
+
+/* SetArea 私藏組合*/
+.SetArea{ width:100%; margin:0 auto;}
+.SetArea .AreaContent{ width:1000px; }
+.SetArea .AreaContent .title{ width:980px; margin:0 auto 3%;}
+img.half{ width:50%; }
+img.setbn{ width:80%; margin:2% auto 0;}
+
+/* 優惠同樂會 */
+.card{ width:46.5%; margin:0 1.5% 3.5% 1.5%; padding:18px 25px; background:#3c8ed9/*暗紅底*/; box-sizing:border-box; border-radius:25px; text-align:left; display:inline-block;}
+.card:nth-child(2), .card:nth-child(3), .card:nth-child(4n+2), .card:nth-child(4n+3){ background:#3cb4f2/*紅底*/; !important}
+.card .cover{ width:100%; margin:0 auto 3%; text-align:center; }
+.card p{ width: 100%; margin:0 auto 3%; font-size:20px; font-weight:bold; line-height:1.3em; letter-spacing:0.05em; color:#fff; text-align:center;}
+hr{ margin:0 auto 2.5%; height:3px; border:none; border-top:3px solid #fee32e;}
+.buyBN{ width:60%; margin:0 auto; padding:2.5% 0; color:#fff; font-size:23px; border-radius:50px; text-align:center; letter-spacing:0.08em;
+background: #fc5fa7;
+background: -moz-linear-gradient(top, #fc5fa7 0%, #fc5fa7 50%, #fe469a 50%, #fe469a 100%);
+background: -webkit-linear-gradient(top, #fc5fa7 0%,#fc5fa7 50%,#fe469a 50%,#fe469a 100%);
+background: linear-gradient(to bottom, #fc5fa7 0%,#fc5fa7 50%,#fe469a 50%,#fe469a 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc5fa7', endColorstr='#fe469a',GradientType=0 );
+}
+.card a{ text-decoration:none; color:#fff;}
+.card a:hover{ position:relative; top:-3px;}
+
+/* 天天66折 */
+.sixZONE{ width:100%; padding:18px; box-sizing:border-box; background:#c7f9f6;}
+.sixZONE:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.sixZONE .today{ width:38%; margin:0 2% 0 0; padding:2.5%; box-sizing:border-box; background:rgba(255,255,255,0.9); float:left;}
+.today .title_66{ width:35%; float:right; }
+.today .bookBOX{ width:59%; float:left; margin:0 4% 0 0; text-align:center; font-size:16px; }
+.bookBOX .book_name{ width:100%; margin:8px auto 12px auto; color:#204693; font-weight:bold; line-height:1.4em; height:2.6em; overflow:hidden; }
+.bookBOX .book_price{ width:100%; margin:0 auto 10px auto; }
+.book_price span{ font-size:20px; font-weight:bold; color:#ea023e;}
+.bookBOX .mybuybox{ width:100%; margin:0 auto; padding:4.5% 0 ; color:#fff; background:#f1406e; letter-spacing:0.06em;}
+.bookBOX a{ color:#242424; text-decoration:none;}
+.book_name:hover{ color:#f1406e;}
+.mybuybox:hover{ background:#e81958;}
+
+.sixZONE .nextday{ width:60%; padding:2.5%; box-sizing:border-box; background:rgba(255,255,255,0.9); float:left; text-align:center;}
+.nextday .title_66{ width:68%; margin:0 auto 4%; text-align:center;}
+.nextday .bookBOX{ width:28%; margin:0 2.3%; display:inline-block; text-align:center; font-size:16px; }
+.bookBOX .nextdate{ margin:0 auto 8px; font-size:20px; font-weight:bold; color:#fe4926;}
+
+/* freedom精神 */
+.productZONE{ width:100%; margin:0 auto 4%; border:3px solid #94d082; box-sizing:border-box; background:rgba(255,255,255,0.7);}
+.productZONE:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.productZONE .freedomPIC{ width:27%; float:left;}
+.productZONE .swiper-container{ width:73%; float:left; }
+.swiper-container .swiper-slide{width:25% !important; margin:3.5% 4% 0;}/*BN大小*/
+.swiper-container .swiper-button-next
+{position:absolute;right:0;width:4%;height:74px;background:#4f9535 url(../images/icon-ar-right-w.png) center center no-repeat;background-size:18px 30px;}
+.swiper-container .swiper-button-prev
+{position:absolute;left:0;width:4%;height:74px;background:#4f9535 url(../images/icon-ar-left-w.png) center center no-repeat;background-size:18px 30px;}
+
+/* foodArea 滿399送*/
+.foodArea{ width:100%; margin:0 auto; background:url(../images/049_bg2.jpg) top; }
+.foodArea .AreaContent{ width:1040px; }
+.foodArea .AreaContent .title{ width:980px; margin:0 auto 3%;}
+.foodArea .bnPIC img{ width:49%; margin:0 0.5%;}
+
+/* CellphoneArea 超商加碼抽 */
+.CellphoneArea{ width:100%; margin:0 auto;}
+.CellphoneArea .bnPIC{ margin:0 auto 4%;}
+.CellphoneArea img:hover{ -moz-transform: none;-webkit-transform: none;-o-transform: none;-ms-transform: none;}
+.phoneZONE{ width:100%; margin:0 auto; padding:3%; background:rgba(255,255,255,0.7); box-sizing:border-box; text-align:left;}
+.phoneBOX{ width:100%; margin:0 auto 2%;}
+.phoneBOX:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.phoneBOX .phonePIC{ width:30%; float:left; margin:0 4% 0 0;}
+.phonePIC img{ width:100%;}
+.phoneBOX .phoneTXT{ width:66%; float:left; font-size:18px; line-height:1.4em; letter-spacing:0.03em;}
+.phoneTXT li{ list-style-type:none; margin:0 0 1.8%;}
+.phoneTXT li:nth-child(1){ font-weight:bold; font-size:22px;}
+.phoneTXT li:nth-child(1) img{ height:40px;}
+.phoneTXT li:nth-child(2) img{ height:30px;}
+.phoneTXT a{ color:#1080df; text-decoration:underline;}
+.phoneTXT span{ color:#fb2389; line-height:1.6em;}
+.phoneTXT span.small{ font-size:16px; color:#e71144; line-height:1.3em;}
+
+.phoneNOTE{ width:100%; margin:0 auto; padding:2% 3% 2% 2%; box-sizing:border-box; background: rgba(255,251,133,0.3); color:#333; border-radius:15px; }
+.phoneNOTE h4{ font-size:18px; margin:0 auto 1%; font-weight:bold; text-align:center;}
+.phoneNOTE ul{ width:96%; margin:0 2% 0 3%;}
+.phoneNOTE li{ list-style-type: disc; margin:0 0 1.5%; font-size:15px; line-height:1.4em;}
+/*--------------收合------------*/
+.toggle-input { display:none;}
+.toggle-label { display:none;}
+
+
+/* noteZONE 注意 */
+.noteZONE{ width:100%; background:rgba(156,232,227,0.8); margin:0 auto; padding:1.5% 0; font-size:15px; color:#4e4e4e; line-height:1.3em; text-align:center;}
+
+/* freepik圖片來源 */
+.freepik{ width:100%; margin: 0 auto; padding:2% 0 1% 0; text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:0.6em; color:#65beb8;}
+.freepik a{color:#65beb8; text-decoration:none;}
+
+
+/*===================================================================================================================================*/
+@media screen and (max-width:1023px) {
+body { background-size:50% auto;}
+.pcfloor { display:none;}
+.pcimg{ display:none;}
+.mobileimg{ display:block;}
+
+/* wrapper */
+.wrapper{ overflow-x:hidden;}
+
+/*浮動選單*/
+.sideNAV { display:none; }
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(224,32,54,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+
+/* 刊頭 */
+.headbg{ height:auto; position:relative; z-index:3;}
+.headbg img{ display:none;}
+.headbg .headCenter{ width:100%; height:auto; }
+.headbg .date{ 3%; margin:2% auto 0; position: absolute; font-size:0.6em; }
+.mobilehead{ display:block; width:100%; position:relative; z-index:1;}
+.mobilehead .phone{ width:24%; position: absolute; right:4%; top:41%; z-index:2;}
+
+.menulist{ font-size:0;}
+.menulist li { width:32.5%; margin:0 0.2% 0.4%; padding:3%; border-radius:3px; opacity:0.9; 
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; !important/*文字溢出省略*/}
+.menulist li:nth-child(odd){ position:relative; top:0; }/*單數*/
+.menulist li:nth-child(1){ background:#f549a0; }
+.menulist li:nth-child(2){ background:#ff751d;}
+.menulist li:nth-child(3){ background:#75cd49;}
+.menulist li:nth-child(4){ background:#24b3de;}
+.menulist li:nth-child(5){ background:#f34146;}
+.menulist li:nth-child(6){ background:#bb5de1;}
+.menulist li:nth-child(7){ background:#18c47b;}
+.menulist li:nth-child(8){ background:#5478f3;}
+.menulist li:nth-child(9){ background:#dc7f2e;}
+.menulist span{ display:block; font-size:13px;}
+.menulist a{ color:#fff; text-decoration:none;}
+.menulist img{ width:12%; margin:0 3% 0 0;}
+
+/* Area共用 */
+.Area_A{ background-size:cover;}
+.AreaContent{ width:96%; padding:7% 0 0; }
+
+/* FreeArea 送免運+尋找19 */
+.FreeArea .AreaContent{ width:100%; background:none; }
+.FreeArea img{ width:100%;}
+.freebn{ margin:3% auto 0; }
+.freebn img{ margin:0 auto 3%;}
+
+/* SetArea 私藏組合*/
+.SetArea .AreaContent{ width:96%; }
+.SetArea .AreaContent .title{ width:100%; }
+img.setbn{ width:100%; }
+
+/* 優惠品牌 */
+.card{ width:47.5%; margin:0 1% 3% 1%; padding:18px; border-radius:20px;}
+.card .cover{ width:100%;}
+.card p{ font-size:18px; line-height:1.3em; }
+.buyBN{ width:75%; padding:3% 0; font-size:20px; }
+
+/* 天天66折 */
+.sixZONE{ padding:9px; overflow:hidden!important /*float等高*/; border-bottom:solid 9px #c7f9f6!important /*補底線*/;}
+.sixZONE .today{ width:58%; margin:0 2% 0 0; padding:2.5%;   
+padding-bottom: 500em;  margin-bottom: -500em !important /*float等高*/;} 
+.today .title_66{ width:33%; float:right; }
+.today .bookBOX{ width:62%; float:left; margin:0 4% 0 0; text-align:center; font-size:14px; }
+.bookBOX .book_name{ width:100%; margin:8px auto 8px auto; line-height:1.2em; height:2.4em; }
+.bookBOX .book_price{ width:100%; margin:0 auto 8px auto; }
+.book_price span{ font-size:18px; }
+.bookBOX .mybuybox{ padding:7% 0; }
+
+.sixZONE .nextday{ width:40%; padding:2.5%;
+padding-bottom: 500em;  margin-bottom: -500em !important /*float等高*/;}
+.nextday .title_66{ width:100%; margin:0 auto 4%; text-align:center;}
+.nextday .bookBOX{ width:90%; margin:0 auto; display:inline-block; text-align:center; font-size:14px; }
+.nextday div:nth-child(n+3){ display:none !important /*nextday第3個div之後都隱藏*/;}
+.bookBOX .nextdate{ margin:0 auto 8px; font-size:16px; font-weight:bold; color:#fe4926;}
+
+/* freedom精神 */
+.productZONE .freedomPIC{ width:100%; float:none;}
+.productZONE .swiper-container{ width:100%; float:none;}
+.swiper-container .swiper-slide{width:28% !important; margin:3% 4%;}/*BN大小*/
+.swiper-container .swiper-button-next
+{position:absolute;right:0;width:6%;height:74px;background:#4f9535 url(../images/icon-ar-right-w.png) center center no-repeat;background-size:18px 30px;}
+.swiper-container .swiper-button-prev
+{position:absolute;left:0;width:6%;height:74px;background:#4f9535 url(../images/icon-ar-left-w.png) center center no-repeat;background-size:18px 30px;}
+.productZONE .bookBOX{ font-size:14px; }
+.book_price span{ font-size:16px; }
+
+/* foodArea 滿399送*/
+.foodArea{ background-size:cover; }
+.foodArea .AreaContent{ width:96%; }
+.foodArea .AreaContent .title{ width:100%; }
+.foodArea .bnPIC img{ width:100%; margin:0 auto 3%;}
+.foodArea .bnPIC{ margin:0 auto 5%;}
+
+/* CellphoneArea 超商加碼抽 */
+.phoneZONE{ width:100%; margin:0 auto; padding:0; }
+.phoneBOX .phonePIC{ width:96%; float:none; margin:1% auto 2%; text-align:center;}
+.phonePIC img{ width:46%;}
+.phoneBOX .phoneTXT{ width:96%; float:none; margin:0 auto; font-size:16px; line-height:1.3em;}
+.phoneTXT li{ list-style-type:square; margin:0 0 2.5% 5%;}
+.phoneTXT li:nth-child(1){ font-size:20px; list-style-type:none;}
+.phoneTXT li:nth-child(1) img{ width:auto;height:35px;}
+.phoneTXT li:nth-child(2) img{ width:auto;height:20px;}
+.phoneTXT span{ line-height:1.5em;}
+.phoneTXT span.small{ font-size:14px;}
+
+.phoneNOTE{ width:100%; margin:0 auto; padding:2% 3% 2% 2%; border-radius:10px; }
+.phoneNOTE h4{ font-size:16px; margin:2% auto 1%; }
+.phoneNOTE ul{ width:96%; margin:0 2% 0 5%;}
+.phoneNOTE li{ margin:0 0 1.5%; font-size:14px; line-height:1.3em;}
+/*--------------收合------------*/
+.oneTheme { margin:0 auto;}
+.otPadd2 { padding:2% 2% 60px 2%; position:relative; }
+/*--收合效果--*/
+.toggle-input { display:none;}
+.toggle-label { display:block; cursor:pointer; padding:7px; font-weight:600; background-color:#ff7d36; border-radius:8px; width:160px; text-align:center; color:#fff; position:absolute; bottom:13px; left:0; right:0; margin:0 auto; font-family:"微軟正黑體";}
+.toggle-label:before { content:"展開完整說明";}
+.toggle-input:checked ~ .toggle-label:before { content:"收合";}
+.toggle-content { max-height:150px; height:150px;/*展開前高度*/ overflow:hidden; -moz-transition:ease 0.8s max-height; -o-transition:ease 0.8s max-height; 
+-webkit-transition:ease 0.8s max-height; transition:ease 0.8s max-height;} 
+.toggle-input:checked ~ .fix > .toggle-content { max-height:100%;/*展開後高度*/ height:auto; }
+
+
+/* noteZONE 注意 */
+.noteZONE{ padding:1.5% 2%; box-sizing:border-box; font-size:10px; text-align:left;}
+
+/* freepik圖片來源 */
+.freepik{ padding:4% 0 2%; font-size:0.5em; }
+
+}
+
+@media screen and (max-width:767px) {
+/* 優惠品牌 */
+.card{ width:98%; margin:0 auto 4%; padding:4%; border-radius:15px; display:block;}
+.card:nth-child(odd){ background:#3c8ed9/*暗紅底_單數*/; !important}
+.card:nth-child(even){ background:#3cb4f2/*紅底_偶數*/;  !important}
+.card .cover{ width:100%;  }
+.card p{ font-size:18px; line-height:1.3em; }
+.buyBN{ width:75%; padding:3% 0; font-size:20px; }
+	
+}
+
