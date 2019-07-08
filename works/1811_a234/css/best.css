@@ -1,0 +1,178 @@
+﻿body { margin: 0px; background:url(../images/best_bg.jpg) #0dbaa6;}
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+.clearNO{ clear:both; margin-bottom:3% !important;}/*解決高度問題*/
+img{border:0; }
+.mobileimg{ display:none;}/*手機版圖片*/
+#NOhover{ -moz-transform: none;-webkit-transform: none;-o-transform: none;-ms-transform: none; top:0;}
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:none;}
+/*浮動選單*/
+/*.sideNAV { display:none; z-index:999; position:fixed; right:1%; bottom:6%;}*/
+#FAD_Div {display:none;}
+.sitemenu{ width:190px;}
+.sitemenu img:hover{ position:relative; top:-3px;}
+.nav_sidearea_m{display:none;}
+
+/* wrapper */
+.wrapper{ width:100%; margin:0 auto; background:url(../images/best_bg_side.png) center top fixed no-repeat; }
+
+/* 刊頭 */
+.head{ width:100%; height:653px; margin:0 auto; text-align:center; background:url(../images/best_topbg.png) center no-repeat; position: relative; }
+.head .headCenter{ width:980px;  margin:0 auto; position: relative; }
+.headCenter .title{ position:absolute; left:0; top:125px; }
+.headCenter .fb-like{ position:absolute; left:535px; top:303px;}
+/*4大主頁籤*/
+.mainTab{ width:980px; height:245px; margin:0 auto; position: relative; z-index:2; left:0; right:0; }
+.mainTab li{ list-style-type:none; float:left; width:23%; background-size:contain; margin:0 0.5%; background-repeat:no-repeat;}
+.mainTab01{ background-image:url(../images/best_topmenu_01.png); position:relative; top:-2px;}
+.mainTab02{ background-image:url(../images/best_topmenu_02.png); position:relative; top:20px;}
+.mainTab03{ background-image:url(../images/best_topmenu_03.png); position:relative; top:-30px;}
+.mainTab04{ background-image:url(../images/best_topmenu_04.png); position:relative; top:20px;}
+.mainTab01:hover{ background-image:url(../images/best_topmenu_01a.png);}
+.mainTab02:hover{ background-image:url(../images/best_topmenu_02a.png);}
+.mainTab03:hover{ background-image:url(../images/best_topmenu_03a.png);}
+.mainTab04:hover{ background-image:url(../images/best_topmenu_04a.png);}
+.mainTab li a{ display:block; width:100%; height:100%;}
+
+/* Area */
+.Area{ width:980px; margin:0 auto; background:rgba(255,255,255,0.5); font-family:"微軟正黑體"; }
+
+
+/*------------作家推薦 best.asp------------*/
+.AreaContent{ width:900px; margin:0 auto; padding:2% 5%; box-sizing:border-box; background:rgba(255,255,255,0.6); text-align:center;}
+.BAR{ width:100%; margin:0 auto 3%; position:relative; }
+.BAR .chooseBar{ width:600px; margin:0 auto; padding:1% 0; background:#ff9595; border-radius:50px; }
+.chooseBar select{ width:80%; height:41px; padding:0 4px; font-family:Arial, Helvetica, "微軟正黑體"; font-size:25px; color:#d02222; border:2px solid #fa4128;
+  /*移除箭頭樣式*/
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  /*改變右邊箭頭樣式*/
+  background: url(../images/best_author_arrow.jpg) no-repeat right center transparent ;
+  background-color:#fff;
+}
+select::-ms-expand { display: none; }/*IE隱藏箭頭樣式*/
+.BAR li{ list-style-type:none; position: absolute; font-size:14px; color:#107469; right:0; bottom:0; }
+.BAR li br{ display:none;}
+
+.authorContent{ width:100%; margin:0 auto; text-align:left;}
+/*作家_給讀者_介紹*/
+.authorContent .infoBOX{ width:100%; margin:1% auto 5%; font-size:0;}
+.infoBOX .photo { width:38%; display:inline-block; margin:0 5% 0 0;}
+.infoBOX .info h3{ font-size:28px; font-weight:bold; color:#d02222; margin:1.5% 0 3% 0;}
+.infoBOX .info{ width:57%; display:inline-block; font-size:18px; color:#333232; line-height:1.54em; vertical-align:top; }
+/*作家_推薦書*/
+.authorContent .pushBOX{ width:100%; margin:0 auto 3%; }
+.pushBOX h3{ font-size:28px; font-weight:bold; color:#d02222; text-align:center;  margin:0 auto 3%;}
+.BOOKset{ width:100%; margin:0 auto;}
+.BOOKset img{ width:28%; float:left; margin:0 4% 2% 0;}
+.BOOKset .info h4{ font-size:24px; font-weight:bold; color:#305cb6; margin:0 0 2% 0;} 
+.BOOKset .info{ font-size:18px; color:#333232; line-height:1.54em; vertical-align:top; }
+/*作家_作品列表*/
+.BOOKlist{ width:100%; margin:0 auto 2%; text-align:center; font-size:0;}
+.bookBox{ width:21%; margin:0 2% 3% 2%; font-size:18px; font-weight:bold; color:#305cb6; display:inline-block; overflow:hidden; white-space: nowrap;text-overflow: ellipsis;}
+.bookBox img{ margin:0 auto 5%;}
+
+/*------------年度之最 best_most.asp------------*/
+.most_BOX{ width:100%; height:525px; margin:0 auto; position:relative;}
+.a2,.a4{ margin-top:-2%; padding-bottom:4%;}
+.most_BOX .title{ width:55%; position:absolute; z-index:1; }
+.most_BOX .books{ width:100%; position:absolute; z-index:1; text-align:center; font-size:0;}
+.most_BOX .books img{ width:24%; margin:0 3%; -moz-transition: 0.2s;-webkit-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s;}
+.books img:hover{ transform:translate(0,-4px);-webkit-transform:translate(0,-4px);-moz-transform:translate(0,-4px);-o-transform:translate(0,-4px);-ms-transform:translate(0,-4px);}
+.books img:nth-child(2) { position:relative; top:15px; }
+.books img:nth-child(3) { position:relative; top:-10px; }
+.a1 .title{ top:7%; left:10%; }
+.a2 .title{ top:13%; right:9%; }
+.a3 .title{ top:5%; left:23%; }
+.a4 .title{ top:16%; left:10%; }
+.a1 .books{ top:29%; left:0; }
+.a2 .books{ top:34%; left:0; }
+.a3 .books{ top:26%; left:0; }
+.a4 .books{ top:34%; left:0; }
+
+/*------------讀者推薦+店員推薦 best_reader.asp + best_clerk.asp ------------*/
+.picZONE img{ -moz-transition: 0.2s;-webkit-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s;}
+.picZONE img:hover{ transform:translate(0,-4px);-webkit-transform:translate(0,-4px);-moz-transform:translate(0,-4px);-o-transform:translate(0,-4px);-ms-transform:translate(0,-4px);}
+.readerPICx2, .readerPICx3{ width:100%; margin:0 auto; font-size:0; text-align:center;}
+.readerPICx2 img{ width:50%; }
+.readerPICx3 img{ width:33.333%;}
+.ContentPadding{ padding-bottom:4%;}
+.clerkTitle{ width:100%; margin:0 auto; text-align:center;}
+.clerkTitle img{ width:55%;}
+.freepik{ width:100%; margin: 0 auto; padding:3% 0 1% 0; text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:0.6em; color:#0dbaa6;}
+.freepik a{color:#0dbaa6; text-decoration:none;}
+
+
+
+/*====================================================================================================================================*/
+@media screen and (max-width:981px) {
+	.pcfloor { display:none;}
+	.mobileimg{ display:block; width:100%; margin:0 auto;}/*手機版圖片*/
+	.pcimg{ display:none;}/*PC版圖片*/
+
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:10%; background-color:rgba(235,37,74,0.7); border-radius:100px; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/; z-index:1000;}
+	/*----------浮動選單-----------*/
+	.nav_sidearea_m{display:block;position:fixed;bottom:0;left:0;width:100%;height:auto; opacity:0.95; z-index:99;}
+	.nav_sidearea_m .nav_sidecol{margin:0;padding:0 ; }
+	.nav_sidearea_m .nav_sidecol li{list-style-type:none;float:left;display:table;margin:0;padding:1.5% 0;width:20%;height:auto;text-align:center;border-right:1px solid #83cfc9;background-color:#0d7d74; box-sizing:border-box !important;}
+	.nav_sidearea_m .nav_sidecol .color1{background-color:#f34b34;/*橘色*/ }
+	.nav_sidearea_m .nav_sidecol .color2{background-color:#af7a1e;/*土黃*/ }	
+	.nav_sidearea_m .nav_sidecol li a{display:table-cell;vertical-align:middle;width:100%;height:100%;font:normal normal 15px/1.2 "微軟正黑體";color:#FFF;text-decoration:none;}	
+
+	/* 刊頭 */
+	.head{ height:auto; background:none; }
+	.head .headCenter{ width:100%; }
+	.headCenter .title{ display:none;}
+	.headCenter .fb-like{ right:2%; bottom:6%; top: auto; left:auto;}
+	
+	/*4大主頁籤*/
+	.mainTab{ display:none;}
+	
+	/* Area */
+	.Area{ width:96%; margin:0 auto; }
+	
+	/*------------作家推薦 best.asp------------*/
+	.AreaContent{ width:95%; padding:2% 3%; }
+	.BAR .chooseBar{ width:80%; margin:0 auto; padding:2% 4%; }
+	.chooseBar select{ width:90%; font-size:18px; }
+	.BAR li { font-size:12px; line-height:1.2em; color:#fff; right:-10px; bottom:8px; background:#fa4128; border-radius:2px; padding:1px 2px;}
+	.BAR li br{ display:block;}
+	/*作家_給讀者_介紹*/
+	.infoBOX .photo { width:70%; display:block; margin:0 auto 4% auto;}
+	.infoBOX .info h3{ font-size:22px; margin:3% auto ; text-align:center;}
+	.infoBOX .info{ width:100%; display:block; font-size:15px; line-height:1.4em; }
+	/*作家_推薦書*/
+	.pushBOX h3{ font-size:22px; }
+	.BOOKset{ margin:0 auto 4%;}
+	.BOOKset img{ width:45%; float:left; margin:0 4% 2% 0;}
+	.BOOKset .info h4{ font-size:20px; line-height:1.4em;} 
+	.BOOKset .info{ font-size:15px; line-height:1.4em; }
+	/*作家_作品列表*/
+	.BOOKlist{ margin:0 auto 15%; }
+	.bookBox{ width:45%; margin:0 2% 5% 2%; font-size:15px;}
+
+	/*------------年度之最 best_most.asp------------*/
+	.most_BOX{ height:auto; padding-bottom:30%;}
+	.a4{ padding-bottom:45%;}
+	.most_BOX .title{ width:67%; }
+	.most_BOX .books img{ width:28%; margin:0 2%;}
+	.a2 .title{ right:6%; }
+	.a3 .title{ left:18%; }
+	.a4 .title{ top:10%; left:7%; }
+	.a4 .books{ top:26%; }
+
+	/*------------讀者推薦+店員推薦 best_reader.asp + best_clerk.asp ------------*/
+	.ContentPadding{ width:100%; padding-bottom:18%;}
+	.clerkTitle img{ width:75%;}
+	.freepik{ padding:4% 0 18%; font-size:0.5em; }
+	
+}
+

@@ -1,0 +1,161 @@
+﻿body { margin: 0px; background: #53c1c1;}
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+.clearNO{ clear:both; display: none;}
+img{border:0; }
+.mobileimg{ display:none;}/*手機版圖片*/
+#NOhover{ -moz-transform: none;-webkit-transform: none;-o-transform: none;-ms-transform: none; top:0;}
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:none;}
+
+/* wrapper */
+.wrapper{ width:100%; margin:0 auto; }
+
+/* 刊頭 */
+.head{ width:100%; margin:0 auto; text-align:center; background:url(../images/234_head_bg.png) center top no-repeat; }
+.head .headCenter{ width:980px; margin:0 auto; position:relative; }
+.headCenter .fb-like{ position:absolute; right:29%; bottom:38%;}
+
+/* Area1 */
+.Area1{ width:100%; height:1827px; margin:-55px auto 0; background:url(../images/234_ten_bg_a1.png) center top no-repeat, url(../images/234_ten_bg_a2.png) center bottom no-repeat, url(../images/234_ten_bg2.jpg) repeat-x; }
+.Area1 .AreaContent{ width:1200px; margin:0 auto;}
+.AreaContent .swiper-container{ width:1000px; margin:0 auto; text-align:center;}
+.tenTitle{ width:45%; display:inline-block; margin:0 3% 0 0;}
+.tenTitle img{ width:90%;}
+.tenTitle .tenwords{ width:95%; margin:2% auto 0; font-size:24px; line-height:1.3em; font-family:"微軟正黑體"; font-weight:bold; letter-spacing:0.04em; color:#fff; text-align:left; }
+.tenBOOK{ width:41%; display:inline-block; margin:2% 0 0 0;}
+.tenALL{ width:100%; margin:2% auto 0;}
+.tenALL img{ width:25%; }
+
+/* Area2 風雲人物 */
+.Area2{ width:100%; height:1021px; margin:0 auto; background:url(../images/234_author_bg1.png) center bottom no-repeat, url(../images/234_author_bg2.jpg) repeat-x; }
+.Area2 .AreaContent{ width:980px; height:1021px; margin:0 auto; position:relative;} 
+.Area2 .AreaContent img{ width:100%;  -moz-transition: 0.2s;-webkit-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s;}
+.Area2 .AreaContent li{ list-style-type:none; position:absolute;}
+.authorTitle{ width:50%; position: absolute; top:0; left:1%;}
+.author1{ width:46%; top:13%; right:3%; z-index:3;}
+.author2{ width:52%; top:30%; left:8%; z-index:2;}
+.author3{ width:45%; top:60%; right:0; z-index:1;}
+.flower{ width:27%; top:22%; left:0; z-index:1;}
+.author1 img:hover,.author2 img:hover,.author3 img:hover{ transform:translate(0,-6px);-webkit-transform:translate(0,-6px);-moz-transform:translate(0,-6px);-o-transform:translate(0,-6px);-ms-transform:translate(0,-6px);}
+
+/* Area3 */
+.Area3{ width:100%; height:1646px; margin:0 auto; background:url(../images/234_trend_bg_a1.png) center top no-repeat,url(../images/234_trend_bg_a2.png) center bottom no-repeat, url(../images/234_trend_bg2.jpg) repeat-x; }
+.Area3 .AreaContent{ width:980px; margin:0 auto; padding-top:245px;}
+.Area3 .AreaContent img{ width:100%;}
+
+/* Area4 */
+.Area4{ width:100%; height:1451px; margin:0 auto ; background:url(../images/234_top_bg_a1.png) center top no-repeat, url(../images/234_top_bg_a3.png) center bottom no-repeat, url(../images/234_top_bg_a2.png) center 225px no-repeat, url(../images/234_top_bg2.jpg) repeat-x; }
+.Area4 .AreaContent{ width:980px; margin:0 auto; padding-top:55px;}
+.topTitle{ width:50%; margin:0 auto 3%;}
+/* ----------跑馬燈 */
+.boardcontent{ width:95%; margin:0 auto; text-align:center;}
+.typetitle{ width:70%; margin:0 auto;}
+.runArea { width:100%; height:auto; margin:3% auto 0; }
+#myDiv,#myDiv2,#myDiv3,#myDiv4 { overflow:hidden; width:100%; cursor:hand; margin:0 auto; }
+.runArea .runner1 {width:100%; height:auto; margin:0; padding:15px 0 0 15px; }
+.runner1 td { height:380px;}
+.bookBOX{ width:auto; margin:0 40px 0 0; position:relative;}
+.bookBOX .num{ width:60px; height:60px; line-height:30px; color:#fff; font-family:Arial, Helvetica; font-size:15px; background-color:rgba(199,29,14,0.8); border-radius:99em; text-align:center; position: absolute; top:-15px; left:-15px; z-index:2;}
+.num .number{ font-size:40px; color:#fff10a; margin:-5px auto 0;}
+.bookBOX .cover { width:auto; height:380px; margin:0 auto;}
+.cover img { width:auto; height:380px; }
+/* ----------跑馬燈選單 */
+.menulist{ width:80%; margin:5% auto 0; text-align:center; font-size:0;}
+.menulist .ybn{ width:21%; margin:0 1%; display:inline-block; -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+.menulist a:nth-child(odd){ position:relative; top:15px;}
+.menulist a:last-child{ position:relative; top:10px;}
+.ybn img{ width:100%;}
+.ON{ -webkit-filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.6)); filter: drop-shadow(4px 4px 2px rgba(0,0,0,0.6));}
+.ybn:hover{ -moz-transform: scale(1.15);-webkit-transform: scale(1.15);-o-transform: scale(1.15);-ms-transform: scale(1.15);}
+
+/* Area5 */
+.Area5{ width:100%; height:1362px; margin:0 auto ; background:url(../images/234_best_bg1.jpg) center top no-repeat; }
+.Area5 .AreaContent{ width:980px; margin:0 auto; }
+.treeZone{ width:100%; position:relative;}
+.treeZone li{ list-style-type:none; width:230px; position:absolute; -moz-transition: 0.2s;-webkit-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s;}
+.treeZone li:hover{ transform:translate(0,-6px);-webkit-transform:translate(0,-6px);-moz-transform:translate(0,-6px);-o-transform:translate(0,-6px);-ms-transform:translate(0,-6px);}
+.bn1{top:210px ; right: 30px;}
+.bn2{top:240px ; left: 340px;}
+.bn3{top:120px ; left: 35px;}
+.bn4{top:0 ; right: 125px;}
+
+
+
+/*====================================================================================================================================*/
+@media screen and (max-width:981px) {
+	.pcfloor { display:none;}
+	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+	.mobileimg{ display:block; width:100%; }/*手機版圖片*/
+	.pcimg{ display:none;}/*PC版圖片*/
+
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:8%; background-color:rgba(235,37,74,0.7); border-radius:100px; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/; z-index:1000;}
+
+	/* 刊頭 */
+	.head{ background:none; }
+	.head .headCenter{ width:100%; }
+	.headCenter .fb-like{ right:4%; bottom:18%;}
+
+	/* Area1 */
+	.Area1{ height:auto; margin:0 auto; background:none, none, url(../images/234_ten_bg2.jpg) repeat-x #fff; background-size:15% auto;}
+	.Area1 .AreaContent{ width:100%; }
+	.AreaContent .swiper-container{ width:100%; padding-top:2%; font-size:0; }
+	.tenTitle{ width:95%; margin:0 auto; display:block;}
+	.tenTitle img{ width:42%; margin:0 2% 2% 0; float:left; }
+	.tenTitle .tenwords{ width:100%; margin:0 auto; font-size:17px; font-weight:normal;}
+	.tenBOOK{ width:65%; display:block; margin:0 auto 1%;}
+	/*----改上下順序*/
+	.AreaContent .swiper-slide{ display: -webkit-flex;  display: flex;  -webkit-flex-direction: column;  flex-direction: column;}	
+	.swiper-slide>div:nth-of-type(1){-webkit-order: 3;}
+	.swiper-slide>div:nth-of-type(3){-webkit-order: 1;}
+	.swiper-slide>div:nth-of-type(1){order: 3;}
+	.swiper-slide>div:nth-of-type(3){order: 1;}
+	/*----隱藏圓點點*/
+	.AreaContent .swiper-pagination{ display:none;}
+	.tenALL{ background:url(../images/234_ten_bg_a2.png) right bottom no-repeat; background-size:140% auto; }
+	.tenALL img{ padding-bottom:18%;}
+	
+	/* Area2*/ 
+	.Area2{ height:auto; 
+	background:url(../images/234_author_bg1.png) left bottom no-repeat, url(../images/234_author_bg2.jpg) repeat-x; background-size:160% auto,15% auto;}
+	.Area2 .AreaContent{ width:100%; height:auto;}
+	
+	/*Area3 */
+ 	.Area3{ height:auto; padding-bottom:8%;
+	background:url(../images/234_trend_bg_a1.png) center top no-repeat,url(../images/234_trend_bg_a2.png) right bottom no-repeat, url(../images/234_trend_bg2.jpg) repeat-x #e7fbfd; background-size:160% auto,200% auto,11% auto;}
+	.Area3 .AreaContent{ width:100%; padding-top:20%;}
+ 
+	/* Area4 */
+	.Area4{ height:auto; background:url(../images/234_top_bg_a1.png) right top no-repeat, url(../images/234_top_bg_a3.png) center bottom no-repeat, none, url(../images/234_top_bg2.jpg) repeat-x; background-size:160% auto,180% auto,100% auto,15% auto;}
+	.Area4 .AreaContent{ width:100%; padding-top:10%; }
+	.topTitle{ width:57%; margin:0 0 3% 6%;}
+	/* 跑馬燈 */
+	.typetitle{ width:90%; }
+	.runArea { width:94%; height:auto; margin:1% auto 0; padding:2% 3%; background:rgba(255,255,255,0.8); border-radius:8px; }
+	.runner1 td { height:250px;}
+	.bookBOX{ width:auto; margin:0 20px 0 0; position:relative;}
+	.bookBOX .num{ width:40px; height:40px; line-height:25px; font-size:0.7em;}
+	.num .number{ font-size:1.6em; color:#fff10a; margin:-10px auto;}
+	.bookBOX .cover { width:auto; height:250px; margin:0 auto;}
+	.cover img { width:auto; height:250px; }
+	/* ----------跑馬燈選單 */
+	.menulist{ width:95%; margin:2% auto 0; padding-bottom:30%;}
+	.menulist .ybn{ width:23%; margin:0 1%; }
+
+	/* Area5 */
+	.Area5{ height:auto; background:none; }
+	.Area5 .AreaContent{ width:100%; }
+	.treeZone li{ width:30%;}
+	.bn1{top:65% ; right: 15%;}
+	.bn2{top:40% ; left: 30%;}
+	.bn3{top:15% ; left: 5%;}
+	.bn4{top:0 ; right: 7%;}
+	
+}
+
