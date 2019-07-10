@@ -18,16 +18,16 @@ img{border:0;}
 /* 刊頭 */
 .pchead{ width:100%; margin:0 auto; background:url(../images/453_head_bg.png) center top no-repeat; text-align:center;}
 .mobilehead{ display:none;}
-.gift{ font-size: 13px;	font-weight:bold; color: #ffff00;font-family: "新細明體" , "Times New Roman";	margin:8px 0 0 25px; letter-spacing:0.08em;}
+.gift{ font-size: 13px;	font-weight:bold; color: #ffff00;font-family: "微軟正黑體" , "Times New Roman";	margin:8px 0 0 25px; letter-spacing:0.08em;}
 .fb-like{ margin:15px 0 0 -55px;}
 .date {	color: #666; padding-left: 25px; margin-top: 5px; float: left; font-size: 12px; font-family: "微軟正黑體" , "Calibri";}
 /*-----跑馬燈-------*/
-#myDiv{ width:148px; margin:13px 0 0 5px; cursor:hand; overflow:hidden;}
+#myDiv{ width:148px; margin:13px 0 0 5px; cursor:hand; overflow:hidden; }
 .runner1 { margin:0; padding:0; width:100%;}
 .runner1 td { height:169px;}
 .runner1 img{ height:169px; margin:0 15px ; }
 .runner1 a{ text-decoration:none; color:#000; }
-.runword { width:90%; height:2.4em; overflow:hidden; margin:0 auto 0; font-family: "新細明體"; font-size: 15px; line-height:1.28em; text-align:center; color:#000;}
+.runword { width:90%; height:2.4em; overflow:hidden; margin:0 auto 0; font-family: "微軟正黑體"; font-size: 15px; line-height:1.28em; text-align:center; color:#000;}
 
 /* wrapper */
 .wrapper{ width:100%; margin:0 auto;}
@@ -164,7 +164,7 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 .stage1{ width:100%; position:relative;}
 .stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
 .stage2{ width:100%; position:relative;}
-.stage2 .gift{ font-size: 11px; margin:0; position:absolute; bottom:0; right:20%;}
+.stage2 .gift{ font-size: 10px; margin:0; position:absolute; bottom:0; right:22%;}
 .headm .fb-like{ margin:0; position:absolute; bottom:3%; left:5%; }
 img.p34{ width:34%;}
 img.p16{ width:16%;}

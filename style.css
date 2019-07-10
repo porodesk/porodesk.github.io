@@ -64,7 +64,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .picZone { height:250px; }
 .picZone img { height:250px; /*margin: 0 -70% !important;*/ }
 .words{ margin:1% auto; font-size:0.8em; line-height:1.5em;}
-.words .goBN{ width:100%; margin:0.5% auto 1%; padding:1.5% 0; display:block; border-radius:1px;}
+.words .goBN{ width:100%; margin:0.5% auto 1%; padding:1.5% 0; display:block; border:1px solid #fff; background:#000; color:fff;}
+.head a:hover .goBN{ border:1px solid #000; }
 
 
 /* menu 選單*/
