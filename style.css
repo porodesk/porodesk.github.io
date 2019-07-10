@@ -30,7 +30,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .head a:hover .goBN{ background:#000; color:#fff;}
 
 /* menu 選單*/
-.menu{ width:1100px; margin:2% auto; text-align:center; font-size:0; }
+.menu{ width:900px; margin:2% auto; text-align:center; font-size:0; }
 .menu li{ list-style-image:none; display:inline-block; width:120px; height:120px; border-radius:56px; margin:0 0.8% 2%; text-align:center; position:relative; overflow:hidden;}
 .menu li img{ width:100%;position:absolute; left:0; z-index:1; }
 .dark{ width:100%; height:100%; background:rgba(0,0,0,0.75); position:absolute; top:0; z-index:2;  
@@ -47,6 +47,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 /* 刊頭 */
 .words{ width:95%;}
+.words .goBN{ width:23%; }
 
 /* menu 選單*/
 .menu{ width:96%;}
@@ -62,8 +63,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /* 刊頭 */
 .picZone { height:250px; }
 .picZone img { height:250px; margin: 0 -70% !important; }
-.words{ margin:1% auto; }
-.words .goBN{ width:20%; padding:1.5% 0; }
+.words{ margin:1% auto; font-size:0.8em; line-height:1.5em;}
+.words .goBN{ width:100%; margin:0 auto 1%; padding:1.5% 0; display:block; }
+
 
 /* menu 選單*/
 .menu{ margin:4% auto;}
