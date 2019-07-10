@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>2018鬼月企劃：來喔，有求必應?!－金石堂網路書店</title>
+<meta name="title" content="2018鬼月企劃：來喔，有求必應?!">
+<meta name ="description" content ="金石堂網路書店：2018鬼月企劃：來喔，有求必應?!">
+<meta name="keywords" content ="鬼月">
+<meta name ="robots" content ="index, follow">
+<meta name ="googlebot" content =" index, follow ">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="172.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="swiper.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"><!--動態效果-->
+
+<script src="jquery.blockUI.js"></script>
+<script src="jquery-3.1.0.min.js"></script>
+<script src="wow.js"></script><!---回頭不會再跑一次動態-->
+<script>
+new WOW().init();
+</script>
+
+<script type="text/javascript">
+function showPop(thisId){
+  var poplink = thisId;
+  //$("#popBlock").load(poplink);                   //讀網頁
+  $("#popBlock").html($("#"+poplink).html());   //讀DIV區塊
+  $.blockUI({
+    message:$("#popBlock"),
+    css:{
+	    padding:    0,
+        margin:     0,
+        width:      '830px',//要改寬度的話，另需調整關閉按鈕的位置CSS
+		'max-width':'96%',
+		'max-height':'80%',
+        top:        '13%',
+        textAlign:  'center',
+		fadeIn:  50,
+		border:   'none',
+		'overflow':'auto',
+		'cursor':'normal',
+		backgroundColor: '#000'}, //燈箱背景顏色可改
+		overlayCSS:{cursor:'normal',opacity:0.75}
+  });
+
+  //按燈箱以外關閉
+  $('.blockOverlay').attr('title','點選任一處關閉').click($.unblockUI);
+
+  //調整燈箱視窗位置
+  $.fn.center = function () {
+	  this.css("position","fixed");
+	  this.css("left", ( $(window).width() - this.width() ) / 2+$(window).scrollLeft() );
+	  return this;
+  }
+  $('.blockUI.blockMsg').center();
+  $(window).resize(function() {
+		$('.blockUI.blockMsg').center();
+  });
+
+}
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.topBtn').fadeIn();
+            } else {
+                $('.topBtn').fadeOut();
+            }
+        });
+
+        $('.topBtn').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+        });
+
+    });
+</script>
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="head">
+      <div class="headContent">
+        <div class="date wow fadeIn">2018.07.25 - 2018.08.31</div>
+        <div class="head01 wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s"><img src="images/172_head_01.png"></div>
+        <a href="<%=wwwpath%>/event/activity/activity.asp?active=A1807172&actid=<%=ActID%>" target="_blank">
+        <div class="title01 wow fadeIn" data-wow-delay="1.5s" data-wow-duration="3s"><img src="images/172_head_t01.png" /></div>
+        <div class="title02 wow fadeIn" data-wow-delay="3s" data-wow-duration="3s"><img src="images/172_head_t02.png" /></div>
+        </a>
+        <div class="slogan1 wow fadeIn" data-wow-delay="4s" data-wow-duration="3s"><img src="images/172_head_s01.png" /></div>
+        <div class="slogan2 wow fadeIn" data-wow-delay="5s" data-wow-duration="3s"><img src="images/172_head_s02.png" /></div>
+        <div class="source wow fadeIn" data-wow-delay="6s"><img src="images/172_head_source.png" /></div>
+
+        <div class="menu wow fadeIn" data-wow-delay="6.5s">
+          <a href="#a1"><img src="images/172_menu_01.png" alt="人算不如天算"></a>
+          <a href="#a2"><img src="images/172_menu_02.png" alt="有求必應"></a>
+          <a href="<%=wwwpath%>/event/1806_a047/047.asp?actid=<%=ActID%>" target="_blank"><img src="images/172_menu_03.png" alt="揪團湊零用金"></a>
+          <a href="<%=wwwpath%>/event/1804_a065/game.asp?actid=<%=ActID%>" target="_blank"><img src="images/172_menu_04.png" alt="玩遊戲"></a>
+        </div><!--menu end-->
+      </div><!--headContent end-->
+
+      <div class="bg"><img src="images/172_head_door.jpg"></div><!--背景-->
+    </div><!--head end-->
+
+
+    <div class="Area1"><a name="a1"></a>
+      <div class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s"><img src="images/172_title_01.png" class="pcimg" alt="人算,不如天算"><img src="images/172_title_m01.png" class="mobileimg"></div>
+
+      <div class="cardBOX">
+          <div class="set wow flipInY" data-wow-delay="0.5s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock1');"><img src="images/172_card_01.png" alt="金錢"></a><br>
+            求財人數：<span id="click1">12</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="0.7s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock2');"><img src="images/172_card_02.png" alt="愛情"></a><br>
+            求愛情人數：<span id="click2">56</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="0.9s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock3');"><img src="images/172_card_03.png" alt="事業"></a><br>
+            求事業人數：<span id="click3">456</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="1.1s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock4');"><img src="images/172_card_04.png" alt="名聲"></a><br>
+            求名聲人數：<span id="click4">103</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="1.3s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock5');"><img src="images/172_card_05.png" alt="友情"></a><br>
+            求友情人數：<span id="click5">957</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="1.5s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock6');"><img src="images/172_card_06.png" alt="佛系OO"></a><br>
+            求OO人數：<span id="click6">42</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="1.7s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock7');"><img src="images/172_card_07.png" alt="健康"></a><br>
+            求健康人數：<span id="click7">76</span>人
+          </div><!--set end-->
+
+          <div class="set wow flipInY" data-wow-delay="1.9s">
+            <a href="javascript:void(0)" onclick="showPop('popBlock8');"><img src="images/172_card_08.png" alt="人品"></a><br>
+            求人品人數：<span id="click8">450</span>人
+          </div><!--set end-->
+
+      </div><!--cardBOX end-->
+      <div id="popBlock" class="PopbookArea" style="display:none;"></div>
+
+      <div id="popBlock1" class="PopbookArea" style="display:none;">
+            <div class="closewindow">x</div><!--關閉按鈕-->
+      
+            <!-------------------------------------燈箱內容 START------------------------------------->
+            <div class="bookBox">
+                <div class="book_pic"><a href="/book/book_page.asp?kmcode=2018561006599" target="_blank"><img src="/event/1807_a172/images/172_card_book01.png" width="100%"></a></div>
+                <div class="book_name"><a href="/book/book_page.asp?kmcode=2018561006599" target="_blank">符紙婆婆詭語怪談1</a></div>
+                <a href="javascript: putCart('2018561006599','','WWW','');"><div class="mybuybox">立即購買</div></a>
+            </div><!--bookBox end-->
+      
+            <div class="txtBox">
+                <span class="red">籤</span><br />
+                <div class="txtcontent">
+                  <p>於今此景正當時</p>
+                  <p>看看欲吐百花魁</p>
+                  <p>若能遇得春色到</p>
+                  <p>一洒清吉脫塵埃</p>
+                </div><!--txtcontent end-->
+                <span class="blue">解</span><br />
+                <div class="txtcontent">
+                  非自己的不強求，因為付出的代價，往往比你想得還要多！
+                </div><!--txtcontent end-->
+                <div class="source">《籤詩來源：籤詩網 六十甲子籤》</div>
+                <a href="/event/activity/activity.asp?active=A1807172" target="_blank"><div class="more">More</div></a>
+                <div class="themepic"><img src="/event/1807_a172/images/172_card_w01.png" alt="金錢"></div>
+            </div><!--txtBox end-->
+            <!-------------------------------------燈箱內容 END----------------------------------------------->
+                
+      </div><!--PopbookArea end-->      
+
+    </div><!--Area1 end 人算,不如天算-->
+
+
+    <div class="Area2"><a name="a2"></a>
+      <div class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s"><img src="images/172_title_02.png" class="pcimg" alt="魔鬼在細節裡"><img src="images/172_title_m02.png" class="mobileimg"></div>
+
+      <div class="typebook">
+          <a href="<%=wwwpath%>/event/activity/activity.asp?active=a1807172&cid=157224&actid=<%=ActID%>" target="_blank"><img src="images/172_book_01.png" alt="新書"></a>
+          <a href="<%=wwwpath%>/event/activity/activity.asp?active=a1807172&cid=157226&actid=<%=ActID%>" target="_blank"><img src="images/172_book_02.png" alt="類型"></a>
+      </div><!--typebook end-->
+      <div class="video">
+          <div class="aVideo">
+            <iframe src="https://www.youtube.com/embed/j--0odPKq8g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+          <a href="<%=wwwpath%>/event/activity/activity.asp?active=a1807172&cid=157234&actid=<%=ActID%>" target="_blank"><img src="images/172_book_more.png" /></a>
+      </div><!--video end-->
+
+    </div><!--Area2 end 魔鬼在細節裡-->
+
+
+    <div class="Area3">
+      <div class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2s"><img src="images/172_title_03.png" class="pcimg" alt="OO許願池"><img src="images/172_title_m03.png" class="mobileimg"></div>
+      
+      <div class="bnArea">
+      
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+              
+                <div class="swiper-slide"><a href="#" target="_blank"><img src="https://cdn.kingstone.com.tw/newadmin/userpics/980x300_a1807014.jpg" width="100%"></a></div><!--swiper-slide end輪播BN-->
+                <div class="swiper-slide"><a href="#" target="_blank"><img src="https://cdn.kingstone.com.tw/newadmin/userpics/980x300_a1906219.jpg" width="100%"></a></div><!--swiper-slide end輪播BN-->
+                <div class="swiper-slide"><a href="#" target="_blank"><img src="https://cdn.kingstone.com.tw/newadmin/userpics/980x300_a1905343.jpg" width="100%"></a></div><!--swiper-slide end輪播BN-->
+                <div class="swiper-slide"><a href="#" target="_blank"><img src="https://cdn.kingstone.com.tw/newadmin/userpics/980x300_t1906005.jpg" width="100%"></a></div><!--swiper-slide end輪播BN-->
+                <div class="swiper-slide"><a href="#" target="_blank"><img src="https://cdn.kingstone.com.tw/newadmin/userpics/980x300_a1811110_9.jpg" width="100%"></a></div><!--swiper-slide end輪播BN-->
+                 
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+          </div>
+      
+      </div><!--bnArea end 輪播BN-->	  
+      
+    </div><!--Area3 end OO許願池-->
+
+
+
+</div><!--wrapper end-->
+
+<!--手機版TOP鈕-->
+<a href="#"><div class="topBtn">TOP</div></a>
+
+
+<!--啟動左右滑動-->
+<script src="swiper.min.js"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    paginationClickable: true,
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: 2500,
+    autoplayDisableOnInteraction: false,
+});
+</script>
+
+
+
+</body>
+</html>

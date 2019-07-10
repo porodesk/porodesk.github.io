@@ -1,0 +1,174 @@
+﻿body { margin: 0; background:#ceedff;}
+.wrapper { width:100%; margin:0 auto; text-align:center; }
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+/*map *:focus{outline:none;  for Chrome 消除MAP藍框 }*/
+.mapImg { max-width:100%; height:auto; }/*影像地圖RWD*/
+
+img{border:0;}
+#mobileimg{ display:none;}/*手機版圖片*/
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:none;}
+
+/*--------------刊頭--------------*/
+#headBG{ width:100%; margin:0 auto; background:url(images/266_circlebg.png) center -100px repeat fixed #ceedff;}
+.head{ width:980px; height:470px; margin:0 auto; font-family: "微軟正黑體" , "Arial";  position:relative; }
+.datearea{ color: #666; margin: 3px 0 0 0 ; font-size: 0.8em; text-align:right; float: right;}
+.head .hp1{ position:absolute; top:0; left:15px; width:385px;}
+.head .hp2{ position:absolute; top:30px; right:30px; width:536px;}
+.head .itemArea{ position:absolute; top:255px; right:96px; width:392px; text-align:center;}
+.itemArea img{ width:100%; margin:0 auto 1.5%;}
+.infofrom{ width:245px; margin:3% auto 0; text-align:center;}
+.infofrom img{ width:100%;}
+
+/*--------------敞開視野--------------*/
+#area01BG { width:100%; height:740px; margin:0 auto; position: relative;}
+#area01BG .area01_title{ width:100%; margin:0 auto; position: absolute; top:0; z-index:1;}
+.area01_title{ width:800px; text-align:center;}
+#area01BG .leftArea{ width:50%; background:url(images/266_area01bg_a.jpg) right bottom no-repeat #fffcca; height:740px; position:absolute; top:0; left:0; z-index:0;}
+#area01BG .rightArea{ width:50%; background:url(images/266_area01bg_b.jpg) left bottom no-repeat #ebfbd1; height:740px; position:absolute; top:0; right:0; z-index:0;}
+/*文_內容*/
+.leftArea .leftbox{ width:490px; position:absolute; right:0; top:308px;}
+.leftbox .liberalArts{ width:85%; margin:0 auto; text-align:center; font-size:25px; font-weight:bold; font-family: "微軟正黑體"; line-height:1.6em; letter-spacing:0.1em; color:#ea5811;}
+.liberalArts a{ color:#6c3216; text-decoration:none;}
+.liberalArts a:hover,.liberalArts a:active{ text-decoration: underline;}
+.liberalArts img{ width:50%; margin:3.5% auto 0; float:left;}
+/*理_內容*/
+.rightArea .rightbox{ width:490px; position:absolute; left:0; top:308px;}
+.rightbox .science{ width:85%; margin:0 auto; text-align:center; font-size:25px; font-weight:bold; font-family: "微軟正黑體"; line-height:1.6em; letter-spacing:0.1em; color:#54800e;}
+.science a{ color:#6c3216; text-decoration:none;}
+.science a:hover,.science a:active{ text-decoration: underline;}
+.science img{ width:50%; margin:3.5% auto 0; float:left;}
+
+/*--------------大學人間--------------*/
+#area02BG { width:100%; margin:0 auto; background:url(images/266_area02bg_b.png) center bottom no-repeat fixed #ffe9e0;}
+#area02BG .contentArea{ width:980px; height:825px; margin:0 auto; background:url(images/266_area02bg_a.png) center bottom no-repeat; position: relative;}
+.area_title{ width:510px; margin:0 auto;}
+.area_subtitle{ width:740px; margin:0 auto 1%;}
+.contentArea .box1_pc{ position:absolute; top:165px; left:28px; }
+.contentArea .box2_pc{ position:absolute; top:204px; right:17px; }
+.contentArea .box3_pc{ position:absolute; top:455px; left:2px; }
+.contentArea .box4_pc{ position:absolute; top:490px; right:14px; }
+.box_mobile{ display:none;}
+.picdraw{ display:none;}
+
+/*--------------遊戲區--------------*/
+#area03BG { width:100%; height:336px; margin:0 auto; background:url(images/266_area03bg.png) center top no-repeat #ff7581;}
+#area03BG .contentArea{ width:980px; margin:0 auto; }
+
+/*--------------大學生最愛--------------*/
+#area04BG{ width:100%; margin:0 auto; background:url(images/266_circlebg.png) center -100px repeat fixed #d2f1e9;}
+#area04BG .contentArea{ width:980px; margin:0 auto; padding:0 0 2% 0;}
+.board{ width:600px; float:left;}
+.board img{ padding:0 0 2% 0;}
+.board2{ width:365px; float:right; padding:0.8% 0 5% 0;}
+#area04BG:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+
+/*--------------大學開學必買清單--------------*/
+#area05BG{ width:100%; margin:0 auto; background:url(images/266_area05bg.png) top repeat fixed #fdf7d7;}
+#area05BG .contentArea{ width:980px; margin:0 auto; padding:0 0 2% 0; }
+.ITEM_BOX{ width: 300px; height: 300px; margin:0 10px 20px 10px; display:inline-block; position: relative; overflow:hidden;}
+.ITEM_BOX img{ opacity: 1; display: block; }
+.ITEM_BOX h2{ position:absolute; top:0; opacity: 0; width: 300px;  height: 300px;  margin:0 auto; color:#fff; background: rgba(0,0,0,0.5); font-size:1.6em;line-height:1.3; font-weight:bold; font-family: "微軟正黑體"; letter-spacing:0.1em; line-height:300px; text-align: center; }
+.ITEM_BOX p{ display:block;	margin:0 auto; overflow:hidden; }
+.ITEM_BOX h2:hover{ opacity:1; display:block; background: rgba(0,0,0,0.5); transition: opacity 0.5s ease-in-out;}
+.ITEM_BOX a:hover { display:block; text-decoration: none; color:#fff;  background: rgba(0,0,0,0.5);}
+
+/*-------------勤奮青年優惠折扣--------------*/
+#area06BG{ width:100%; margin:0 auto; background:#f4eefa;}
+#area06BG .contentArea{ width:980px; margin:0 auto; padding:0 0 2% 0; }
+.discount { font-size:0;}
+.discount img{ width:22.5%; margin:1% 12px 0 12px; }
+
+/*-------------出版社--------------*/
+#area07BG{ width:100%; margin:0 auto; background:url(images/266_circlebg.png) center -100px repeat fixed #daf3d0;}
+#area07BG .contentArea{ width:980px; margin:0 auto; padding:0 0 2% 0; }
+.publish  { padding:0.5% 3%; margin:2% 0.8% 1.5% 0.8%; border-radius:30px; display:inline-block; font-family: "微軟正黑體"; font-size:22px; letter-spacing:0.1em; background-color:#5bb823; }
+.publish2 { padding:0.5% 3%; margin:2% 0.8% 1.5% 0.8%; border-radius:30px; display:inline-block; font-family: "微軟正黑體"; font-size:22px; letter-spacing:0.1em; background-color:#2b8c11; }
+#area07BG a{ color:#fff; text-decoration:none;}
+.publish:hover,.publish2:hover{ color:#ff0; background-color:#174d02;}
+
+
+
+
+/*====================================================================================================================================*/
+@media screen and (max-width:767px) {
+.ksdown_pc{display:none;}
+#pcimg{ display:none;}/*電腦版圖片*/
+#mobileimg{ display: block;}/*手機版圖片*/
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(0,0,0,0.4); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+
+/*--------------刊頭--------------*/
+#headBG{ width:100%; margin:0 auto; background:url(images/266_circlebg.png) top repeat #ceedff;}
+.head{ width:100%; height:auto; margin:0 auto; font-family: "微軟正黑體" , "Arial";  position:relative; }
+.datearea{ color: #666; margin: 3px 1% 2% 0 ; font-size: 0.7em; text-align:right; float: none;}
+.head .hp1{ position:absolute; bottom:0; left:0; width:45%;}
+.head .hp2{ position: static; float:right; margin:0 2% 1% 0; width:55%;}
+.hp1 img, .hp2 img{ width:100%;}
+.head .itemArea{ position: static; float:right; width:55%; text-align:center;}
+.itemArea img{ width:85%;}
+.infofrom{ width:70%; margin:3% auto 0; text-align:center;}
+.head:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+
+/*--------------敞開視野--------------*/
+#area01BG { height:auto; overflow:hidden !important/*div等高*/; }
+#area01BG .area01_title{ width:100%; margin:0 auto; position:static; background: linear-gradient(to right,#fffcca 50%,#ebfbd1 50%) /*雙色背景*/}
+.area01_title img{ width:100%; }
+#area01BG .leftArea{ width:50%; background:url(images/266_area01bg_a.jpg) right top no-repeat #fffcca; height:auto; position:static; float:left; padding-bottom: 9999px;margin-bottom: -9999px !important/*div等高*/;}
+#area01BG .rightArea{ width:50%; background:url(images/266_area01bg_b.jpg) left top no-repeat #ebfbd1; height:auto; position:static; float:right; padding-bottom: 9999px;margin-bottom: -9999px !important/*div等高*/;}
+/*文_內容*/
+.leftArea .leftbox{ width:100%; position: static; }
+.leftbox .liberalArts{ width:100%; margin:2% auto 0; text-align:center; font-size:0.9em; line-height:1.5em; letter-spacing:0.04em; color:#ea5811;}
+.liberalArts img{ width:50%; margin:3.5% auto 2%; float:left;}
+/*理_內容*/
+.rightArea .rightbox{ width:100%; position: static;}
+.rightbox .science{ width:100%; margin:2% auto 0; text-align:center; font-size:0.9em; line-height:1.5em; letter-spacing:0.04em; color:#54800e;}
+.science img{ width:50%; margin:3.5% auto 2%; float:left;}
+/*連結改成底線*/
+#area01BG span{ display:none;}
+#area01BG a{ text-decoration:underline; margin:0 1.5%;}
+
+/*--------------大學人間--------------*/
+#area02BG { width:100%; margin:0 auto; background:url(images/266_area02bg_b.png) center bottom no-repeat #ffe9e0; background-size:150% auto;}
+#area02BG .contentArea{ width:100%; height:auto; margin:0 auto; background:none;}
+.area_title{ width:80%; margin:-2% auto -1%;}
+.area_subtitle{ width:96%; margin:0 auto 1%;}
+.contentArea .box1_pc,.contentArea .box2_pc,
+.contentArea .box3_pc,.contentArea .box4_pc{ display:none;}
+.box_mobile{ width:48%; display:inline-block; z-index:1; position:relative;}
+.picdraw{ display:block; width:90%; height:auto; margin:-20% auto 0; z-index:0; position:relative; }
+
+/*--------------遊戲區--------------*/
+#area03BG { width:100%; height:auto; margin:0 auto; background:url(images/266_area03bg.png) center no-repeat #ff7581; background-size:auto 100%;}
+#area03BG .contentArea{ width:100%; margin:0 auto; }
+
+/*--------------大學生最愛--------------*/
+#area04BG{ width:100%; margin:0 auto; background:url(images/266_circlebg.png) top repeat #d2f1e9;}
+#area04BG .contentArea{ width:100%; margin:0 auto; padding:0 0 1% 0;}
+.board{ width:100%; float:none;}
+.board img{ padding:0 ;}
+.board2{ width:100%; float:none; padding:0 0 4% 0;}
+
+/*--------------大學開學必買清單--------------*/
+#area05BG .contentArea{ width:100%; margin:0 auto; padding:0 0 2% 0;}
+.ITEM_BOX{ width: 30%; height: auto; margin:0 1% 2% 1%; background:#fff; display:inline-block; position: relative; overflow:hidden;}
+.ITEM_BOX h2{ position:absolute; top:0; opacity: 0; width: 100%; height: 100%; margin:0 auto; color:#fff; background: rgba(0,0,0,0.5); font-size:1.2em;line-height:1.3; font-weight:bold; font-family: "微軟正黑體"; letter-spacing:0.1em; text-align: center; line-height:auto; padding: 45% 0 !important /*文字垂直置中*/;}
+
+/*-------------勤奮青年優惠折扣--------------*/
+#area06BG .contentArea{ width:100%; margin:0 auto; padding:0 0 2% 0; }
+.discount img{ width:46%; margin:1% 1.5%; }
+
+/*-------------出版社--------------*/
+#area07BG{ width:100%; margin:0 auto; background:url(images/266_circlebg.png) center top repeat #daf3d0;}
+#area07BG .contentArea{ width:96%; margin:0 auto; padding:0 0 3% 0; }
+.publish  { padding:0.5% 3%; margin:2% 0.5% 2% 0.5%; border-radius:30px; display:inline-block; font-family: "微軟正黑體"; font-size:1em; letter-spacing:0.05em; background-color:#5bb823; }
+.publish2 { padding:0.5% 3%; margin:2% 0.5% 2% 0.5%; border-radius:30px; display:inline-block; font-family: "微軟正黑體"; font-size:1em; letter-spacing:0.05em; background-color:#2b8c11; }
+
+
+}
+

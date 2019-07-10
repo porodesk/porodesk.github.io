@@ -1,0 +1,244 @@
+﻿body { margin: 0px; background-color:#eaf6fd; }
+
+.snowing{ width:100%; height:1000px; margin: 0px; position: fixed; top:0; left:0; right:0; z-index:-1; 
+  background-image: url(images/013_bg2.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  animation: animatedBackground 12s linear infinite;}
+@keyframes animatedBackground {
+  from { background-position: 0 -500px; }
+  to { background-position: 0 900px; }
+}
+
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+img{border:0;}
+.mobileimg{ display:none;}/*手機版圖片*/
+.titleimg { width:100%; margin:2% auto 1%;}/*標題圖片*/
+map *:focus{outline:none; /* for Chrome 消除MAP藍框 */}
+
+.clearNO{ clear:both; display: none;}
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:none;}
+.date_m { display:none;}
+
+/* 頂端裝飾 */
+.topDecoration{ width:100%; margin:0 auto; overflow:hidden; position:relative; z-index:1; }
+.topDecoration img{ width:25%; float:left;}
+
+.wrapper { width:980px; margin:0 auto;}
+
+/* 刊頭 */
+.pchead{ width:100%; margin:0 auto ; position:relative;}
+.headbg{ width:100%; margin:-41px 0 0 2px; position:relative; z-index:0;}
+.pchead .date {	color: #feabc7; position:absolute; top:45px; left:10px; z-index:1; font-size: 12px;	font-family: "微軟正黑體" , "Calibri";}
+.pchead .discount{ width:156px; position:absolute; top:213px; left:204px; z-index:1;}
+.pchead .ec{ width:199px; position:absolute; top:207px; left:353px; z-index:1;}
+.pchead .pizza{ width:220px; position:absolute; top:185px; right:196px; z-index:1;}
+.pchead .child{ width:214px; position:absolute; top:35px; right:36px; z-index:0;}
+.pchead .whale{ width:176px; position:absolute; top:114px; right:19px; z-index:1;}
+.pchead img{ width:100%; -moz-transition: 0.2s;-webkit-transition: 0.2s;-o-transition: 0.2s;-ms-transition: 0.2s;}
+.pchead img:hover{ transform:translate(0,-3px);-webkit-transform:translate(0,-3px);-moz-transform:translate(0,-3px);-o-transform:translate(0,-3px);-ms-transform:translate(0,-3px);}
+.nohover img:hover{ transform: none;-webkit-transform:none;-moz-transform:none;-o-transform:none;-ms-transform:none;}
+.mobilehead{ display:none;}
+
+/*耶誕節+特別推薦*/
+.Area1{ width:100%; margin:-1.5% auto 2%;}
+.Area1:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.spBOX{ width:48%; margin:0 1% ; float:left;}
+.spBOX a{ text-decoration:none;}
+.spBOX:hover { position:relative;top:-3px;}
+.boxBM{ width:100%; margin:-16px auto 0; padding:12px; box-sizing:border-box; background-color:#ffedf4; border-radius:10px; text-align:center; font-family: "微軟正黑體";}
+.coverArea{ width:100%; height:309px; background-color:#fff; position:relative;}
+.coverArea .cover{ width:46%; position:absolute; left:27%; top:10px; z-index:1;}
+.cover img{ width:100%;}
+.coverArea .coverP1{ width:90px; position:absolute; left:5px; top:0; z-index:2;}
+.coverArea .coverP2{ width:85px; position:absolute; right:0; bottom:0; z-index:2;}
+.book_title{ width:100%; height:34px; line-height:34px; font-size:16px; color:#ee3d6b; }
+.line{ width:100%; height:33px; line-height:33px;}
+.line img{ width:100%; height:6px; margin:14px auto 0;}
+.bookinform{ width:100%; height:80px; padding:8px; box-sizing:border-box; background:url(images/013_p_pbg.jpg);}
+.bookinform .book_name{ width:100%; margin:0 auto ; font-size:22px; font-weight:bold; color:#7e192c;}
+.bookinform .book_price{ width:100%; font-size:18px; color:#3b3b3b; }
+.book_price .f_price{ text-decoration:line-through; margin:0 8px 0 0; } /*定價*/
+em{ font-size:25px; font-weight:bold; font-style:normal; color:#c41043;} /*特價數字*/
+.br{ display:none;}
+.BUYbn{ width:100%; height:24px; margin:5px auto 0; }
+
+/*5個切換*/
+.Area2{ width:100%; margin:0 auto 2%; position:relative;}
+.Area2 .menulist{ width:100%; height:186px; margin:0 auto; background:url(images/013_area2_tree.png) center bottom no-repeat; text-align:center; }
+li.cbn{ width:142px; height:142px; border-radius:99em; background-color: rgba(148,196,237,0.9); border:8px solid rgba(255,255,255,0.9); margin:0 1% 28px; float:left; list-style-type:none; position:relative;}
+li.cbn p{ display:none;}
+li.cbn p img{ width:57px;}
+li.cbn:hover,
+li.ON{ border:8px solid rgba(255,255,255,1); background-color:rgba(249,81,132,1); }
+li.cbn:hover p,
+li.ON p{ display:block; position:absolute; bottom:-55px; left:0; right:0;}
+.cbn img{ width:125px; margin:-14px 0 0 2px;}
+
+.itemContent{ width:97.3%; margin:0 auto; padding:12px; box-sizing:border-box; border-radius:10px; background:#ffdfec; text-align:center;}
+.allBOX:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.itemBOX{ width: 220px; height:220px; margin:7px 7px 7px 5px; padding:5px; box-sizing:border-box; background:#fff; float:left; position: relative; overflow:hidden; }
+.itemBOX a{ text-decoration:none;}
+.itemBOX img{ width:auto; height:100%;}
+.itemBOX p{ width: 100%; margin:0 0 0 -5px; padding:8px; box-sizing:border-box; position:absolute; bottom:-85px; background: rgba(0,0,0,0.8); font-size:17px; line-height:1.25em; font-family: "微軟正黑體"; letter-spacing:0.05em; color:#ffe32a; }
+.itemBOX br{ margin:0 0 8px;}
+.itemBOX .s_price { color:#fff;}
+.itemBOX .s_price em{ font-size:18px; font-weight:bold; font-style:normal; color:#ff9ec0;}
+.itemContent .seemore{ width:99%; margin:1% auto; }
+.itemContent .seemore span{ display:none;}
+.seemore:hover{ position:relative; top:-3px;}
+.Area2 .snowfloor{ width:100%; margin:0 auto; position:absolute; bottom:-20px; z-index:2;}
+.Area2 .snowfloor img{ width:100%;}
+
+/*送禮指南*/
+.Area3{ width:100%; margin:0 auto; position:relative;}
+.Area3 .presentlist{ width:96%; margin:0 auto; font-size:0;}
+.presentlist .pbn{ width:32%; height:auto; margin:0 6px 2% 6px ; display:inline-block; }
+.presentlist img{ width:100%; }
+.presentlist img:hover{ position:relative; top:-3px;}
+.Area3 .menulist{ width:100%; height:69px; margin:1% 0 1% 17px; }
+.Area3 .menulist img{ width:220px; height:69px; margin:0 8px; float:left; }
+.Area3 .menulist img:hover{ opacity:0.8;}
+.Area3 .seemore{ width:102px; height:28px; margin:15px 0 0 825px; position:relative; z-index:3;}
+.Area3 .seemore span{ display:none;}
+.Area3 .snowfloor{ width:100%; margin:0 auto; position:absolute; bottom:-10px; z-index:2;}
+.Area3 .snowfloor img{ width:100%;}
+
+/*小編祝福*/
+.Area4{ width:100%; margin:0 auto; position:relative; font-family: "微軟正黑體";}
+.Area4 ul{ width:98%; margin:0 auto 2%; height:70px;}
+.Area4 li{ margin:0 0.5% 1% 0.5%; list-style-type:none; display:inline-block; font-size:16px; color:#4b799d;}
+.Area4 li a{ color:#4b799d; text-decoration:none;}
+.Area4 li span{ font-size:19px; font-weight:bold; }
+.Area4 li:hover{ color:#f72867; border-bottom:5px solid #f65599;}
+li.wON a{ color:#f72867; border-bottom:5px solid #f72867;}
+
+.wishContent{ width:980px; height:238px; background:url(images/013_wishbg.png) center no-repeat; position:relative;}
+.wishContent a{ text-decoration:none;}
+.wishContent .wishTxt{ width:215px; height:120px; font-size:20px; color:#f65599; line-height:1.5em; letter-spacing:0.06em; font-weight:bold; position:absolute; top:40px; left:164px;}
+.wishContent .wishBOOK{ width:300px; height:190px; position:absolute; top:17px; right:280px; font-size:0;}
+.pic-cover { width:46%; background-color:#fff; margin:0 0.5%; padding:4px; display:inline-block; text-align:center;}
+.pic-cover img{ width:98%;}
+
+/*-----180x140 BN區---------*/
+.Area5{ width:100%; margin:0 auto; position:relative; font-size:0;}
+.bnpic { margin: 0 auto; width:980px; padding-bottom:15px; text-align:center;}
+.bnpic img{ padding: 0 ; margin:0 3px 6px 3px; width:180px;}
+.bnpic a:hover{ position:relative; top:-3px; }
+.Area5 .snowfloor{ width:100%; margin:0 auto; position:absolute; bottom:-10px; z-index:2;}
+.Area5 .snowfloor img{ width:100%;}
+
+
+
+/*====================================================================================================================================*/
+@media screen and (max-width:767px) {
+.snowing{ width:100%; height:500px; 
+  background-size: contain;
+  animation: animatedBackground 8s linear infinite;}
+@keyframes animatedBackground {
+  from { background-position: 0 0; }
+  to { background-position: 0 500px; }
+}
+.pcfloor { display:none;}
+.mobileimg{ display:block;}/*手機版圖片*/
+.pcimg{ display:none;}/*PC版圖片*/
+.mapImg { max-width:105%; height:auto; }/*RWD MAP*/
+.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+
+/* 頂端裝飾 */
+.topDecoration img{ width:50%;}
+
+.wrapper { width:100%; margin:0 auto;}
+
+/* 刊頭 */
+.date{ width:97%; margin:0 auto; padding:0.5% 0 0.5% 1%; font-size:0.5em; float:none; }
+.pchead{ display:none;}
+.mobilehead{ display: block; width:100%; margin:-4% auto 0; overflow-x:hidden; overflow-y:hidden; position:relative;}
+.mobilehead img{ width:105%; margin:0 0 0 -2%;}
+.date_m { display:block; color: #666; position:absolute; top:0; left:1%; z-index:1; font-size: 0.6em; font-family: "微軟正黑體" , "Calibri";}
+
+/*耶誕節+特別推薦*/
+.boxBM{ width:100%; margin:-3% auto 0; padding:4%; box-sizing:border-box; background-color:#ffedf4; border-radius:7px; }
+.spBOX{ width:47%; margin:0 0 0 2%; float:left;}
+.coverArea{ width:100%; height:190px; }
+.coverArea .cover{ width:95%; height:180px; position:absolute; left:2.5%; top:5px; z-index:1;}
+.cover img{ width:auto; height:180px;}
+.coverArea .coverP1{ width:50px; position:absolute; left:2%; top:0; z-index:2;}
+.coverArea .coverP2{ display:none;}
+.book_title{ width:100%; height:2.6em; line-height:1.2em; font-size:1em; overflow:hidden; margin:2% auto;}
+.line{ width:100%; height:2.6em; line-height:2.6em; margin:2% auto;}
+.line img{ width:100%; height:12px; margin:1em auto 0;}
+.bookinform{ width:100%; height:auto; padding:1.5%; box-sizing:border-box; background:url(images/013_p_pbg.jpg);}
+.bookinform .book_name{ width:100%; height:2.6em; line-height:1.3em; margin:0 auto; font-size:1.1em; overflow:hidden;}
+.bookinform .book_price{ width:100%; font-size:0.9em; }
+.book_price .f_price{ text-decoration:line-through; margin:0 auto; } /*定價*/
+em{ font-size:1.1em; } /*特價數字*/
+.br{ display:block; line-height:0px; height:0px;}
+
+/*5個切換*/
+.Area2 .menulist{ width:99%; height:auto; margin:0 auto; background:url(images/013_area2_tree.png) center bottom no-repeat; text-align:center; }
+.Area2 ul{ margin:0 0 0 1%; padding:0; }
+li.cbn{ width:17%; height:auto; border-radius:2%; border:3px solid rgba(255,255,255,0.9); margin:0 2px 2% 2px;}
+li.cbn:hover,
+li.ON{ border:3px solid rgba(255,255,255,1); }
+.cbn img{ width:85%; margin:-10% 0 0 0;}
+li.cbn p{ display:none;}
+li.cbn:hover p,
+li.ON p{ display:none; }
+
+.itemContent{ width:97.3%; margin:0 auto; padding:1.5%; box-sizing:border-box; border-radius:6px; text-align:center;}
+.itemBOX{ width:48%; height:150px; margin:1%; padding:5px; position: relative; overflow:hidden; }
+.itemBOX img{ width:auto; height:100%;}
+.itemBOX p{ font-size:1em; line-height:1.2em; letter-spacing: normal; position:absolute; bottom:-130px;}
+.itemBOX br{ margin:0 0 6px;}
+.itemBOX .s_price em{ font-size:1em; }
+.itemContent .seemore{ width:99%; margin:1% auto; padding:2% 0; background:#ff96be; border-radius:6px; }
+.itemContent .seemore img{ display:none;}
+.itemContent .seemore span{ display:block; font-size:1.5em; font-family:Arial, Helvetica; color:#fff;}
+.seemore a{ text-decoration:none; }
+.seemore:hover{ position:relative; top:-3px;}
+.Area2 .snowfloor{ width:100%; margin:0 auto; position:absolute; bottom:-2%; z-index:2; overflow:hidden;}
+.Area2 .snowfloor img{ width:150%;}
+
+/*送禮指南*/
+.Area3 .presentlist{ width:98%; margin:0 auto; font-size:0;}
+.presentlist .pbn{ width:49%; margin:1% 0.5% ; display:inline-block; }
+.Area3 .menulist{ width:99%; height:auto; margin:2% 0 1% 1%; font-size:0;}
+.Area3 .menulist img{ width:23.6%; height:auto; margin:0 0.5%; float:none;}
+/*2個一排
+.Area3 .menulist{ width:97%; height:auto; margin:2% 0 1% 2%; font-size:0;}
+.Area3 .menulist img{ width:46%; height:auto; margin:0 1% 1%; float:none;}
+*/
+.Area3 .seemore{ width:102px; height:28px; margin:2% auto; position:relative; z-index:3;}
+.Area3 .seemore span{ display:none;}
+.Area3 .snowfloor{ display:none;}
+
+/*小編祝福*/
+.Area4{ width:100%; margin:0 auto; position: static;}
+.Area4 ul{ width:98%; margin:0 ; padding:0 0 0 1.5%; height:auto;}
+.Area4 li{ margin:0 0.5% 2.5% 0.5%; padding:0; list-style-type:none; display:inline-block; font-size:1em; color:#4b799d;}
+.Area4 li span{ font-size:1.1em; font-weight:bold; }
+.Area4 li:hover{ color:#f72867; border-bottom:1px solid #f65599;}
+li.wON a{ color:#fff; border:2px solid #f72867; background-color:#f72867;}
+
+.wishContent{ width:96%; height:auto; margin:0 auto; background:url(images/013_boardbg.png) repeat rgba(255,255,255,0.6); border-radius:6px; padding:2% 1.5%; box-sizing: border-box; position: static;}
+.wishContent .wishTxt{ width:98%; height:auto; font-size:1em; color:#f65599; line-height:1.3em; letter-spacing:0.06em; font-weight:bold; position: static; margin:0 auto 1%;}
+.wishContent .wishBOOK{ width:100%; height:auto; position: static; font-size:0; }
+
+/*-----180x140 BN區---------*/
+.bnpic { width:100%; padding:0 1% ; box-sizing: border-box/*解決padding溢出*/;margin:0 auto 1% auto; font-size:0;}
+.bnpic img{ width:48%; margin:1% 2px; }
+.Area5 .snowfloor{ width:100%; margin:0 auto; position:absolute; bottom:-3%; z-index:2; overflow:hidden;}
+.Area5 .snowfloor img{ width:150%;}
+
+}

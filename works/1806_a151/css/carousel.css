@@ -1,0 +1,60 @@
+/*-------------每週破盤商品-------------*/
+/*--商品樣式--*/
+.product_area{ margin:0 5px; padding-top:8px; width:100%; height:auto; float:left; text-align:center;}
+
+.product_area .product_name { margin:5px auto; width:96%; height:33px; font-size:13px; color:#5db9e4; line-height:1.3em; }
+.product_area .product_pic img{ width:auto; height:155px;  }
+
+.product_name a:link,
+.product_name a:visited{ font-size:13px; color:#5db9e4; text-decoration:none;}
+.product_name a:hover,
+.product_name a:active{ font-size:13px; color:#5db9e4; text-decoration:underline;}
+
+.price1box{	font-size:13px;	color:#2b2525; line-height:1.3em; margin-bottom:4px;}
+.product_area .style1{ font-size:17px; color:#dd0003; font-weight: bold;}
+
+
+/*--輪播樣式--*/
+.abgne-yahoo-carousel { width:auto; height:auto; margin:0 auto 20px ; padding:0 5%; position:relative; background:#e8f9fe; }
+.abgne-yahoo-carousel ul, .abgne-yahoo-carousel li { list-style:none; }
+
+.abgne-yahoo-carousel .btn { display:none;}
+.abgne-yahoo-carousel .frame { position:relative; overflow:hidden; width:100%;/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1) */
+height:305px; margin:0 auto; padding-top:5px; }
+.bc2 .abgne-yahoo-carousel .frame { height:860px;}
+
+.abgne-yahoo-carousel ul { width:100%; position:absolute; font-size:13px; font-family:Arial, Verdana, PMingLiU, sans-serif;}
+.abgne-yahoo-carousel li {  float:left; width:23%; margin:10px 1%; position:relative; }
+
+/*----*/
+.bcTitle { color:#cf206a; font-size:18px; font-weight:bold; text-align:center;}
+.bcProPic { margin-bottom:8px;}
+.frame ul li p { margin:3px 0;}
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:980px) {
+	.abgne-yahoo-carousel .btn { display:block;}
+	.abgne-yahoo-carousel .btn a { width:36px; height:118px; text-indent:-9999px; }
+	.abgne-yahoo-carousel .btn a.prev { background:url(../images/151_pre.png); position:absolute; top:45px; left:-3%; z-index:2;}
+	.abgne-yahoo-carousel .btn a.next { background:url(../images/151_next.png); position:absolute; top:45px; right:-3%; z-index:2;}
+	.abgne-yahoo-carousel .btn a.prev:hover { background:url(../images/151_pre_a.png); }
+	.abgne-yahoo-carousel .btn a.next:hover { background:url(../images/151_next_a.png); }
+
+	.abgne-yahoo-carousel { padding:0; margin:0 auto;}
+	.abgne-yahoo-carousel .frame { width:275px;/* (li 的寬度 + li 的邊框寬度 * 2 ) * 一次要顯示的數量 + li 的右邊界 * (一次要顯示的數量 - 1) */
+	height:255px; padding-top:3px; }
+	.bc2 .abgne-yahoo-carousel .frame { height:255px;}
+	
+	.abgne-yahoo-carousel ul { width:99999px; font-size:14px; }
+	.abgne-yahoo-carousel li {  float:left; width:127px; margin:10px 6px; }
+	
+	/*----*/
+	.bcTitle { margin-top:15px; padding:0 3%; color:#cf206a; font-size:16px; font-weight:bold; text-align:center;}
+}
+
+@media screen and (min-width:768px) and (max-width:979px) {
+	.abgne-yahoo-carousel .frame { width:555px;}
+	.abgne-yahoo-carousel .btn a.prev { left:3%; }
+	.abgne-yahoo-carousel .btn a.next { right:3%; }
+}
+

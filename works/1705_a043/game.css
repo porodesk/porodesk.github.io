@@ -1,0 +1,125 @@
+.fadeoutcolor{ width:100%; height:100%; background-color:#e2cfc0; position:absolute; top:0; left:0; z-index:10; opacity:0.9;}/*淡出色塊*/
+.gameWrapper { width:980px; height:630px; margin:0 auto; padding:0; /*background-color:#e2cfc0;*/ position:relative; overflow:hidden; font-family:Arial, Verdana, "微軟正黑體", sans-serif; z-index:4;}
+.gameWrapper > img { border:0;}
+.gSakura01 { width:100%; position:absolute; top:0; left:0; z-index:0;}
+.gSakura02 { width:40%; position:absolute; bottom:0; right:0; z-index:0;}
+.innerbg { width:942px; position:absolute; top:23.8%; left:2%; z-index:1;}
+
+.g_mainTitle { overflow:hidden; position:relative; z-index:2; margin:0 auto;}
+.g_mainTitle img { float:left;}
+
+/*--keyword--*/
+.g_keywordBox { width:150px; margin:2.4% 2% 0 2.2%; padding:0 10px ; /*overflow:hidden;*/ float:left; position:relative; z-index:2; }
+ul.gkeyword {  width:150px; height:auto;}
+.gkeyword { width:100%; height:364px; list-style:none; margin:0 ; padding:0;}
+.gkeyword li { margin-bottom:10px; position:relative;}
+.gkeyword li select { width:86%; height:34px; padding-left:5px; color:#5e5e5e; font-size:18px; position:absolute; bottom:20px; left:0; right:0; margin:0 auto;}
+.gkeyword .count{ position:absolute; bottom: 18%; right:19%; z-index:3; text-shadow:2px 2px 0px #fcd9d9, 0px 0px 5px #fcd9d9, -2px -2px 0px #fcd9d9; color:#ee145c; font-size:1.5em; font-weight:bold;}
+.gPlay { display:block; width:149px; height:51px; margin:31px auto 0;}
+.gPlay:hover { position:relative; top:1px; left:1px;}
+.gPlayBtn01 { display:block;}
+.gPlayBtn02 { display:none;}
+
+/*--result--*/
+.g_resultBox { width:755px; margin:2.4% 0 0 0; float:left; position:relative; z-index:2;}
+.grTitle { overflow:hidden; margin:23px 0 0 0; display:block;}
+.grTitle img {float:left;}
+.grt01 { display:block;}
+.grt02 { padding:0 0 0 8px;}
+.grtMobile { display:none;}
+
+.grContent { height:364px; background-color:#ffffff; box-shadow:rgba(0,0,0,0.3) 0px 0px 9px inset; overflow:hidden; padding:0; position:relative; }
+.grContent .Contentbox{ padding:3.5%;}
+.gr4corner { width:100%; position:absolute; bottom:0; left:0; z-index:2;}
+.grPic{ margin:0 auto; width:100%; }
+.grPic_m{ display:none;}
+
+.grBook { width:222px; float:left; margin-right:15px; position:relative; z-index:3;}
+.grContxt { width:460px; float:left;}
+.grStart { width:100%; margin-top:77px; display:block;}
+.grStart2 { display:none;}
+
+.grAnswer { position:relative; z-index:4; margin-top:-6px; line-height:1.25;}
+.grAnswer p { margin:0; padding:0;}
+.grAnswer a{text-decoration:none;}
+.graTitle { font-size:28px; color:#da0a62;}
+.graPerson { font-size:36px; color:#da0a62;}
+.graBookName { height:33px; overflow:hidden; font-size:26px; color:#174797; font-weight:bold; margin:6px 0 2px 0 !important;}
+.graBookInfo { height:162px; overflow:hidden; font-size:21px; color:#464546; text-align: justify;}
+.graBookName a{color:#174797; }
+.graBookInfo a{color:#464546; }
+
+.grLikeMore { overflow:hidden;}
+.grLike { float:left; font-size:24px; color:#174797; margin-top:10px;}
+.grLike img { width:21px; margin-right:5px;}
+.grMore { float:left; display:block; width:90px; padding:5px 0; margin:9px 0 0 45px; background-color:#cb3857; color:#ffffff; font-size:15px; border-radius:100px; text-align:center; text-decoration:none; }
+.grMore:hover { background-color:#4aa5fa;}
+
+.sharefb_mbg{ display:none;}
+.sharefb{ margin:20px 0 0 0;}
+.gFB { display:block; width:248px; height:51px; margin:9px 0 0 0; float:left;}
+.gFB:hover { position:relative; top:1px; left:1px;}
+.gFBbtn01 { display:block; }
+.gFBbtn02 { display:none;}
+
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:767px) {
+	.fadeoutcolor{ width:100%; height:100%; background-color:#e2cfc0; position:absolute; top:0; left:0; z-index:10; opacity:0.9;}/*淡出色塊*/
+	.fadeoutcolor:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden;}/*高度填滿*/
+	.gameWrapper { width:100%; height:auto; margin:0 auto; padding:0; /*background-color:#e2cfc0;*/ position:relative; overflow:hidden; font-family:Arial, Verdana, "微軟正黑體", sans-serif; z-index:4;}
+	.gameWrapper > img { border:0;}
+	.gSakura01 { display:none;}
+	.gSakura02 { display:none;}
+	.innerbg { width:100%; position:absolute; top:23.8%; left:2%; z-index:1; display:none;}
+	
+	.g_mainTitle { overflow:hidden; position:relative; z-index:2; margin:0 ; display:none;}
+	
+	/*--keyword--*/
+	.g_keywordBox { width:96%; margin:0 auto; padding:0; overflow:hidden; float:none; position:relative; z-index:2; }
+	ul.gkeyword {  width:100%; }
+	.gkeyword { width:100%; height:auto; list-style:none; margin:5px 0 0 0; padding:0; overflow:hidden;}
+	.gkeyword li { width:32.333%; float:left; margin:0 0.5%; position:relative;}
+	.gkeyword li select { width:86%; height:30%; padding-left:5px; color:#5e5e5e; font-size:15px; position:absolute; top:50%; bottom:0; left:0; right:0; margin:0 auto;}
+	.gPlay { display:block; width:100%; height:auto; margin:5px 0 8px 0;}
+	.gPlayBtn01 { display:none;}
+	.gPlayBtn02 { display:block;}
+	
+	/*--result--*/
+	.g_resultBox { width:96%; margin:0 auto; float:none; position:relative; z-index:2;}
+	.grTitle { display:none;}
+	.grt02 { display:none;}
+	.grtMobile { display:block; width:100%; margin:0 auto;}
+	
+	.grContent { height:auto; background-color:#ffffff; box-shadow:rgba(0,0,0,0.3) 0px 0px 9px inset; overflow:hidden; padding:0; position:relative;}
+	.grContent .Contentbox{ padding:3% 8%;}
+	.gr4corner { width:100%; position:absolute; bottom:0; left:0; z-index:2;}
+	.grPic{ display:none;}
+	.grPic_m{ display:block; margin:0 auto; width:100%; }
+		
+	.grBook { width:190px; float:none; margin:0 auto; position:relative; z-index:3;}
+	.grContxt { width:100%; float:none; }
+	.grStart { width:100%; margin-top:60px; display:none;}
+	.grStart2 { width:100%; margin:10px 0 30px 0; display:block;}
+	
+	.grAnswer { position:relative; z-index:4; margin-top:10px; ine-height:1.3;}
+	.grAnswer p { margin:0; padding:0;}
+	.graTitle { font-size:1.3em; color:#da0a62;}
+	.graPerson { font-size:1.8em; color:#da0a62;}
+	.graBookName { height:auto; overflow:hidden; font-size:1.3em; color:#174797; font-weight:bold; margin:6px 0 5px 0 !important;}
+	.graBookInfo { height:6.2em; overflow:hidden; font-size:1.1em; color:#464546;}
+	
+	.grLikeMore { overflow:hidden; }
+	.grLike { float:left; font-size:20px; color:#174797; margin:10px 10px 0 0;}
+	.grLike img { width:21px; margin-right:5px;}
+	.grMore { float:left; display:block; width:90px; padding:5px 0; margin:10px 0 0 0; background-color:#cb38574; color:#ffffff; font-size:15px; border-radius:100px; text-align:center; text-decoration:none; }
+	.grMore:hover { background-color:#aa5fa;}
+	
+	.sharefb_mbg{ display:block; width:100%; margin:0 auto; position:absolute; z-index:1; }
+	.sharefb{ margin:3% 0 0 0; padding-bottom:25%; position:relative; z-index:3;}
+	.gFB { display:block; width:100%; height:auto; margin:0; float:none;}
+	.gFB:hover { opacity:1;}
+	.gFBbtn01 { display:none;}
+	.gFBbtn02 { display:block;}
+	
+}

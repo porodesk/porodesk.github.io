@@ -1,0 +1,332 @@
+﻿@charset "utf-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
+
+body { line-height: 1.3; position:relative; }
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+/*--------------------my reset--------------------*/
+* { box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; }
+html { font-family:Arial, Verdana, "微軟正黑體", sans-serif;
+width:100%; height:100%; min-height:100%;
+box-sizing:border-box; -webkit-box-sizing:border-box; -moz-box-sizing:border-box;
+text-size-adjust:none; -webkit-text-size-adjust:none;}
+/*--------------------my reset--------------------*/
+
+.ksdown_pc{margin:0;padding:0;width:100%;height:auto;}
+.mNO { display:block;}
+.mNOtxt { display:inline-block;}
+.pcNO { display:none;}
+.brStyle { display:none;}
+.brStyle2 { display:block; height:0;}
+.txtRed { color:#ea0101; font-weight:bold;}
+.bold { font-weight:bold;}
+.inShop { color:#ea0101; font-size:17px; font-weight:bold;}
+body { background-image:url(../images/151_headcloud.jpg); background-position:top center; background-color:#cff2fd;}
+
+/*----刊頭+選單----*/
+.header { width:100%; margin:0 auto; padding:0 0 123px; background:url(../images/151_headbg.png) no-repeat; text-align:center;}
+.header img{ width:1052px; margin:0 auto;}
+.menuPC { overflow:hidden; width:980px; height:67px; margin:0 auto; padding:0; background-image:url(../images/151_menu_bg.jpg); background-repeat:repeat-x;}
+.menuPC li { float:left; width:118px; height:62px; font-size:16px; text-align:center; border-right:#fea0d1 1px solid; }
+.menuPC li:first-child,
+.menuPC li:nth-child(2) { border-left:0; width:140px; background-color:#f0518d; font-size:22px; font-weight:bold;}
+.menuPC li:nth-child(6){ width:205px; }
+.menuPC li:last-child { width:141px; border-right:0; }
+.menuPC li a {  color:#ffffff; text-decoration:none; text-align:center; width:100%; display:table; line-height:62px;}
+.menuPC li:hover > a { border-bottom:5px solid #FF0; color:#FF0;}
+.menuPC .ON{ border-bottom:5px solid #FF0; color:#FF0;}
+.menuPC br{ display:none;}
+
+/*----內容----*/
+.content { width:980px; margin:-123px auto 0; padding:40px 1% 10px 1%; background-color:#ffe0e6; position:relative; }
+/*.otBG { background-image:url(../images/151_bagbg.jpg); background-position:top center; background-repeat:no-repeat;}*/
+.shareArea { display:block; position:absolute; top:8px; right:15px; text-decoration:none; color:#5098e5; font-weight:bold; font-size:15px; padding:3px 10px;}
+.shareArea li{ list-style:none; float:right; }
+.shareArea img { margin:0 4px 0 0;}
+.fbShare img { display:inline-block; width:60px; vertical-align:bottom;  }
+.googleplus{ margin:0 4px 0 0;}
+
+/*----一主題----*/
+.oneTheme { background-color:#ffffff; border-radius:15px; border:#edafbf 1px solid; box-shadow:rgba(204,102,153,0.9) 0px 0px 10px inset; margin-bottom:40px;}
+.otTitlePC { margin:-28px 0 0 20px;}
+.otTitleM { display:none;}
+
+.otPadd { padding:40px 5%;}
+.otPadd2 { padding:20px 5% 30px 5%; position:relative !important;}
+.otPadd3 { padding:10px 2% 15px 2%; position:relative; }
+.otPadd4 { padding:20px 5% 30px 5%; position:relative;}
+
+/*---包裝照+小朋友照---*/
+.photo, .photo2{ margin:0 auto; text-align:center;}
+.photo img{ width:31%; margin:1% ;}
+.photo2 img{ width:23%; margin:1% ;}
+
+/*--希望書包文具--*/
+.otTop { overflow:hidden; padding:0 1.5%;}
+.bagPic { width:20%; float:left;}
+.bagNumber { width:70%; float:left; margin:0 5%; color:#000; font-size:20px; font-weight:bold;}
+.bnIcon { vertical-align:bottom; margin:0 5px;}
+.bagNumber b { font-size:24px;}
+.bagNumber b.need { font-size:30px; color:#cc0033;}
+.bagNumber b br { display:none;}
+.bagIntr { width:75%; float:left; margin:15px 0 15px 5%; color:#853434; font-size:20px;}
+
+/*--書包5單位--*/
+.brand5_M { display:none;}
+.brand5 { overflow:hidden; padding:10px 0;}
+.oneB5 { float:left; width:30.333%; height:232px; padding:12px 15px 10px 15px; margin:10px 1.5%; text-align:center; border:#e9c9cf 1px solid; border-radius:10px; 
+box-shadow:rgba(0,0,0,0.1) 3px 3px 3px; background-image:url(../images/151_bagbg_02.jpg); background-repeat:no-repeat; background-position:bottom right;}
+.brand5 .oneB5:nth-child(1) { width:47%; height:187px;}
+.brand5 .oneB5:nth-child(2) { width:47%; height:187px;}
+
+.oneB5 h5 ,.oneSHOP h5{ padding-bottom:5px; margin-bottom:10px; font-size:18px; border-bottom:#eac7d4 1px solid; text-align:center; font-weight:bold;}
+.oneB5 div { margin:5px 0; font-size:16px;}
+.oneB5 div select { width:53px; height:23px;}
+.goCartBTN { width:120px; height:32px; margin:7px 0; background-image:url(../images/151_btnbg_01.jpg); background-repeat:repeat-x; border:0; border-radius:100px; color:#ffffff; cursor:pointer;
+font-size:18px; font-weight:bold; font-family:Arial, Verdana, "微軟正黑體", sans-serif;}
+.goCartBTN:hover { position:relative; top:-2px; color:#FFEB3B;}
+div.finish { color:#ad441b; margin:20px 0 13px 0;}
+div.thanks { color:#e00957; margin:45px 0 5px 0; padding:10px 0; font-weight:bold;}
+
+/*文具包4單位*/
+.stationery{ height:330px;}
+.b52 .oneB5 { width:23%; height:254px; padding:12px 0; margin:10px 1%;}
+.b52 .oneB5:nth-child(4) { width:23%;}
+.b52 .oneB5 h5 { margin-bottom:35px;}
+.b52 .sister h5 { margin-bottom:10px;}
+.b52 .oneB5 .goCartBTN { margin-top:27px;}
+.b52 .sister .goCartBTN { margin-top:7px;}
+.b52 .oneB5:nth-child(1) { width:23%; height:254px;}
+.b52 .oneB5:nth-child(2) { width:23%; height:254px;}
+/*.b52 .oneB5 div { margin:17.5px 0; }
+.b52 .sister div { margin:5px 0; }
+.b52 .oneB5 div.finish { margin-top:27px;}*/
+/*實體門市尚有*/
+.oneSHOP{ width:98%; height:100px; float:none; padding:12px 0 10px ; margin:10px auto; text-align:center; border:#e9c9cf 1px solid; border-radius:10px; box-shadow:rgba(0,0,0,0.1) 3px 3px 3px; background-image:url(../images/151_bagbg_02.jpg); background-repeat:no-repeat; background-position:bottom right;}
+.oneSHOP a { color:#266cae;}
+.oneSHOP a:hover { text-decoration:none; color:#0c77e2;}
+
+/*書包內容物*/
+.bagMainBox { margin-top:-25px;}
+
+/*--協辦單位--*/
+.logo_a { display:block; width:26%; margin:0 0 0 15px; }
+
+/*--合作夥伴--*/
+.nameWrite { position:absolute; top:-9px; right:12px; color:#f35776; font-size:14px;}
+.corbrand_pc img { width:auto; height:78px; }
+.corbrand_pc img.cpc2 { height:105px;}
+.corbrand_m { display:none;}
+
+/*--收合效果--*/
+.toggle-input { display:none;}
+.toggle-label { display:none;}
+
+/*--注意事項--*/
+.noticeBox { font-size:18px; padding:0 4%; list-style:disc; line-height:1.4;}
+.noticeBox li { margin:10px 0;}
+.noticeBox li a { color:#266cae;}
+.noticeBox li a:hover { text-decoration:none; color:#0c77e2;}
+
+.cartM { display:none;}
+.topBtn { display:block; width:50px; height:50px; position:fixed; bottom:60px; right:20px; opacity:0.9; z-index:2;}
+/*浮動選單*/
+.nav_sidearea_m{display:none;}
+#FAD_Div { display:block; z-index:999;}
+.sitemenu { width:138px; background-color:#ffffff; border-top:#81d2fc 5px solid;}
+.sitemenu p { border-bottom:#9be0f3 1px solid; position:relative; margin:0; opacity:0.8;}
+.sitemenu p a { display:block; width:138px; padding:10px 15px; font-size:15px; color:#687578; text-decoration:none; text-align:center; font-weight:bold; }
+.sitemenu p a:hover { background-color:#33c6ef; color:#ffffff;}
+.sitemenu .color2 { background-color:#fffcd5; }/*黃底*/
+.smenuPic { width:138px; margin-top:20px;}
+.smenuPic:hover {opacity:0.9; position:relative; top:2px;}
+
+
+
+
+@media screen and (max-width:1024px){
+	.topBtn { display:block; width:40px; height:40px; bottom:80px; right:10px;}
+	/*浮動選單*/
+	#FAD_Div { display:none;}
+	.nav_sidearea_m { display:block; position:fixed; bottom:0; left:0; width:100%; height:auto; z-index:1000; opacity:0.95;}
+	.nav_sidearea_m .nav_sidecol { margin:0; padding:0; display:flex; -webkit-display:flex; -moz-display:flex; -o-display:flex;}
+	.nav_sidearea_m .nav_sidecol li { flex:1; -webkit-flex:1; -moz-flex:1; -o-flex:1;  list-style-type:none; float:left; /*display:table;*/ margin:0; padding:1% 0 ; /*width:20%;*/ height:auto; text-align:center; border-right:1px solid #ffb5cf; background-color:#46befb; text-align:center;font:normal normal 15px/1.2 "微軟正黑體";color:#FFF;}
+	.nav_sidearea_m .nav_sidecol li:first-child,
+	.nav_sidearea_m .nav_sidecol li:nth-child(2){ background-color:#22a7ec;}/*深色*/
+	.nav_sidearea_m .nav_sidecol li:nth-child(6){ background-color:#DB4437;}/*google+*/
+	.nav_sidearea_m .nav_sidecol li:nth-child(7){ background-color:#00C300;}/*LINE*/	
+	.nav_sidearea_m .nav_sidecol li:last-child { margin-right:0;border-right:none; background-color:#4b6dad;}
+	.nav_sidearea_m .nav_sidecol li a { display:block; /*display:table-cell;*/ vertical-align:middle;width:100%;height:100%;font:normal normal 15px/1.2 "微軟正黑體";color:#FFF;text-decoration:none;}
+	.nav_sidearea_m .nav_sidecol li span { font-weight:bold;}
+	
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:768px) and (max-width:979px) {
+	 body{ background-size:100% auto;}
+	.ksdown_pc{ display:none;}
+	.header { width:100%; background-size:auto 440px;}
+	.header img{ width:768px;}
+	.menuPC{ width:768px; height:55px;}
+	.menuPC li {width:92px; height:50px; font-size:13px;}
+	.menuPC li:first-child,
+	.menuPC li:nth-child(2){ font-size:18px; width:105px;}
+	.menuPC li:nth-child(6){ width:167px; }
+	.menuPC li:last-child { width:115px; }
+	.menuPC li a { line-height:50px;}	
+
+	.content { width:768px; padding:40px 1%;}
+	
+	/*--希望書包文具--*/
+	.bagIntr { font-size:18px;}
+	
+	/*----一主題----*/
+	.otPadd { padding:15px 2%;}
+	.otPadd2 { padding:10px 2% 20px 2%; }
+	.otPadd4 { padding:10px 2% 20px 2%;  }
+	
+	/*--書包5單位--*/
+	.oneB5 { height:245px;}
+	.oneB5 h5 { font-size:16px;}
+	
+	/*--協辦單位--*/
+	.logo_a { width:30%; }
+	
+	/*--合作夥伴--*/
+	.corbrand_pc img { height:61.8px; }
+	.corbrand_pc img.cpc2 { height:83px;}
+	
+
+	/*表單*/
+	.fbar input[type="text"] { width:305px; font-size:12px;}
+	.fbar input.in2[type="text"] { width:270px;}
+	.fsend  { width:155px;}
+
+	/*--購物車鈕--*/
+	.cartM { display:block; position:fixed; bottom:125px; right:10px; width:42px; padding:5px; background-color:#f63479; opacity:0.9; font-size:13px; color:#ffffff; border-radius:5px; text-decoration:none; font-family:Arial, Verdana, PMingLiU, sans-serif; text-align:center; z-index:2;} 
+	.cartM img { display:block; width:100%; margin:0 auto 2px auto;}
+
+
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+@media screen and (max-width:767px) {
+	.ksdown_pc{ display:none;}
+	.mNO { display:none;}
+	.mNOtxt { display:none;}
+	.pcNO { display:inline-block;}
+	.brStyle { display:block; height:0;}
+	.brStyle2 { display:none;}
+	.inShop { font-size:15px !important;}
+	
+	/*----刊頭+選單----*/
+	.header { width:100%; background:none #ffe0e6; padding:0; }
+	.header img{ width:100%;}
+	
+	.menuPC{ width:100%; height:auto; background:none #ffe0e6; padding:1% 0;}
+	.menuPC li { width:31.33%; height:auto; margin:0 1% 1%; background:#fa7cab; border:none; font-size:15px; border-radius:4px;}
+	.menuPC li:first-child,
+	.menuPC li:nth-child(2){ width:48%; font-size:18px;}
+	.menuPC li:nth-child(6),
+	.menuPC li:last-child { width:48%; }
+	.menuPC li a { line-height: normal; padding:5% 0; }
+	.menuPC li:first-child a ,li:nth-child(2) a{ padding:3% 0; }
+	.menuPC li:hover > a { border-bottom: none; color:#FF0; border-radius:4px;}	
+	.menuPC .ON{ border-bottom: none; color:#FF0; border-radius:4px;}
+	.menuPC br{ display:block; margin:-3px 0 0;}
+	
+	/*----內容----*/
+	.content { width:100%; margin:0 auto; padding:8% 1%; background-color:#ffe0e6; }
+	/*.otBG { background-image:url(../images/151m_bagbg.jpg); background-position:top left; }*/
+	.shareArea { display:none;}
+
+	/*----一主題----*/
+	.oneTheme { margin-bottom:10%;}
+	.otTitlePC { display:none;}
+	.otTitleM { display:block; margin-top:-8%;}
+	
+	.otPadd { padding:15px 3%;}
+	.otPadd2 { padding:2% 2% 60px 2%; }
+	.otPadd3 { padding:1% 2% 15px 2%; }
+	.otPadd4 { padding:2% 2% 5% 2%; }
+	
+	/*---包裝照---*/
+	.photo img{ width:46%; margin:1% ;}
+	.photo2 img{ width:46%; margin:1% ;}
+	
+	/*--希望書包文具--*/
+	.bagPic { width:31%; }
+	.bagNumber { width:64%; line-height:1; margin:0 0 0 4%;}
+	.bagIntr { width:100%; margin:10px 0 4px 0; font-size:16px;}
+	
+	/*--書包5單位--*/
+	.brand5 { padding:0;}
+	.oneB5 { float:left; width:47%; height:260px; padding:8px 1%; margin:6px 1.5%;}
+	.brand5 .oneB5:nth-child(1) { width:47%; height:auto;}
+	.brand5 .oneB5:nth-child(2) { width:47%; height:auto;}
+	.brand5 .oneB5:nth-child(3) { width:47%; height:auto;}
+	.brand5 .oneB5:nth-child(4) { width:47%; height:auto;}
+	.brand5 .oneB5:nth-child(5) { width:97%; height:205px; }
+
+	.oneB5 h5 { padding-bottom:5px; margin-bottom:10px; font-size:18px; border-bottom:#eac7d4 1px solid; text-align:center; font-weight:bold; line-height:1.1;}
+	.oneB5 div select { height:30px; font-size:17px;}
+	
+	.goCartBTN { width:116px; height:35px; font-size:20px;}
+	div.finish { margin:15px 0 5px 0; font-size:17px;}
+	div.thanks { margin:0; font-size:15px;}
+	
+	/*文具包4單位*/
+	.stationery{ height:auto;}
+	.b52 .oneB5 { width:47%; height:250px; padding:8px 1%; margin:6px 1.5%;}
+	.b52 .oneB5:nth-child(4) { width:47%;}
+	
+	.stationery .oneB5:nth-child(1) { width:47%; height:320px;}
+	.stationery .oneB5:nth-child(2) { width:47%; height:320px;}
+	
+	/*書包內容物*/
+	.bagMainBox { margin-top:-8%;}
+
+	/*--協辦單位--*/
+	.logo_a { width:50%; margin:0 auto; }
+
+	/*--合作夥伴--*/
+	.nameWrite { position:absolute; top:inherit; bottom:4%; right:5%; color:#f35776; font-size:13px;}
+	.corbrand_pc { display:none;}
+	.corbrand_m { display:block;}
+	.corbrand_m img { width:49%;}
+	
+	/*--收合效果--*/
+	.toggle-input { display:none;}
+	.toggle-label { display:block; cursor:pointer; padding:7px; font-weight:600; background-color:#ffffff; border:#CCC 1px solid; border-radius:8px; width:120px; text-align:center; color:#999;
+	position:absolute; bottom:13px; left:0; right:0; margin:0 auto;}
+	.toggle-label:before { content:"展開全文";}
+	.toggle-input:checked ~ .toggle-label:before { content:"收合";}
+	
+	.toggle-content { max-height:122px; height:122px; overflow:hidden; -moz-transition:ease 0.8s max-height; -o-transition:ease 0.8s max-height; 
+	-webkit-transition:ease 0.8s max-height; transition:ease 0.8s max-height;} 
+	.toggle-input:checked ~ .fix > .toggle-content { max-height:2000px; height:auto; }
+	
+	/*--注意事項--*/
+	.noticeBox { padding:0 2.5% 0 9%;}
+	
+	/*--購物車鈕--*/
+	.cartM { display:block; position:fixed; bottom:125px; right:10px; width:42px; padding:5px; background-color:#f63479; opacity:0.9; font-size:13px; color:#ffffff; border-radius:5px; text-decoration:none; font-family:Arial, Verdana, PMingLiU, sans-serif; text-align:center; z-index:2;} 
+	.cartM img { display:block; width:100%; margin:0 auto 2px auto;}
+
+	
+}
+

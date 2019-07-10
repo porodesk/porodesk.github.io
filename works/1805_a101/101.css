@@ -1,0 +1,331 @@
+﻿body {	margin: 0px; background:#0b0e17;}
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+img{ border:0;-moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+img:hover{ -moz-transform: translateY(-5px);-webkit-transform: translateY(-5px);-o-transform: translateY(-5px);-ms-transform: translateY(-5px); }
+#noHover:hover{ -moz-transform: none;-webkit-transform: none;-o-transform: none;-ms-transform: none;}
+img.pcimg{ width:100%;}
+img.mobileimg{ display:none;}
+
+.clearNO{ display:none;}
+
+/* wrapper */
+.wrapper{ width:100%; margin:0 auto; }
+
+/* 刊頭 */
+.head{ width:100%; height:95vh; margin:0 auto; position:relative;}
+.head .bg { width:100%; height:100%; background:url(images/101_bg1.jpg) no-repeat center; background-size:cover; position:absolute; z-index:0;}
+.head .bg img { display:none;}
+.head .headContent{ width:1028px; height:100%; margin:0 auto; position:absolute; left:0; right:0; z-index:1; text-align:center; }
+.headContent .date{ position:absolute; left:0; right:0; top:18%;}
+.headContent .titleH{ position:absolute; left:0; right:0; top:25%;}
+.headContent .slogan{ position:absolute; right:12%; top:52%;}
+.headContent .discount{ position:absolute; right:21%; top:62%; z-index:2;}
+.headContent .txt{ position:absolute; left:10%; top:60%; z-index:1;}
+.headContent .menu{ width:100%; position:absolute; left:0; right:0; bottom:6%;}
+.menu img{ width:22%;}
+img.menu3{ margin:0 0 0 54px;}
+
+/* Area1 犯罪預告*/
+#Area1{ width:100%; height:1028px; margin:0 auto; background:url(images/101_bg2.jpg) center bottom no-repeat fixed; text-align:center;}
+#Area1 .title{ width:980px; margin:5px auto;}
+#Area1 .a01{ display:inline-block; margin:0 1% ; top:20px;}
+#Area1 .a02{ display:inline-block; margin:1% 1% ; top:33px;}
+#Area1 .a03{ display:inline-block; margin:0 1% ; top:20px;}
+#Area1 .a04{ display:inline-block; margin:-1% 1% 0; top:605px;}
+#Area1 .a05{ display:inline-block; margin:2.5% 1% ; top:595px;}
+#Area1 .a06{ display:inline-block; margin:0 1% ;  top:600px;}
+#Area1 .a07{ position:absolute; left:143px; top:317px; display:none;}
+#Area1 .a08{ position:absolute; left:1450px; top:308px; display:none;}
+
+/* Area2 頭條*/
+#Area2{ width:100%; height:auto; margin:0 auto; background:url(images/101_bg1.jpg) center top no-repeat fixed; }
+#Area2 .title{ width:100%; margin:0 auto 2%;}
+.bookBOX{ width:980px; height:auto; margin:0 auto 2%; padding:20px 30px; box-sizing:border-box; background: rgba(0,0,0,0.6); font-family:"微軟正黑體"; letter-spacing:0.05em;}
+img.authorimg{ width:315px; height:343px; margin:0 20px 0 0; float:left;}
+.bookBOX .txt{ width:100%; margin:0 0 14px; font-size:19px; color:#fff;}
+.txt span{ font-size:24px; font-weight:bold; color:#feec57;}
+.bookBOX .bookpics{ width:100%;}
+.bookpics img{ width:170px; margin:0 21px 0 0;}
+
+/* Area3 偵查備忘*/
+#Area3{ width:100%; height:auto; margin:0 auto; background:url(images/101_bg2.jpg) center bottom no-repeat fixed; }
+#Area3 .title{ width:100%; margin:0 auto 2%;}
+#Area3 .cloud{ width:980px; height:545px; margin:0 auto; position:relative; font-family:"微軟正黑體"; }
+.cloud a:link,
+.cloud a:visited{text-decoration:none;}
+.cloud a:hover,
+.cloud a:active{text-decoration:underline;}
+.cloud .keyword1 a{ position:absolute; top:77px;  left:348px; font-size:48px; color:#79ff28/*綠*/;}
+.cloud .keyword2 a{ position:absolute; top:95px;  left:740px; font-size:48px; color:#ffffff/*白*/;}
+.cloud .keyword3 a{ position:absolute; top:260px; left:91px;  font-size:48px; color:#fff228/*黃*/;}
+.cloud .keyword4 a{ position:absolute; top:404px; left:190px; font-size:48px; color:#ffffff/*白*/;}
+.cloud .keyword5 a{ position:absolute; top:226px; left:388px; font-size:48px; color:#8ce8ff/*藍*/;}
+.cloud .keyword6 a{ position:absolute; top:317px; left:339px; font-size:48px; color:#fff228/*黃*/;}
+.cloud .keyword7 a{ position:absolute; top:365px; left:564px; font-size:48px; color:#fec71f/*橘*/;}
+
+.cloud .keyword8  a{ position:absolute; top:162px; left:405px; font-size:32px; color:#ffffff/*白*/;}
+.cloud .keyword9  a{ position:absolute; top:169px; left:812px; font-size:32px; color:#8ce8ff/*藍*/;}
+.cloud .keyword10 a{ position:absolute; top:262px; left:276px; font-size:32px; color:#d29dff/*紫*/;}
+.cloud .keyword11 a{ position:absolute; top:298px; left:588px; font-size:32px; color:#ffffff/*白*/;}
+.cloud .keyword12 a{ position:absolute; top:142px; left:581px; font-size:32px; color:#fff228/*黃*/;}
+.cloud .keyword13 a{ position:absolute; top:322px; left:212px; font-size:32px; color:#8ce8ff/*藍*/;}
+.cloud .keyword14 a{ position:absolute; top:463px; left:354px; font-size:32px; color:#fdc1cb/*粉*/;}
+.cloud .keyword15 a{ position:absolute; top:344px; left:721px; font-size:32px; color:#ffffff/*白*/;}
+.cloud .keyword16 a{ position:absolute; top:270px; left:699px; font-size:32px; color:#fdc1cb/*粉*/;}
+.cloud .keyword17 a{ position:absolute; top:29px;  left:736px; font-size:32px; color:#d29dff/*紫*/;}
+.cloud .keyword18 a{ position:absolute; top:12px;  left:344px; font-size:32px; color:#ffffff/*白*/;}
+.cloud .keyword19 a{ position:absolute; top:0px;   left:558px; font-size:32px; color:#8ce8ff/*藍*/;}
+.cloud .keyword20 a{ position:absolute; top:72px;  left:616px; font-size:32px; color:#fec71f/*橘*/;}
+.cloud .keyword21 a{ position:absolute; top:73px;  left:228px; font-size:32px; color:#fdc1cb/*粉*/;}
+.cloud .keyword22 a{ position:absolute; top:116px; left:140px; font-size:32px; color:#fff228/*黃*/;}
+
+.cloud .keyword23 a{ position:absolute; top:142px; left:268px; font-size:29px; color:#fec71f/*橘*/;}
+.cloud .keyword24 a{ position:absolute; top:409px; left:764px; font-size:29px; color:#79ff28/*綠*/;}
+.cloud .keyword25 a{ position:absolute; top:203px; left:205px; font-size:29px; color:#fdc1cb/*粉*/;}
+.cloud .keyword26 a{ position:absolute; top:432px; left:489px; font-size:29px; color:#ffffff/*白*/;}
+.cloud .keyword27 a{ position:absolute; top:280px; left:814px; font-size:29px; color:#fff228/*黃*/;}
+
+.cloud .keyword28 a{ position:absolute; top:397px; left:397px; font-size:24px; color:#ffffff/*白*/;}
+.cloud .keyword29 a{ position:absolute; top:29px;  left:172px; font-size:24px; color:#fec71f/*橘*/;}
+.cloud .keyword30 a{ position:absolute; top:173px; left:74px;  font-size:24px; color:#ffffff/*白*/;}
+.cloud .keyword31 a{ position:absolute; top:364px; left:53px;  font-size:24px; color:#ffffff/*白*/;}
+.cloud .keyword32 a{ position:absolute; top:484px; left:157px; font-size:24px; color:#79ff28/*綠*/;}
+.cloud .keyword33 a{ position:absolute; top:455px; left:634px; font-size:24px; color:#d29dff/*紫*/;}
+
+.cloud .keyword34 a{ position:absolute; bottom:0px; left:506px; font-size:20px; color:#8ce8ff/*藍*/;}
+.cloud .keyword35 a{ position:absolute; top:220px;  left:637px; font-size:20px; color:#ffffff/*白*/;}
+/*名詞說明x3*/
+#Area3 .noteBOX{ width:980px; height:450px; margin:1% auto 0; padding:0 0 2%; font-family:"微軟正黑體"; }
+.noteBOX a{ text-decoration:none;}
+.noteBOX .note1{ width:294px; height:405px; margin:0 1.5%; background:url(images/101_notebg.png) no-repeat; float:left;}
+.noteBOX .note2{ width:294px; height:405px; margin:3% 1.5% 0; background:url(images/101_notebg.png) no-repeat; float:left;}
+.note_title{ width:100%;}
+.note_title span{ display:none;}
+.note_txt{ width:85%; margin:4% auto 0; font-size:18px; line-height:1.6em; color:#000;}
+.note_txt span{ color:#5a1f1f;}
+
+/* Area4 搜索情報+佈署地圖*/
+#Area4{ width:100%; height:auto; margin:0 auto; background:url(images/101_bg1.jpg) center bottom no-repeat fixed; text-align:center;}
+#Area4 .title{ width:100%; margin:0 auto 1%;}
+#Area4 .Area4BOX{ width:100%;  margin:0 0 2%;}
+#Area4 .typebook{ width:35%; display:inline-block;}
+.typebook img{ width:46%; }
+.video { width:600px;/*影片寬度調這邊*/ margin:0; position:relative; display:inline-block;}
+.aVideo { width:100%; height:0; padding:0 0 56.25% 0; position:relative;}
+.aVideo iframe { width:100%; height:100%; position:absolute; left:0; top:0;}
+.video img{ width:100%; }
+/* 佈署地圖_出版社 */
+#Area4 .publish{ width:979px; height:398px; margin:0 auto; padding:0 0 2%; position:relative; }
+.publish img{ width:100%; position:absolute; top:0; left:0; z-index:0;}
+.publish .black{ width:100%; height:100%; color:#fff; font-size:1.8em; font-family:"微軟正黑體"; letter-spacing:0.1em; background:rgba(0,0,0,0.75); position:absolute; top:0; left:0; z-index:1; text-align:center; display: flex; flex-direction: column; justify-content: center; -moz-transition: .6s;-webkit-transition: .6s;-o-transition: .6s;-ms-transition: .6s;}
+.black:hover{ background:rgba(0,0,0,0.4);-moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;-ms-transition: .5s;/*淡入淡出*/}
+
+.publish .p1{ width:246px; height:398px; position:absolute; top:0; left:0; }
+.publish .p2{ width:165px; height:197px; position:absolute; top:0; left:255px; }
+.publish .p3{ width:316px; height:57px; position:absolute; top:0; left:432px; }
+.publish .p4{ width:75px; height:197px; position:absolute; top:0; left:758px; }
+.publish .p5{ width:137px; height:197px; position:absolute; top:0; right:0px; }
+.publish .p6{ width:316px; height:57px; position:absolute; top:66px; left:432px; }
+.publish .p7{ width:96px; height:64px; position:absolute; top:133px; left:432px; }
+.publish .p8{ width:209px; height:265px; position:absolute; top:133px; left:539px; }
+.publish .p9{ width:272px; height:189px; position:absolute; top:209px; left:255px; }
+.publish .p10{ width:137px; height:123px; position:absolute; top:209px; left:758px; }
+.publish .p11{ width:76px; height:123px; position:absolute; top:209px; right:0px; }
+.publish .p12{ width:222px; height:56px; position:absolute; top:341px; right:0px; }
+
+/* Area5 特惠情資*/
+#Area5{ width:100%; height:auto; margin:0 auto; background:url(images/101_bg2.jpg) center bottom no-repeat fixed; }
+#Area5 .title{ width:100%; margin:0 auto 2%;}
+#Area5 .discountBOX{ width:980px; margin:0 auto; text-align:center;}
+.discountBOX img{ width:39%; margin:0 5% 4% 5%;}
+#Area5 .infoBOX{ width:980px; height:460px; margin:0 auto;}
+
+/*書評*/
+.commentArea,.billboardArea{ width:47%; margin:0 1%; float:left;}
+.commentbox{ width:92%; height:325px; padding:4%; background:rgba(0,0,0,0.65); font-family:"微軟正黑體"; }
+.comment{ width:57%; margin:0; padding:0; font-size:1em; color:#fff; line-height:1.6em; float:left;}
+.book_data { width:39%; margin:0 4% 0 0; float:left; text-align:center;}
+.book_data .bookcolumn{ width:100%%; }
+.bookcolumn img{width:100%;height:auto;}
+.book_data .booktitle{ width:100%; height:1.6em;margin:3px 0;padding:0;font-size:1em;color:#fef677; font-weight:bold; 
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; !important/*文字溢出省略*/ }
+.book_data .author{ width:100%; height:1.6em;margin:0 0 5px 0;padding:0;font-size:1em;color:#757474; font-weight:bold; overflow: hidden;}
+.buyBN{ margin:0 auto;}
+.buyBN .CartIcon02{ margin:0 auto;}
+
+.author a:link,
+.author a:visited{color:#c30416;text-decoration:none;}
+.author a:hover,
+.author a:active{color:#c30416;text-decoration:underline;}
+.booktitle a:link,
+.booktitle a:visited{color:#fef677; text-decoration:none;}
+.booktitle a:hover,
+.booktitle a:active{color:#fef677;text-decoration:underline;}
+
+a.more:link,
+a.more:visited{color:#fff10f; font-weight:bold;text-decoration:underline;}
+a.more:hover,
+a.more:active{color:#fff10f; font-weight:bold;text-decoration:none;}
+
+/* 排行榜 */
+.billboard{ width:92%; height:325px; padding:4%; background:rgba(0,0,0,0.65); font-family:"微軟正黑體"; }
+.billboardunit1{ width:37%; margin:0 3% 0 0; float:left;}
+.billboardunit1 .ordercolumn{ width:100%; background-color:#aa171d; font-size:1em; color:#fff; font-weight:bold; text-align:center; border-radius:4px;}
+.billboardunit1 .coverregion{ width:100%;height:auto;margin:3% 0 6px 0;padding:0;}
+.coverregion img{ width:100%;height:auto;}
+.billboardunit1 .booktitle{width:100%;height:1.6em;margin:0 auto 6px;padding:0;font-size:1em;color:#fef677;line-height:1.3; font-weight:bold;text-align:center;
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; /*文字溢出省略*/}
+
+.billboardunit2{ width:60%; margin:0 ; float:left;}
+.billboardunit2 .ordercolumn{ width:17%; margin:0 2% 0 0; font-size:1em; color:#c30416; font-weight:bold; float:left;}
+.billboardunit2 .booktitle{ width:77%; height:1.6em;margin:0 0 6px 0;padding:0;font-size:1em;color:#fff;font-weight:bold; line-height:1.6em; float:right; 
+overflow: hidden; text-overflow: ellipsis; white-space: nowrap; /*文字溢出省略*/ }
+.billboard .more{ font-size:1em; color:#fff10f; font-weight:bold; clear:right; text-align:right; margin-right:1em; }
+
+.billboardunit2 .booktitle a:link,
+.billboardunit2 .booktitle a:visited{color:#fff; text-decoration:underline;}
+.billboardunit2 .booktitle a:hover,
+.billboardunit2 .booktitle a:active{color:#fff; text-decoration:none;}
+
+.more a:link,
+.more a:visited{color:#fff10f;text-decoration:underline;}
+.more a:hover,
+.more a:active{color:#fff10f;text-decoration:none;}
+
+/* freepik圖片來源 */
+.freepik{ width:100%; margin: 0 auto; padding:30px 0 1% 0; text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:0.6em; color:#9da0a7;}
+.freepik a{color:#9da0a7; text-decoration:none;}
+
+/*----------浮動選單-----------*/
+.nav_sidearea_m{display:none;}
+
+.navFixed { display:block; z-index:999; position: fixed; right:0px; top: 106px; }
+.sitemenu { width:150px; background-color:#346dba; border-top:#970b25 5px solid; opacity:1; text-align:center; }
+.sitemenu p { border-bottom:#5c76ab 1px solid; position:relative; margin:0;}
+.sitemenu p a { display:block; width:150px; padding:10px 5px ; font-size:14px; font-weight:bold; font-family:"微軟正黑體"; color:#ffffff; text-decoration:none; box-sizing:border-box !important; }
+.sitemenu p a:hover { background-color:#5098ea;}
+.sitemenu .color2 { background-color:#1551a3;}
+.trian { width:150px !important; padding:10px 10px !important; background-color:#6099d9;}
+.trian:before { content:""; border-bottom:#ffffff 8px solid; border-left:transparent 6px solid; border-right:transparent 6px solid; border-top:#ffffff 0 solid; position:absolute; top:15px; left:14px;}
+
+
+
+/*====================================================================================================================================*/
+@media screen and (max-width:767px) {
+.pcfloor { display:none;}
+.clearNO{ display:block; clear:both;}
+img.pcimg{ display:none;}
+img.mobileimg{ display:block; width:100%;}
+
+/* wrapper */
+.wrapper{ width:100%; position:relative;}
+
+/* 刊頭 */
+.head{ width:100%; height:auto; margin:0 auto; position:relative; }
+.head .bg { width:100%; height:auto; background:none; z-index:0; overflow-x: hidden; position:static;}
+.head .bg img { display: block; width:100%; margin:-80% 0 0 -30%; }
+.head .headContent{ width:100%; z-index:1; text-align:center; position:static; background:url(images/101_bg1.jpg) no-repeat center -60px; background-size:cover;}
+.headContent .date{ margin:0 auto; padding:16% 0 0 0; position:static;}
+.headContent .titleH{ margin:2% auto 0; position:static;}
+.headContent .slogan{ margin:4% 13% 0 0; text-align:right; position:static;}
+.headContent .discount{ margin:1% 23% 0 0; text-align:right; position:static;}
+.headContent .txt{ margin:-3% 0 0 10%; text-align:left; position:static;}
+.headContent .menu{ margin:10% auto 5%; position:static;}
+.date img,.titleH img{ width:96%;}
+.slogan img{ width:70%;}
+.discount img{ width:45%;}
+.txt img{ width:80%;}
+.menu img{ width:43%; margin:0 auto 2%;}
+img.menu3{ margin:0 auto 2%;}
+
+/* Area1 犯罪預告*/
+#Area1{ width:100%; height:auto; margin:0 auto; padding:0 0 2%; position:static; font-size:0;}
+#Area1 .title{ width:100%; margin:0 auto 2%; position:static; }
+#Area1 .a01,#Area1 .a02,#Area1 .a03,
+#Area1 .a04,#Area1 .a05,#Area1 .a06{ width:33%; position:static; display:inline-block; margin:0 auto;}
+#Area1 .a07,#Area1 .a08{ width:50%; position:static; display:inline-block; margin:0 auto;}
+#Area1 img{ width:100%;}
+
+/* Area2 頭條*/
+.bookBOX{ width:96%; height:auto; margin:0 auto 2%; padding:2%; box-sizing:border-box; }
+img.authorimg{ width:40%; height:auto; margin:0 2% 2% 0; float:left;}
+.bookBOX .txt{ margin:0 0 2%; font-size:1em;}
+.txt span{ font-size:1.1em; }
+.bookBOX .bookpics{ width:100%; margin:2% auto 0;}
+.bookpics img{ width:31%; margin:0 0.6% ;}
+
+/* Area3 偵查備忘*/
+#Area3 .cloud{ width:98%; height:auto; margin:0 auto; padding:0 0 2%; position: static; text-align:center; }
+.cloud .keyword1,.cloud .keyword8,.cloud .keyword11, 
+.cloud .keyword12,.cloud .keyword15,.cloud .keyword23,.cloud .keyword25{display:inline-block; width:30%; margin:0 0 2% 0;}
+.cloud .keyword35{display:inline-block; width:50%; }
+.cloud .keyword1  a{ position:static; margin:0 3% 2% 0; font-size:1.3em; color:#79ff28/*綠*/; line-height:1.2em;}
+.cloud .keyword8  a{ position:static; margin:0 3% 2% 0; font-size:1.3em; color:#ffffff/*白*/;}
+.cloud .keyword11 a{ position:static; margin:0 3% 2% 0; font-size:1.8em; color:#d29dff/*紫*/;}
+.cloud .keyword12 a{ position:static; margin:0 3% 2% 0; font-size:1.4em; color:#fff228/*黃*/;}
+.cloud .keyword15 a{ position:static; margin:0 3% 2% 0; font-size:1em; color:#ffffff/*白*/;}
+.cloud .keyword23 a{ position:static; margin:0 3% 2% 0; font-size:1.4em; color:#fec71f/*橘*/;}
+.cloud .keyword25 a{ position:static; margin:0 3% 2% 0; font-size:1.3em; color:#fdc1cb/*粉*/;}
+.cloud .keyword35 a{ position:static; margin:0 3% 2% 0; font-size:1em; color:#ffffff/*白*/;}
+
+.cloud .keyword2,.cloud .keyword3,.cloud .keyword4,
+.cloud .keyword5,.cloud .keyword6,.cloud .keyword7,
+.cloud .keyword9,.cloud .keyword10,.cloud .keyword13,
+.cloud .keyword14,.cloud .keyword16,.cloud .keyword17,
+.cloud .keyword18,.cloud .keyword19,.cloud .keyword20,
+.cloud .keyword21,.cloud .keyword22,.cloud .keyword24,
+.cloud .keyword26,.cloud .keyword27,.cloud .keyword28,
+.cloud .keyword29,.cloud .keyword30,.cloud .keyword31,
+.cloud .keyword32,.cloud .keyword33,.cloud .keyword34{ display:none;}
+/*名詞說明x3*/
+#Area3 .noteBOX{ width:94%; height:auto; padding:0 0 3%;}
+.noteBOX .note1,.noteBOX .note2{ width:100%; height:auto; margin:0 auto 3%; background:url(images/101_notebg2.jpg) repeat; float:none;}
+.note_title span{ display:none; font-size:1.5em; color:#ae0021; font-weight:bold;}
+.note_title img{ width:75%; margin:-3% 0 0 14%;}
+.note_txt{ width:90%; margin:2% auto 0; padding:0 0 3%; font-size:1em; line-height:1.4em; }
+
+/* Area4 搜索情報+佈署地圖*/
+#Area4 .typebook{ width:96%; display:block;}
+.video { width:96%;/*影片寬度調這邊*/ }
+/* 佈署地圖_出版社 */
+#Area4 .publish{ width:98%; height:auto; margin:0 auto; padding:0 0 2%; position: static; }
+.publish img{ display:none; width:100%; position:static; }
+.publish .black{ width:100%; height:auto; font-size:1.2em; background:none; position: static; }
+.publish .p1,.publish .p2,.publish .p3,.publish .p4,
+.publish .p5,.publish .p6,.publish .p7,.publish .p8,
+.publish .p9,.publish .p10,.publish .p11,.publish .p12{ width:30%; height:auto; margin:0 1% 2%; padding:3% 0; background:rgba(0,0,0,0.75); display:inline-block; position:static; }
+.p10 br{ display:none;}
+
+/* Area5 特惠情資*/
+#Area5 .discountBOX{ width:98%; margin:0 auto; text-align:center;}
+.discountBOX img{ width:47%; margin:0 1% 3% 1%;}
+#Area5 .infoBOX{ width:96%; height:auto; }
+
+/*書評*/
+.commentArea,.billboardArea{ width:100%; margin:0 auto; float:none;}
+.commentbox,.billboard{ width:96%; height:auto; padding:2%; }
+.commentbox:after,.billboard:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.book_data .author{ height:1.4em;font-size:0.9em;}
+/* 排行榜 */
+.billboardunit2 .ordercolumn{ width:17%; margin:0 2% 0 0 ; font-size:0.9em;}
+.billboardunit2 .booktitle{ width:77%; margin:0 0 6px 0;padding:0 0 0 3px; height:1.4em;font-size:0.9em;}
+
+/* freepik圖片來源 */
+.freepik{ padding:4% 0 20%; font-size:0.5em; }
+
+/*----------浮動選單-----------*/
+.navFixed { display:none;}
+.nav_sidearea_m{display:block;}
+
+.nav_sidearea_m{position:fixed;bottom:0;left:0;width:100%;height:auto;z-index:1000; opacity:0.95;}
+.nav_sidearea_m .nav_sidecol{margin:0;padding:0 0 0 1%; }
+.nav_sidearea_m .nav_sidecol li{list-style-type:none;float:left;display:table;margin:0;padding:1.5% 0;width:14.2%;height:auto;text-align:center;border-right:1px solid #637294;background-color:#ae1a36; box-sizing:border-box !important;}
+.nav_sidearea_m .nav_sidecol .color1{background-color:#6b0f21;}
+.nav_sidearea_m .nav_sidecol li a{display:table-cell;vertical-align:middle;width:100%;height:100%;font:normal normal 15px/1.3 "微軟正黑體";color:#FFF;text-decoration:none;}
+	
+}

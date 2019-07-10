@@ -1,0 +1,48 @@
+.introBOX{ width:100%; margin:0 0 2%; font-size: 16px; line-height:1.5em; letter-spacing:0.08em; color:#2755aa;}
+
+.noticeLIST,.sendBOX{ width: 100%; margin:0 auto; font-size: 18px;}
+
+.noticeLIST table {	border: 1px inset #FCC;}
+.noticeLIST table tr td {
+	line-height:1.5em;
+	border: 1px ridge #FCC;
+	padding:5px ;
+}
+
+/*報名表單*/
+.sendBOX p{ margin:0 0 3px;}
+.sendBOX h3{ font-weight:bold; text-align:right;}
+.sendBOX h4{ font-weight:bold; font-size: 16px; color:#F36; margin:0 0 1.5%;}
+.sendBOX input { width: 100%; height: 35px; margin:0 0 2%; color:#054a9f; font-size: 16px; background:#e8f9fe; border:1px solid #CCC;}
+#validcode{ width:125px; margin:0 5px 0 0;}
+.okBOX{ width:100%; margin:2% auto 0; text-align:center;}
+.okBOX img{ width:300px; margin:0 2%;}
+.okBOX img:hover{ position:relative; top:-3px;}
+
+
+@media screen and (min-width:769px) and (max-width:1023px) {
+	
+}
+
+@media only screen and (max-width:767px){
+.introBOX{ width: 95%; margin:0 auto 2%; font-size: 15px; line-height:1.4em;}
+.noticeLIST,.sendBOX{ width: 95%; }
+
+.noticeLIST table tr td {
+	font-size: 15px;
+	line-height:1.2em;
+}
+
+/*報名表單*/
+.sendBOX { font-size: 15px;}
+.sendBOX input { width: 100%; height: 40px; margin:0 0 3%; font-size: 15px;}
+.okBOX img{ width:46%; margin:0 1%;}
+ 
+
+
+}
+
+
+
+
+

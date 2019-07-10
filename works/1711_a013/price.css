@@ -1,0 +1,132 @@
+﻿
+
+/* 共用 ------------------------------- */
+.ems{font-weight:bold;color:#dc070a;/*暗紅色*/ font-size:17px;}
+
+.picbox{margin:0 0 5px 0;padding:0;width:100%;height:auto;text-align:center;}
+.namebox{ width:100%;height:2.45em; margin:5px auto 7px; font-size:15px; line-height:1.2em; color:#2094d6; text-align:center;overflow:hidden;}
+.price1box,
+.price2box{margin:0 0 5px 0;padding:0;width:100%;height:auto;font:normal normal 15px/1.2 "微軟正黑體";text-align:center;color:#2b2525;}
+.btnbuy1box{margin:0 auto;padding:0;width:129px;height:28px;font:normal normal 12px/28px "微軟正黑體";text-align:center;background:transparent url(images/btn_buy2_a.gif) left top no-repeat;}
+.btnbuy2box{margin:6px auto 0;padding:0;width:72px;height:21px;background:transparent url(images/btn_buy_s_a.gif) left top no-repeat;}
+
+.namebox a{color:#2094d6;text-decoration:none;}
+.namebox a:hover{color:#fe3485; }
+
+.btnbuy1box a{display:block;width:100%;height:100%;color:#FFF;text-decoration:none;}
+.btnbuy2box a{display:block;width:100%;height:100%;text-decoration:none;}
+.btnbuy2box a span{display:none;}
+.btnbuy1box a:hover{opacity:0.8;}
+.btnbuy2box a:hover{position:relative;left:1px;top:1px;}
+
+
+/*weekarea -------------------------*/
+.weekfield{margin:0 auto;padding:8px 0 15px 0; width:950px; height:auto; font-family:"微軟正黑體"; background-image:url(images/013_boardbg.png); background-color:rgba(255,255,255,0.6); border-radius:10px; }
+.weekarea .namebox a { color:#7f7f7f;}
+
+/* swiperregion_week ------------------------------------------------------------------------------------------- */
+.swiperregion_week{position:relative;margin:0 auto;width:100%;height:auto;}
+.swiper-container_week{ width:94%; height: 100%; margin:0 auto;overflow:hidden;}
+.swiper-container_week .swiper-slide{width:20% !important;}
+
+.swiper-container_week .swiper-button-next
+{position:absolute;right:0%;width:3%;height:74px;background:#fb76a2 url(images/icon-ar-right-w.png) center center no-repeat;background-size:18px 30px;}
+.swiper-container_week .swiper-button-prev
+{position:absolute;left:0%;width:3%;height:74px;background:#fb76a2 url(images/icon-ar-left-w.png) center center no-repeat;background-size:18px 30px;}
+
+.swiper-slide .weekregion{margin:0 0%;padding:8px 0 0 0;width:auto;height:auto;}/*重要！margin 可調各單位間距*/
+
+.weekregion .weekinner{margin:0 auto;padding:0 ;width:auto;height:auto;}/*重要！可調與箭頭的距離*/
+
+.weekinner .picbox img{width:auto;height:165px;}
+
+
+
+/*==============================================================================================================*/
+@media screen and (min-width:768px) and (max-width:1023px) {	
+
+	/* 共用 ------------------------------- */
+
+	.picbox{margin:0 0 5px 0;padding:0;width:100%;height:auto;text-align:center;}
+	.namebox{width:100%;height:2.45em; margin:5px auto 7px; font-size:15px; line-height:1.2em; color:#2094d6; text-align:center;overflow:hidden;}
+	.price1box,
+	.price2box{margin:0 0 5px 0;padding:0;width:100%;height:auto;font:normal normal 15px/1.2 "微軟正黑體";text-align:center;color:#2b2525;}
+	.btnbuy1box{margin:0 auto;padding:0;width:129px;height:28px;font:normal normal 12px/28px "微軟正黑體";text-align:center;background:transparent url(images/btn_buy2_a.gif) left top no-repeat;}
+	.btnbuy2box{margin:10px auto 0;padding:0;width:72px;height:21px;background:transparent url(images/btn_buy_s_a.gif) left top no-repeat;}
+	
+	.btnbuy1box { width:112px; border-radius:5px;}
+	.btnbuy2box { width:72px; border-radius:5px;}
+	.btnbuy1box a{display:block;width:112px;height:100%;color:#FFF;text-decoration:none;}
+	.btnbuy2box a{display:block;width:112px;height:100%;text-decoration:none;}
+	.btnbuy2box a span{display:none;}
+	.btnbuy1box a:hover{opacity:0.8;}
+	.btnbuy2box a:hover{position:relative;left:1px;top:1px;}
+		
+	
+	/*weekarea -------------------------*/
+	.weekfield{margin:0 auto;padding:0;width:95%;height:auto;}
+	.weekarea .namebox a { color:#7f7f7f;}
+	
+	/* swiperregion_week ------------------------------------------------------------------------------------------- */
+	.swiperregion_week{position:relative;margin:0 auto;width:100%;height:auto;}
+	
+	.swiper-container_week{width: 100%;height: 100%;overflow:hidden;}
+	.swiper-container_week .swiper-slide{width:20% !important;background: #fff;}
+	
+	.swiper-container_week .swiper-button-next
+	{position:absolute;right:-1.5%;width:3%;height:74px;background:#fb76a2 url(images/icon-ar-right-w.png) center center no-repeat;background-size:18px 30px;}
+	.swiper-container_week .swiper-button-prev
+	{position:absolute;left:-1.5%;width:3%;height:74px;background:#fb76a2 url(images/icon-ar-left-w.png) center center no-repeat;background-size:18px 30px;}
+	
+	.swiper-slide .weekregion{margin:0 0%;padding:8px 0 25px 0;width:auto;height:auto;}/*重要！margin 可調各單位間距*/
+	
+	.weekregion .weekinner{margin:0 auto;padding:0 8%;width:auto;height:auto;}/*重要！可調與箭頭的距離*/
+	
+	.weekinner .picbox img{width:auto;height:130px;}
+	
+	
+}
+
+/*=========================================================================================================================*/
+@media screen and (max-width:767px) {
+
+	/* 共用 ------------------------------- */
+	.ems{font-weight:bold;color:#dc070a;/*暗紅色*/ font-size:1em;}
+	
+	.picbox{margin:0 0 5px 0;padding:0;width:100%;height:auto;text-align:center;}
+	.namebox{width:100%; height:2.52em; margin:1.5% auto 3%; font-size:0.8em; line-height:1.3em; overflow:hidden;}
+	.price1box,
+	.price2box{margin:0 0 5px 0;padding:0;width:100%;height:auto;font:normal normal 13px/1.2 "微軟正黑體";text-align:center;color:#2b2525;}
+	.btnbuy1box{margin:0 auto 15px auto;padding:0;width:129px;height:28px;font:normal normal 12px/28px "微軟正黑體";text-align:center;background:transparent url(images/btn_buy2_a.gif) left top no-repeat;}
+	.btnbuy2box{margin:0 auto;padding:0;width:72px;height:21px;background:transparent url(images/btn_buy_s_a.gif) left top no-repeat;}
+	
+	.btnbuy1box { width:112px; border-radius:5px;}
+	.btnbuy2box { width:72px; border-radius:5px;}
+	.btnbuy1box a{display:block;width:112px;height:100%;color:#FFF;text-decoration:none;}
+	.btnbuy2box a{display:block;width:112px;height:100%;}
+	.btnbuy2box a span{display:none;}
+	.btnbuy1box a:hover{opacity:0.8;}
+	.btnbuy2box a:hover{position:relative;left:1px;top:1px;}
+		
+	/*weekarea -------------------------*/
+	.weekfield{margin:0 auto;padding:0;width:95%;height:auto;}
+	.weekarea .namebox a { color:#7f7f7f;}
+	
+	/* swiperregion_week ------------------------------------------------------------------------------------------- */
+	.swiperregion_week{position:relative;margin:0 auto;width:100%;height:auto;}
+	
+	.swiper-container_week{width: 100%;height: 100%;overflow:hidden;}
+	.swiper-container_week .swiper-slide{width:154px !important;background: #fff;}
+	
+	.swiper-container_week .swiper-button-next
+	{position:absolute;right:-1.5%;width:5%;height:74px;background:#fb76a2 url(images/icon-ar-right-w.png) center center no-repeat;background-size:18px 30px;}
+	.swiper-container_week .swiper-button-prev
+	{position:absolute;left:-1.5%;width:5%;height:74px;background:#fb76a2 url(images/icon-ar-left-w.png) center center no-repeat;background-size:18px 30px;}
+	
+	.swiper-slide .weekregion{margin:0 0%;padding:8px 0 10px 0;width:auto;height:auto;}/*重要！margin 可調各單位間距*/
+	
+	.weekregion .weekinner{margin:0 auto;padding:0 7%;width:auto;height:auto;}/*重要！可調與箭頭的距離*/
+	
+	.weekinner .picbox img{width:auto;height:130px;}
+	
+}
