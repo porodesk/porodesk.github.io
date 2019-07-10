@@ -1,0 +1,78 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>web Design</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="head" id="Cont1">
+      <a href="works/1803_a036/036.html" target="_blank">
+      <div class="picZone">
+        <img src="images/web_b_01.jpg" alt="輕動漫華文展">
+        <div class="darkGradual"></div><!--黑漸層-->
+      </div>
+      <div class="words"><div class="goBN">Click</div><span>輕動漫華文展 活動網頁(RWD)</span>&nbsp;&nbsp;*註:原活動頁已下架，此頁面為另行上傳，網頁內連結和部分功能已失效</div>
+      </a>
+    </div><!--head end-->
+
+    <div class="head" id="Cont2" style="display:none;">
+      <a href="https://www.kingstone.com.tw/event/1811_a234/234.asp" target="_blank">
+      <div class="picZone">
+        <img src="images/web_b_02.jpg" alt="年度出版情報">
+        <div class="darkGradual"></div><!--黑漸層-->
+      </div>
+      <div class="words"><div class="goBN">Click</div><span>年度出版情報 活動網頁(RWD)</span></div>
+      </a>      
+    </div><!--head end-->
+    
+    
+    <!--------------------選單-------------------->   
+    <div class="menu" id="menuList">
+      <a href="javascript:{void 0}" onClick="chgCont('1');" class="ON"><li><div class="dark"></div><img src="images/web_s_01.jpg" alt="輕動漫華文展"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('2');"><li><div class="dark"></div><img src="images/web_s_02.jpg" alt="年度出版情報"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('1');"><li><div class="dark"></div><img src="images/web_s_01.jpg" alt="輕動漫華文展"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('2');"><li><div class="dark"></div><img src="images/web_s_02.jpg" alt="年度出版情報"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('1');"><li><div class="dark"></div><img src="images/web_s_01.jpg" alt="輕動漫華文展"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('2');"><li><div class="dark"></div><img src="images/web_s_02.jpg" alt="年度出版情報"></li></a>
+      
+      <a href="javascript:{void 0}" onClick="chgCont('1');"><li><div class="dark"></div><img src="images/web_s_01.jpg" alt="輕動漫華文展"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('2');"><li><div class="dark"></div><img src="images/web_s_02.jpg" alt="年度出版情報"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('1');"><li><div class="dark"></div><img src="images/web_s_01.jpg" alt="輕動漫華文展"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('2');"><li><div class="dark"></div><img src="images/web_s_02.jpg" alt="年度出版情報"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('1');"><li><div class="dark"></div><img src="images/web_s_01.jpg" alt="輕動漫華文展"></li></a>
+      <a href="javascript:{void 0}" onClick="chgCont('2');"><li><div class="dark"></div><img src="images/web_s_02.jpg" alt="年度出版情報"></li></a>
+    
+    
+    </div><!--menu end-->
+
+
+</div><!--wrapper end-->
+
+
+<script>
+    function chgCont(objN){              //選單切換
+		$("#menuList a").removeClass();
+    	$("#menuList a:nth-child("+objN+")").addClass("ON");		
+    	$(".head").hide();
+    	$("#Cont"+objN).show();
+    }
+	
+	$(function(){                         //刊頭黑色塊
+		$(".head").hover(function() {
+			$(this).find(".darkGradual").stop().animate({"bottom":-95});
+		}, function() {
+			$(this).find(".darkGradual").stop().animate({"bottom":0});
+	})
+})	
+</script>
+
+</body>
+</html>

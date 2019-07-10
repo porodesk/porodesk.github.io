@@ -1,0 +1,47 @@
+﻿
+/*燈箱------------*/
+.closewindow{position: fixed; margin:0;padding:0;right:21%;top:6%;width:25px;height:25px;font-size:2em;line-height:20px;color:#000;font-family: Calibri,Helvetica;background-color:#fff;border-radius:99em;cursor:pointer; opacity:0.7; }
+.PopbookArea{margin:0 auto; padding:1% auto; width:90%; text-align:center; position:relative; }
+.PopbookArea h3{ font-size:1.4em; margin:2% auto 1.2%; color:#d82b50; font-family:"微軟正黑體","新細明體"; }
+
+
+/*------------內容-------------*/
+.ig_content_all{ width:1000px; height:auto; padding-top:20px;}
+.ig_content_all p{ margin:0;}
+.content_photo{width:650px; height:485px; float:left;}
+.content_text{width: 325px;	height:200px;float: left; text-align: left;	padding-left:25px;}
+.t_b {font-family: "微軟正黑體";font-size: 15px;font-weight: bold;}
+.t_b_s {font-family: "微軟正黑體";font-size: 15px;}
+.t_g {font-size: 16px;color: #999; line-height:30px;}
+/*===================================================================================================================================*/
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+/*燈箱------------*/
+.closewindow{position: fixed; right:2%;top:6%; }
+.PopbookArea{margin:0 auto; padding:1% auto; width:95%; text-align:center; position:relative; }
+.PopbookArea h3{ font-size:1.4em; margin:2% auto 5px; color:#d82b50; font-family:"微軟正黑體","新細明體"; }
+
+}
+
+/*====================================================================================================================================*/
+@media screen and (max-width:767px) {
+
+/*燈箱------------*/
+.closewindow{position: fixed; right:2%;top:5%; }
+.PopbookArea{margin:0 auto; padding:1% auto; width:98%; text-align:center; position:relative; }
+.PopbookArea h3{ font-size:1.4em; margin:8px auto 6px; color:#d82b50; font-family:"微軟正黑體","新細明體"; }
+
+
+/*------------內容-------------*/
+.ig_content_all{ width:100%; height:auto; padding-top:20px;}
+.content_photo{width:100%; height:auto; float:left;}
+.content_photo img{width:100%; height:auto;}
+.content_mug_shot img{ max-width:100%; }
+.content_text{ width:94%; height: auto; float: left; text-align: left; padding:0 3%;}
+.t_b {font-family: "微軟正黑體";font-size: 15px;font-weight: bold;display: block;}
+.t_b_s {font-family: "微軟正黑體";font-size: 15px;display: block;}
+.t_g {font-size: 16px;color: #999;display: block;}
+
+
+
+}

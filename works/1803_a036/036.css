@@ -1,0 +1,280 @@
+﻿body { margin: 0px; background:url(images/036_bg.jpg) #ffebef; }
+
+/*body { margin: 0px; background:url(images/036_bg.jpg) #ffebef; background:url(images/036_bg2.png) center 250px fixed no-repeat,url(images/036_bg.jpg);}*/
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+.clearNO{ clear:both; display: none;}
+img{border:0;}
+.pcimg{ width:100%;}
+.mobileimg{ display:none; width:100%;}
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:none;}
+
+/* 刊頭 */
+.pchead{ width:100%; height:662px; margin:0 auto; background:url(images/036_head_bg.png) no-repeat;}
+.pchead .mobilebg{ display:none;}
+.mobilehead{ display:none;}/*手機版刊頭*/
+.infoCenter { width:1274px; height:662px; margin:0 auto; position:relative;}
+.infoCenter .date {	position:absolute; left:10px; top:2px; z-index:0; color: #c0961e; font-size: 12px; font-family: "微軟正黑體" , "Calibri";}
+.infoCenter .mainpic{ position:absolute; left:0; top:0; z-index:0;}
+.infoCenter .discount{ position:absolute; left:553px; top:49px; z-index:1;}
+.infoCenter .mood{ position:absolute; left:75px; top:108px; z-index:1;}
+.infoCenter .title{ position:absolute; right:171px; top:79px; z-index:2;}
+.infoCenter .fbpic{ position:absolute; right:185px; top:393px; z-index:2;}
+.infoCenter .sharearea1{ position:absolute; left:665px; top:424px; z-index:2; width:165px; height:auto; }
+.infoCenter .topmenu{ position:absolute; right:139px; bottom:54px; z-index:2; }
+.topmenu a{ text-decoration:none; color:#fff;}
+li.cbn{ width:101px; height:119px; background:url(images/036_topmenu_a.png) no-repeat; margin:0 1px; float:left; list-style-type:none; font-family: "微軟正黑體"; color:#fff; font-size:18px; font-weight:bold; line-height:1.25em; text-align:center;  display: flex; flex-direction: column;  justify-content: center; !important /*div內容垂直置中*/}
+li.cbn:hover{ background:url(images/036_topmenu_b.png) no-repeat; color:#1b1b1b;}
+
+/* sharearea站上FB分享---------------------- */
+.sharearea2{margin:-6% 4% 0 0;padding:0;width:19%;height:auto; float:right; z-index:2; position:relative;}
+.share{float:left;margin:0;padding:0;width:35.8%;height:auto;}
+.fbcount{float:right;margin:0;padding:1% 0 0 6%;width:57%;height:27px;font-size:16px;line-height:27px;color:#3b3938;text-align:left;
+background:transparent url(images/share_count_bg.gif) left top no-repeat; background-size:auto 100%;}
+.share a.fb:hover,
+.share a.fb:active{position:relative; top:1px; left:1px;}
+
+/* wrapper */
+.wrapper { width:980px; margin:0 auto; position:relative; z-index:2;}
+.wrapper:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.castleBG{ display:none; width:100%; margin:0 auto; }
+.navFixed { display:block; position: fixed; bottom:0; left:0; right:0; z-index:-1; }
+
+/* 遊戲區 */
+.Area1{ width:100%; margin:0 auto 3%; }
+.Area1 .gameArea{ width:965px; margin:0 auto; text-align:center;}
+
+/* 青春關鍵字 */
+.Area2{ width:100%; margin:0 auto 3%; text-align:center; font-family:"微軟正黑體";}
+.swiperregion_week{position:relative;margin:0 auto;width:100%;height:auto;}
+.swiper-container_week{ width:94%; height: auto; margin:0 auto; padding:0 0 2%; overflow:hidden;}
+.swiperregion_week .swiper-slide{width:204px !important;}
+.swiperregion_week .swiper-button-next{position:absolute;right:0%;}
+.swiperregion_week .swiper-button-prev{position:absolute;left:0%;}
+
+.Area2 .menulist{ width:100%; margin:0 auto; }
+.Area2 .menulist img{ width:188px; height:66px; margin:0 8px; float:left; }
+.Area2 .menulist .ON img{ border-bottom:8px dotted rgba(255,61,142,1); }
+.Area2 .menulist a:hover > img { border-bottom:8px dotted rgba(255,61,142,1); position:relative; top:2px;}
+
+.bookcontent{ width:946px; height:676px; margin:0 auto; background:url(images/036_young_bg.png) no-repeat; position:relative;}
+.bookcontent .intro4{ width:90%; height:30px; padding:25px 0 0 0; margin:0 auto 18px; overflow:hidden; font-size:1.1em; color:#743cdc; letter-spacing:0.05em; z-index:1;position:relative;}
+.intro4 span{ color:#fff; background:#743cdc; padding:3px 5px;}
+.bookcontent .books{ width:900px; margin:0 auto; }
+.books .bookBOX{ width:17.5%; margin:0 15px 2% 7px; float:left;}
+.books .bookBOX_no{ width:17.5%; margin:0 15px 2% 7px; float:left;}
+.books img{ width:95%; border:1px solid #d2d2d2; background-color:#fff; padding:5px;}
+.books .book_name{ width:100%; margin:3px auto 0 auto; font-size:1em; color:#fb4b9a; line-height:1.3em; height:2.5em; overflow:hidden;}
+.books a{text-decoration:none;}
+.books a:link,.books a:visited{color:#fb4b9a;text-decoration:none;}
+.books a:hover,.books a:active{color:#fb4b9a;text-decoration:underline;}
+
+/* 作者生活IG */
+.Area3{ width:100%; margin:0 auto 3%; }
+.ig{width:965px; height:auto; margin:0 auto; padding:0 0 3%; background: rgba(255,255,255,0.7); text-align:center;}
+.ig:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+img.igbar02{ width:700px;}
+.ig_all{ width:100%; height:auto; margin:0 0 0 0.7%; font-size:0; text-align:left;}
+.ig_a{width:290px; height:290px; margin:2% 1.5%; display:inline-block;}
+.ig_a img{ width:100%;}
+
+/* 書評 */
+.Area4{ width:100%; margin:0 auto 3%; }
+.comment_area{ width:100%; height:330px; margin:0 auto; padding:0; font-family:"微軟正黑體";}
+.commentbox{float:left; width:47%; margin:0 1.5%;}
+.commentbox .bookcolumn{width:37%;margin:2% 3% 0 0;padding:0;float:left;}
+.commentbox .bookcolumn img{width:100%;height:auto;}
+
+.book_data { width: 60%; margin:2% 0 0 0; float:left;}
+.book_data .booktitle{margin:0 0 3px 0;padding:0;width:100%;font-size:1.1em;color:#7b180b;font-weight:bold;}
+.book_data .author{margin:0 0 3px 0;padding:0;width:100%;font-size:0.9em;color:#524848; font-weight:bold;}
+.book_data .idname{margin:0 0 8px 0;padding:0;width:100%;font-size:0.9em;color:#666;}
+.book_data .comment{margin:0;padding:0;width:100%;font-size:0.95em;color:#3e2624;line-height:1.55em; font-weight:bold;}
+
+.booktitle a:link,.booktitle a:visited{color:#7b180b;text-decoration:underline;}
+.booktitle a:hover,.booktitle a:active{color:#7b180b;text-decoration:none;}
+.author a:link,.author a:visited{color:#d82962;text-decoration:none;}
+.author a:hover,.author a:active{color:#d82962;text-decoration:underline;}
+.idname a:link,.idname a:visited{color:#666;text-decoration:underline;}
+.idname a:hover,.idname a:active{color:#666;text-decoration:none;}
+a.more:link,
+a.more:visited{color:#c30416; font-weight:bold;text-decoration:underline;}
+a.more:hover,
+a.more:active{color:#c30416; font-weight:bold;text-decoration:none;}
+
+/* 青春時光隧道 */
+.Area5{ width:100%; margin:0 auto 3%; }
+.timeArea{ height:1719px; position:relative;}
+.timeArea .alltime{ width:100%; position:relative; z-index:1;}
+.alltime img{ width:50%; float:left;}
+.timeArea .tree{ position:absolute; right:-3%; bottom:0; z-index:0;}
+/*--------------收合------------*/
+.toggle-input { display:none;}
+.toggle-label { display:none;}
+
+/* 進擊的錢包_BN輪播 */
+.Area6{ width:572px; margin:0 auto 3%; float:left;}
+.bnZone{ width:100%; margin:0 auto; }
+.bnZone .bigBN{ width:500px; margin:0 auto 3%;}
+.bnZone .menulist{ width:100%; margin:0 auto;}
+.bnZone .menulist img{ width:120px; height:auto; margin:0 4px; float:left; }
+.bnZone .menulist .ON img{ opacity:0.5;}
+.bnZone .menulist a:hover > img { opacity:0.5; }
+.swiperregion_bn{position:relative;margin:0 auto;width:100%;height:auto;}
+.swiper-container_bn{ width:88%; height: auto; margin:0 auto; overflow:hidden;}
+.swiperregion_bn .swiper-slide{width:128px !important;}
+.swiperregion_bn .swiper-button-next{position:absolute;right:0%;}
+.swiperregion_bn .swiper-button-prev{position:absolute;left:0%;}
+
+/* 排行榜 */
+.Area7{ width:408px; margin:0 auto 3%; float:left;}
+.boardZone{ width:100%; }
+.boardcontent{ width:100%; margin:0 auto ; font-family:"微軟正黑體";}
+.bookbox{width:100%; margin:1% auto 0 ; position:relative;}
+.bookbox .spicon{ position: absolute; top:-8px; left:65px; float:left; z-index:3; }
+.bookbox .spicon2{ position: absolute; top:80px; left:50px; float:left; z-index:0; }
+.bookbox .bookcolumn{ width:188px;margin:0 auto 1.5%;padding:0; z-index:1;  position: relative;}
+.bookbox .bookcolumn img{width:100%; border:7px solid rgba(255,255,255,0.7);}
+
+.boardcontent .booktitle{margin:0 auto;padding:0;width:100%;font-size:1.2em;color:#f73c75;font-weight:bold; text-align:center;overflow:hidden;}
+.boardcontent .booktitle a:link,.boardcontent .booktitle a:visited{color:#f73c75;text-decoration:none;}
+.boardcontent .booktitle a:hover,.boardcontent .booktitle a:active{color:#f73c75;text-decoration:underline;}
+
+.billboard{ width:90%; height:auto; margin:0 0 0 55px;padding:0;text-align:center;}
+.billboard ul{ margin:0 ;padding:0;width:100%;height:auto;}
+.billboard ul li{list-style-type:none; }
+.billboard ul li.billboardunit1{margin:0 0 15px 0;padding:0;width:100%;height:auto;}
+.billboardunit1 .ordercolumn{float:left;margin:0 0 15px 5px;padding:0;width:21px;height:21px;text-align:left;background:#39b5f5; border-radius:100px; text-align:center;}
+.billboardunit1 .ordercolumn span{font-size:0.8em;color:#FFF;font-weight:bold;font-family:"微軟正黑體","新細明體";line-height:1.4; padding:0;}
+.billboardunit1 .maincolumn{float:left;margin:0 0 0 11px;padding:0;width:85%;height:auto;}
+.billboardunit1 .booktitleset{margin:0 0 15px 0;padding:0;width:100%;height:21px;line-height:1.4;text-align:left; font-size:1em;overflow:hidden;}
+.booktitleset a{display:block;line-height:1;}
+.booktitleset a:link,.booktitleset a:visited{color:#0955a2;line-height:1.2;text-decoration:none;}
+.booktitleset a:hover,.booktitleset a:active{color:#0955a2;line-height:1.2;text-decoration:underline;}
+
+/* freepik圖片來源 */
+.freepik{ width:100%; height:54px; margin: 0 auto; text-align:center; background:url(images/036_bgbm.png) repeat-x;}
+
+
+
+/*====================================================================================================================================*/
+@media screen and (max-width:767px) {
+.pcfloor { display:none;}
+.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+.pcimg{ display:none;}
+.mobileimg{ display: block; width:100%;}
+
+/* 手機版TOP鈕 ----------------------*/
+.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+
+/* 刊頭 */
+.date{ width:100%; margin:0 auto; padding:0.5% 0 0; font-size:9px; background:#f1db6c; text-align:center; color: #c0961e; font-family: "微軟正黑體" , "Calibri";}
+.pchead{ display:none;}
+.mobilehead{ display: block; width:100%; margin:0 auto; }
+.headarea{ width:100%; margin:0 auto; font-size:0; position:relative;}
+.stage1 img.one{ width:34%; display:inline-block;}
+.stage1 img.three{ width:66%; display:inline-block;}
+.fb_m{ width:100%; background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto; }
+.headarea .sharearea1{ width:100px; height:auto; position:absolute; bottom:9%; right:10%; z-index:2;}
+.topmenu{ width:100%; margin:1% auto 3%; text-align:center; }
+.topmenu ul{ margin:0 ; padding:0; text-align:center; }
+li.cbn{ width:18vw; height:18vw; background:none; margin:0 0.2% 3% 0.6%; float:left; color:#fff; font-size:0.8em; line-height:1.2em; position:relative; z-index:3;}
+li.cbn:hover{ background: none; color: #FF6;}
+li.cbn p{position:relative; z-index:1; }
+li.cbn img{ width:100%; position:absolute; top:0; bottom:0; left:0; right:0; z-index:0;}
+
+
+/* sharearea站上FB分享---------------------- */
+.sharearea2{margin:0 0 2% 0 ;padding:0;width:110px;height:auto; float:right; z-index:2; position:relative; right:0; }
+.share{float:left;margin:0;padding:0;width:47%;height:auto;}
+.sharearea1 .fbcount{ padding:0 0 0 7%;}
+.fbcount{float:right;margin:0;padding:0 0 0 6%;width:46%;height:20px;font-size:12px;line-height:20px;color:#3b3938;text-align:left;}
+.share a{display:block; height:20px; width:100%;}
+
+/* wrapper */
+.wrapper { width:100%; margin:0 auto; }
+.castleBG{ display:none;}
+
+/* 遊戲區 */
+.Area1{ width:100%; margin:0 auto 2%;}
+.Area1 .gameArea{ width:96%; }
+
+/* 青春關鍵字 */
+.swiper-container_week{ width:90%; height: auto; margin:0 auto; padding:0 0 1%; overflow:hidden;}
+.swiperregion_week .swiper-slide{width:30% !important; height:auto; margin:0 1%; }
+.swiper-container_week .swiper-button-next{right:-1%;width:5%; height:45px; background-size:20px 33px; }
+.swiper-container_week .swiper-button-prev{left:-1%;width:5%; height:45px; background-size:20px 33px; }
+.Area2 .menulist{ width:98%; height:auto; margin:0 auto 2%; }
+.Area2 .menulist img{ width:100%; height:auto; float:left; }
+.Area2 .menulist .ON img{ border-bottom:5px dotted rgba(255,61,142,0.6); }
+.Area2 .menulist a:hover > img { border-bottom:5px dotted rgba(255,61,142,1); }
+.bookcontent{ width:96%; height:auto; margin:0 auto; padding:1% 0 2%; background:none #fff; border-radius:10px;}
+.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.bookcontent .pic1,.pic2{ display:none;}
+.bookcontent .intro4{ width:96%; height:2.55em; padding:2% 0 0 0; margin:0 auto 2%; overflow:hidden; font-size:0.9em; color:#743cdc; letter-spacing:0.05em; line-height:1.3em;}
+.bookcontent .books{ width:97%; margin:0 auto; }
+.books .bookBOX{ width:30%; margin:0 1.5% 2% 1.5%; float:left;}
+.bookBOX_no{ display:none;}
+.books .book_name{ width:100%; margin:3px auto 0 auto; font-size:0.8em; color:#fb4b9a; line-height:1.25em; height:2.4em; overflow:hidden;}
+
+/* 作者生活IG */
+.ig{width:98%; }
+img.igbar02{ width:90%;}
+.ig_all{ width:98%; padding:0 1%; margin:0 auto; text-align:left;}
+.ig_a{width:30.5%; height:auto; margin:2% 1.2% 2% 1.4%;}
+
+/* 書評 */
+.comment_area{ width:100%; height:auto;}
+.commentbox{float:none; width:97%; margin:0 1.5% 2%;}
+
+/* 青春時光隧道 */
+.timeArea{ height:auto; position: static;}
+.timeArea .alltime{ width:100%; position:static; }
+.alltime img{ width:100%; float:none;}
+.timeArea .tree{ display:none;}
+/*--------------收合------------*/
+.oneTheme { margin:0 auto;}
+.otPadd2 { padding:2% 2% 60px 2%; position:relative; }
+/*--收合效果--*/
+.toggle-input { display:none;}
+.toggle-label { display:block; cursor:pointer; padding:7px; font-weight:600; background-color:#ffffff; border:#FE7BA7 1px solid; border-radius:8px; width:120px; text-align:center; color:#FE7BA7; position:absolute; bottom:13px; left:0; right:0; margin:0 auto; font-family:"微軟正黑體";}
+.toggle-label:before { content:"★展開全部★";}
+.toggle-input:checked ~ .toggle-label:before { content:"★收合★";}
+.toggle-content { max-height:800px; height:800px;/*展開前高度*/ overflow:hidden; -moz-transition:ease 0.8s max-height; -o-transition:ease 0.8s max-height; 
+-webkit-transition:ease 0.8s max-height; transition:ease 0.8s max-height;} 
+.toggle-input:checked ~ .fix > .toggle-content { max-height:100%;/*展開後高度*/ height:auto; }
+	
+/* 進擊的錢包_BN輪播 */
+.Area6{ width:100%; margin:0 auto 3%; float:none;}
+.bnZone .bigBN{ width:90%; margin:0 auto 2%;}
+.bnZone .menulist{ width:98%; margin:0 auto;}
+.bnZone .menulist img{ width:100%; height:auto; margin:0 4px; float:left; }
+.swiper-container_bn{ width:90%; height: auto; margin:0 auto; overflow:hidden;}
+.swiperregion_bn .swiper-slide{width:30% !important; height:auto; margin:0 1%; }
+.swiper-container_bn .swiper-button-next{right:-1%;width:5%; height:45px; background-size:20px 33px; }
+.swiper-container_bn .swiper-button-prev{left:-1%;width:5%; height:45px; background-size:20px 33px; }
+
+/* 排行榜 */
+.Area7{ width:100%; margin:0 auto 3%; float:none;}
+.boardcontent{ width:95%; margin:0 auto;}
+.bookbox .spicon{ position: absolute; top:-8px; left:65px; float:left; z-index:3; }
+.bookbox .spicon2{ position: absolute; top:70px; left:3%; float:left; z-index:0; }
+.spicon2 img{ width:100%;}
+.bookbox .bookcolumn{ width:auto; height:250px; margin:0 auto; padding:0; z-index:1; position:relative; text-align:center;}
+.bookbox .bookcolumn img{ width:auto; height:100%; border:7px solid rgba(255,255,255,0.7);}
+.boardcontent .booktitle{ margin:4% auto 0;}
+.billboard{margin:0 auto;padding:0;width:295px; height:auto; overflow:hidden;}
+.billboardunit1 .ordercolumn{float:left;margin:0 0 15px 0;padding:0 ;width:18px;height:18px;text-align: center;background:#39b5f5; border-radius:999em;}
+.billboardunit1 .maincolumn{float:left;margin:0 0 0 3%;padding:0;width:88%;height:auto;}
+
+/* freepik圖片來源 */
+.freepik{ width:100%; height:30px; padding:2% 0 ; }
+
+	
+}
