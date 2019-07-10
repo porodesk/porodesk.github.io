@@ -257,7 +257,7 @@ img.authorimg{ width:40%; height:auto; margin:0 2% 2% 0; float:left;}
 .bookBOX .txt{ margin:0 0 2%; font-size:1em;}
 .txt span{ font-size:1.1em; }
 .bookBOX .bookpics{ width:100%; margin:2% auto 0;}
-.bookpics img{ width:31%; margin:0 0.6% ;}
+.bookpics img{ width:31%; margin:0 0.5% ;}
 
 /* Area3 偵查備忘*/
 #Area3 .cloud{ width:98%; height:auto; margin:0 auto; padding:0 0 2%; position: static; text-align:center; }

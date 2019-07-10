@@ -1,4 +1,4 @@
-﻿body { margin: 0px; background:#ececec;}
+﻿body { margin: 0px; background:#000;}
 
 a{
     outline: none; /* for Firefox Google Chrome 消除連結框 */
@@ -22,18 +22,18 @@ background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 65%,r
 background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.6) 65%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-9 */
 }
-.words{ width:1100px; margin:0.7% auto; font-family: Century Gothic,Arial, Helvetica, "微軟正黑體"; font-size:16px; letter-spacing:0.08em; line-height:1.3em;}
+.words{ width:1100px; margin:0.7% auto; font-family: Century Gothic,Arial, Helvetica, "微軟正黑體"; font-size:15px; letter-spacing:0.08em; line-height:1.3em; }
 .words span{ font-weight:bold;}
-.words .goBN{ width:14%; margin:0 1% 0 0; padding:1% 0; background:#fff100; border-radius:50px; color:#242424; letter-spacing:0.03em; font-size:18px; font-weight:bold; display:inline-block; -moz-transition: .4s;-webkit-transition: .4s;-o-transition: .4s;-ms-transition: .4s;}
-.head a{ text-decoration:none; color:#5e5e5e;}
-.head a:hover{ color:#242424;}
-.head a:hover .goBN{ background:#000; color:#fff;}
+.words .goBN{ width:12%; margin:0 1% 0 0; padding:0.5% 0; background:#fff; border-radius:50px; color:#242424; letter-spacing:0.03em; font-size:16px; font-weight:bold; display:inline-block; -moz-transition: .4s;-webkit-transition: .4s;-o-transition: .4s;-ms-transition: .4s;}
+.head a{ text-decoration:none; color: #ccc;}
+.head a:hover{ color:#fff;}
+.head a:hover .goBN{ background:#fff100; color:#000;}
 
 /* menu 選單*/
 .menu{ width:900px; margin:2% auto; text-align:center; font-size:0; }
-.menu li{ list-style-image:none; display:inline-block; width:120px; height:120px; border-radius:56px; margin:0 0.8% 2%; text-align:center; position:relative; overflow:hidden;}
+.menu li{ list-style-image:none; display:inline-block; width:125px; height:125px; border-radius:58px; margin:0 1% 2%; text-align:center; position:relative; overflow:hidden;}
 .menu li img{ width:100%;position:absolute; left:0; z-index:1; }
-.dark{ width:100%; height:100%; background:rgba(0,0,0,0.75); position:absolute; top:0; z-index:2;  
+.dark{ width:100%; height:100%; background:rgba(0,0,0,0.65); position:absolute; top:0; z-index:2;  
 -moz-transition: .6s;-webkit-transition: .6s;-o-transition: .6s;-ms-transition: .6s;}
 .dark:hover{ background:rgba(0,0,0,0); -moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;-ms-transition: .5s;/*黑色淡出*/}
 .menu .ON .dark{ background:rgba(0,0,0,0);}/*切換至-隱藏黑色塊*/
@@ -62,14 +62,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 /* 刊頭 */
 .picZone { height:250px; }
-.picZone img { height:250px; margin: 0 -70% !important; }
+.picZone img { height:250px; /*margin: 0 -70% !important;*/ }
 .words{ margin:1% auto; font-size:0.8em; line-height:1.5em;}
-.words .goBN{ width:100%; margin:0 auto 1%; padding:1.5% 0; display:block; }
+.words .goBN{ width:100%; margin:0.5% auto 1%; padding:1.5% 0; display:block; border-radius:1px;}
 
 
 /* menu 選單*/
 .menu{ margin:4% auto;}
-.menu li{ width:20vw; height:20vw; margin:0 1.2% 2%; border-radius:56px;}
+.menu li{ width:21vw; height:21vw; margin:0 1.5% 2%; border-radius:56px;}
 
 
 
