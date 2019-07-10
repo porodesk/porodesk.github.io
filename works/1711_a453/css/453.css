@@ -160,7 +160,7 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 .pchead{ display:none;}
 .mobilehead{ display: block; width:100%; margin:0 auto; }
 .headm{ width:100%; position:relative; font-size:0;}
-.headm img{ width:100%;}
+.headm img{ width:100%; vertical-align:bottom;}
 .stage1{ width:100%; position:relative;}
 .stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
 .stage2{ width:100%; position:relative;}
