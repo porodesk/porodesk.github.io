@@ -6,7 +6,7 @@ a{
     behavior:expression(this.onFocus=this.blur()); /* for IE */
 }
 .clearNO{ clear:both; display: none;}
-img{border:0;}
+img{border:0; vertical-align:bottom;}
 .mapImg { max-width:100%; height:auto; }/*RWD MAP*/
 map *:focus{outline:none; /* for Chrome 消除MAP藍框 */}
 
