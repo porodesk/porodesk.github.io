@@ -55,7 +55,7 @@ map *:focus{outline:none; /* for Chrome 消除MAP藍框 */}
 .books a:active{color:#fb4b9a;text-decoration:underline;}
 
 /* 遊戲區 */
-.Area2{ width:100%; margin:0 auto; background:url(images/271_area2bg.jpg) fixed #fde3d1;}
+.Area2{ width:100%; margin:0 auto; background:url(images/271_area2bg.jpg) fixed #fde3d1; display:none;}
 .Area2content{ width:980px; margin:0 auto; padding:0 ; text-align:center; }
 .Area2content .gameArea{ width:910px; margin:0 auto; text-align:center;}
 
@@ -291,13 +291,13 @@ hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
 	.headArea{ width:100%; margin:0 auto; padding:0 0 1% 0; background:url(images/271_headbg.jpg) fixed #f8ebf2;}
 	.date{ width:97%; margin:0 auto; padding:0.5% 0 0.5% 1%; font-size:0.5em; float:none; }
 	.pchead{ display:none;}
-	.mobilehead{ display: block;}
+	.mobilehead{ display: block; font-size:0;}
 	.mobilehead img{ vertical-align:bottom;}
 	.mobilehead:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-	.mobilehead .headm{ width:34%; float:left; }
-	.mobilehead .headm2{ width:66%; float:left; position:relative; }
-	.mobilehead .headm3{ width:34%; float:left; position:relative; }
-	.mobilehead .headm4{ width:66%; float:left; }
+	.mobilehead .headm{ width:34%; display:inline-block;}
+	.mobilehead .headm2{ width:66%; display:inline-block; position:relative; }
+	.mobilehead .headm3{ width:34%; display:inline-block; position:relative; }
+	.mobilehead .headm4{ width:66%; display:inline-block; }
 	.headm4 img{ width:100%; max-width:100%;}
 	.headm2 .headmtitle{ width:85%; position: absolute; right:3%; z-index:3;}
 	.headm3 .headfb{ width:40%; position: absolute; left:8%; bottom:3%; z-index:3; }
