@@ -24,6 +24,14 @@
 <link href="css/453.css" rel="stylesheet" type="text/css" />
 <link href="css/453vote.css" rel="stylesheet" type="text/css" />
 <link href="css/swiper.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/animate.css"/><!--動態效果-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!---單元標_用這個回頭會再跑一次動態-->
+
+<script src="css/wow.js"></script><!---回頭不會再跑一次動態-->
+<script>
+new WOW().init();
+</script>
+
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 <script type="text/javascript">
@@ -171,7 +179,7 @@ function MM_swapImage() { //v3.0
       <img src="images/453_headm_09.png" class="p50"></div>
     <div class="fb-like" data-href="https://www.kingstone.com.tw/event/1711_a453/453.asp" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
   </div><!--headm end-->
-  <div class="runTitle"><img src="images/453_headm_run.png" width="100%"></div>
+  <div class="runTitle" data-aos="fade-down"><img src="images/453_headm_run.png" width="100%"></div>
   
   <DIV id="myDiv2">
       <TABLE border="0" align="center" cellpadding="0" cellspacing="0" class="runner1">
@@ -220,9 +228,9 @@ function MM_swapImage() { //v3.0
 <div class="wrapper">
 
     <div class="Area1">
-       <div class="AreaTitle"><a href="<%=wwwpath%>/event/1711_a453/vote.asp?actid=<%=ActID%>" target="_blank"><img src="images/453_title_01.gif" width="100%" alt="紅白名台詞大賞"></a></div>
+       <div class="AreaTitle" data-aos="fade-down"><a href="<%=wwwpath%>/event/1711_a453/vote.asp?actid=<%=ActID%>" target="_blank"><img src="images/453_title_01.gif" width="100%" alt="紅白名台詞大賞"></a></div>
 
-       <div class="zone1_button">
+       <div class="zone1_button wow bounceInUp">
          <a href="javascript:void(0)" onclick="chgVote('1');" style="padding-left:5px;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image05','','images/zone2_button_1_b.png',1)"><img src="images/zone2_button_1_a.png" width="100%"  id="Image05" /></a>
          <a href="javascript:void(0)" onclick="chgVote('2');" style="padding-left:5px;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image06','','images/zone2_button_2_b.png',1)"><img src="images/zone2_button_2_a.png" width="100%"  id="Image06" /></a>
          <a href="javascript:void(0)" onclick="chgVote('3');" style="padding-left:5px;" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image07','','images/zone2_button_3_b.png',1)"><img src="images/zone2_button_3_a.png" width="100%"  id="Image07" /></a>
@@ -233,7 +241,7 @@ function MM_swapImage() { //v3.0
        
        <!-------------------------------切換內容------------------------------->
 
-        <div class="voteContent"> 
+        <div class="voteContent wow bounceInUp"> 
              
            <div class="all_content_edit"><a href="<%=wwwpath%>/event/1711_a453/vote.asp?actid=<%=ActID%>" target="_blank"> 
            <div class="edit">
@@ -285,9 +293,9 @@ function MM_swapImage() { //v3.0
     
     
     <div class="Area2">
-       <div class="AreaTitle"><img src="images/453_title_02.gif" width="100%" alt="這本最厲害"></div>
+       <div class="AreaTitle" data-aos="fade-down"><img src="images/453_title_02.gif" width="100%" alt="這本最厲害"></div>
 
-       <div class="menulist" id="m3">
+       <div class="menulist wow bounceInUp" id="m3">
          <a href="javascript:{void 0}" id="b1" class="ON" onclick="chgBill('1');"><img src="images/453_board_bn1.png" alt="少年漫畫最厲害"></a>
          <a href="javascript:{void 0}" id="b2" onclick="chgBill('2');"><!--切換時樣式改成class="ON"--><img src="images/453_board_bn2.png" alt="少女漫畫最厲害"></a>
          <a href="javascript:{void 0}" id="b3" onclick="chgBill('3');"><!--切換時樣式改成class="ON"--><img src="images/453_board_bn3.png" alt="輕小說漫畫最厲害"></a>
@@ -300,7 +308,7 @@ function MM_swapImage() { //v3.0
       
        <!-------------------------------切換內容------------------------------->
        <div id="best">
-        <div class="boardcontent">
+        <div class="boardcontent wow bounceInUp">
           <div class="Leftbox">
               <div class="top1"><a href="<%=wwwpath%>#&actid=<%=ActID%>" target="_blank">
                 <div class="num"><img src="images/453_board_top1.jpg" width="100%"></div>
@@ -373,9 +381,9 @@ function MM_swapImage() { //v3.0
 
 
     <div class="Area3">
-       <div class="AreaTitle"><img src="images/453_title_03.gif" width="100%" alt="世代最愛排行"></div>
+       <div class="AreaTitle" data-aos="fade-down"><img src="images/453_title_03.gif" width="100%" alt="世代最愛排行"></div>
 
-       <div class="menulist" id="ma">
+       <div class="menulist wow bounceInUp" id="ma">
          <a href="javascript:{void 0}" class="ON" onclick="chgAge('1');"><img src="images/453_age_bn1.png" alt="國高中"></a>
          <a href="javascript:{void 0}" onclick="chgAge('2');"><!--切換時樣式改成class="ON"--><img src="images/453_age_bn2.png" alt="大學"></a>
          <a href="javascript:{void 0}" onclick="chgAge('3');"><!--切換時樣式改成class="ON"--><img src="images/453_age_bn3.png" alt="上班族"></a>
@@ -386,7 +394,7 @@ function MM_swapImage() { //v3.0
       
        <!-------------------------------切換內容------------------------------->
 
-        <div class="AgeContent">
+        <div class="AgeContent wow bounceInUp">
           
             <div class="ageBOX"><a href="<%=wwwpath%>#&actid=<%=ActID%>" target="_blank">
               <div class="txtBG"><div class="txt">關鍵一句話最多二十二字關鍵一句話最多二十二字</div></div>
@@ -451,9 +459,9 @@ function MM_swapImage() { //v3.0
 
 
     <div class="Area4">
-       <div class="AreaTitle"><img src="images/453_title_04.png" width="100%" alt="出版社超低優惠"></div>
+       <div class="AreaTitle" data-aos="fade-down"><img src="images/453_title_04.png" width="100%" alt="出版社超低優惠"></div>
 
-       <div class="publishArea">
+       <div class="publishArea wow bounceInUp">
          <!-------------------------------切換內容------------------------------->
          <div class="pubBigBN">
             <a href="<%=wwwpath%>#&actid=<%=ActID%>" target="_blank"><img src="http://cdn.kingstone.com.tw/newadmin/userpics/discountactive/d1606005.jpg"></a>
@@ -482,8 +490,8 @@ function MM_swapImage() { //v3.0
 
 
     <div class="Area5">
-       <div class="AreaTitle"><img src="images/453_title_05.png" width="100%" alt="動漫精品"></div>
-        <div class="productArea">
+       <div class="AreaTitle" data-aos="fade-down"><img src="images/453_title_05.png" width="100%" alt="動漫精品"></div>
+        <div class="productArea wow bounceInUp">
     
             <div class="productbox">
                 <div class="ptitle">標題三四五六七八九十一二</div>
@@ -554,8 +562,8 @@ function MM_swapImage() { //v3.0
 
 
     <div class="Area6">
-       <div class="AreaTitle"><img src="images/453_title_06.png" width="100%" alt="最新輕動漫"></div>
-       <div class="addlist">
+       <div class="AreaTitle" data-aos="fade-down"><img src="images/453_title_06.png" width="100%" alt="最新輕動漫"></div>
+       <div class="addlist wow bounceInUp">
           <div class="addbn1"><a href="<%=wwwpath%>/book/book_publishnew.asp?class_id=QQQQ&y=2018&m=1&actid=<%=ActID%>" target="_blank"><img src="images/453_add_01.png" alt="當月最新輕小說"></a></div>
           <div class="addbn2"><a href="<%=wwwpath%>/book/book_publishNew.asp?class_id=HHHH&y=2018&m=1&actid=<%=ActID%>" target="_blank"><img src="images/453_add_02.png" alt="當月最新漫畫"></a></div>
           <div class="addbn3"><a href="<%=wwwpath%>/mag/magmook_class.asp?class_id=LA&actid=<%=ActID%>" target="_blank"><img src="images/453_add_03.png" alt="生肉"></a></div>
@@ -651,5 +659,13 @@ function MM_swapImage() { //v3.0
 	
 </script>
 
+<!---單元標_用這個回頭會再跑一次動態-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init({
+	  easing: 'ease-in-out-sine',
+	  duration: 500,
+	});
+</script>
 </body>
 </html>

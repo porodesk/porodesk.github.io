@@ -38,6 +38,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 .dark:hover{ background:rgba(0,0,0,0); -moz-transition: .5s;-webkit-transition: .5s;-o-transition: .5s;-ms-transition: .5s;/*黑色淡出*/}
 .menu .ON .dark{ background:rgba(0,0,0,0);}/*切換至-隱藏黑色塊*/
 
+.copyright{ width:100%; margin:0 auto; padding:25px 0 10px 0; text-align:center; font-family:Verdana, Geneva, sans-serif; font-size:0.6em; color:#555;}
+
 
 
 
@@ -45,13 +47,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*===================================================================================================================================*/
 @media screen and (max-width:1100px) {
 
-/* 刊頭 */
-.words{ width:95%;}
-.words .goBN{ width:23%; }
-
-/* menu 選單*/
-.menu{ width:96%;}
-.menu li{ width:15vw; height:15vw; margin:0 1.2% 2%; border-radius:75px;}
+	/* 刊頭 */
+	.words{ width:95%;}
+	.words .goBN{ width:23%; }
+	
+	/* menu 選單*/
+	.menu{ width:96%;}
+	.menu li{ width:15vw; height:15vw; margin:0 1.2% 2%; border-radius:75px;}
 
 }
 
@@ -60,18 +62,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 /*====================================================================================================================================*/
 @media screen and (max-width:650px) {
 
-/* 刊頭 */
-.picZone { height:250px; }
-.picZone img { height:250px; /*margin: 0 -70% !important;*/ }
-.words{ margin:1% auto; font-size:0.8em; line-height:1.5em;}
-.words .goBN{ width:100%; margin:0.5% auto 1%; padding:1.5% 0; display:block; border:1px solid #fff; background:#000; color:fff;}
-.head a:hover .goBN{ border:1px solid #000; }
+	/* 刊頭 */
+	.picZone { height:250px; }
+	.picZone img { height:250px; /*margin: 0 -70% !important;*/ }
+	.words{ margin:1% auto; font-size:0.8em; line-height:1.5em;}
+	.words .goBN{ width:100%; margin:0.5% auto 1%; padding:1.5% 0; display:block; border:1px solid #fff; background:#000; color:fff;}
+	.head a:hover .goBN{ border:1px solid #000; }
+	
+	
+	/* menu 選單*/
+	.menu{ margin:4% auto;}
+	.menu li{ width:21vw; height:21vw; margin:0 1.5% 2%; border-radius:56px;}
 
-
-/* menu 選單*/
-.menu{ margin:4% auto;}
-.menu li{ width:21vw; height:21vw; margin:0 1.5% 2%; border-radius:56px;}
-
+	.copyright{ padding:3% 0 1%; font-size:0.6em; }
 
 
 

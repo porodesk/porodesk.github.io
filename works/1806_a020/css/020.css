@@ -1,0 +1,379 @@
+﻿body {	margin: 0px; background:#fde8fa;}
+.pcfloor { margin:0;padding:0;width:100%;height:auto;}
+
+a{
+    outline: none; /* for Firefox Google Chrome 消除連結框 */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+	cursor:pointer;
+}
+.clearNO{ clear:both; display: none;}
+img{border:0;}
+.pcimg{ width:100%;}
+.mobileimg{ display:none; width:100%;}
+.titleimg{ width:980px;}
+.mapImg { max-width:100%; height:auto; }/*RWD MAP*/
+map *:focus{outline:none; /* for Chrome 消除MAP藍框 */}
+#noHover:hover{ -moz-transform: none;-webkit-transform: none;-o-transform: none;-ms-transform: none;}
+
+/*選單*/
+.sideMenu{ width:60px; position:fixed; right:5px; bottom:50px; }
+.sideMenu li{ list-style-type:none;}
+.sideMenu span{ display: none;}
+.sideMenu img{ width:100%; margin:0 0 4px;}
+.sideMenu img:hover{ opacity:0.8; }
+
+.wrapper { width:100%; margin:0 auto; background:url(../images/020_bg_star.png),url(../images/020_bg.jpg),#fff;}
+
+/* 刊頭 */
+.pchead{ width:100%; height:800px; margin:0 auto; background:url(../images/020_head_bg.png) bottom no-repeat;}
+.headContent{ width:1250px; height:800px; margin:0 auto; text-align:center; position:relative; overflow:hidden;}
+.headContent .date { position:absolute; top:10px; left:0; right:0; color:#666; font-size: 12px; font-family: "微軟正黑體","Calibri"; font-weight:bold; letter-spacing:0.04em; }
+.headContent .title_1{ position:absolute; top:32px; left:0; right:0;}
+.headContent .title_2{ position:absolute; top:85px; left:0; right:0; z-index:1;}
+.headContent .mainPIC{ position:absolute; bottom:0; left:0; right:0;}
+.headContent .fbLikeArea{ position:absolute; top:267px; left:450px; z-index:3;}
+.fbLikeArea .fbpic{ width:221px; float:left; margin:0 0 0 -25px; }
+.fbLikeArea .sharearea1{ width:165px; float:left; margin:15px 0 0 0;}
+/* sharearea站上FB分享---------------------- */
+.share{float:left;margin:0;padding:0;width:35.8%;height:auto;}
+.fbcount{float:right;margin:0;padding:1% 0 0 6%;width:57%;height:27px;font-size:16px;line-height:27px;color:#3b3938;text-align:left;
+background:transparent url(../images/share_count_bg.gif) left top no-repeat; background-size:auto 100%;}
+.share img:hover{ position:relative; top:-3px;}
+/*-----------------------------------------*/
+.headContent .box1{ position:absolute; left:35px;  top:76px; z-index:2; width:246px;}
+.headContent .box2{ position:absolute; right:37px; top:97px; z-index:2; width:246px;}
+.headContent img{ -moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;-ms-transition: 0.3s;}
+.box1 img:hover,
+.box2 img:hover{ -moz-transform: scale(1.08);-webkit-transform: scale(1.08);-o-transform: scale(1.08);-ms-transform: scale(1.08);}
+
+.giftContent{ width:100%; height:289px; margin:0 auto; padding:0; text-align:center; background:url(../images/020_gift_bg.jpg) repeat-x;}
+.giftContent img{ width:100%;}
+.giftContent .gift1{ width:315px; display:inline-block; margin:29px 4px 0 4px; position:relative;}
+.gift1 .giftcode{ width:100%; position:absolute; z-index:1; left:0; right:0; bottom:17px; color: #f22857; font-size: 15px; font-family:"微軟正黑體"; font-weight:bold; letter-spacing:0.04em; text-align:center;}
+.giftContent .gift2{ width:315px; display:inline-block; margin:29px 4px 0 4px; position:relative;}
+.gift2m{ display:none;}
+.giftContent .gift3{ width:315px; display:inline-block; margin:29px 4px 0 4px; position:relative;}
+.gift3 .gif3_product{ position:absolute; left:0; right:0; bottom:0;}
+/* 左右滑動--------------------------------------------------------- */
+.swiper-container{ width:100%; height: 100%; overflow:hidden; position:relative;}
+.swiper-container .swiper-slide{ width:100% !important;}
+.swiper-container .swiper-button-next{display:block; right:0;width:5%; height:45px; background:url(../images/icon-ar-right-w.png) center center no-repeat; background-size:15px 25px; }
+.swiper-container .swiper-button-prev{display:block; left:0;width:5%; height:45px; background:url(../images/icon-ar-left-w.png) center center no-repeat; background-size:15px 25px; }
+
+/* 簽名作家 */
+.AreaAuthor{ width:100%; margin:0 auto ; padding:1% 0; text-align:center; background:url(../images/020_bg_starbig.png) fixed,url(../images/020_bg_pink.jpg) fixed;}
+.AreaAuthor .menulist2{ width:980px; margin:5px auto 0; font-size:0; position: relative; text-align:center;}
+.menulist2 .pbn{ width:321px; background: url(../images/020_author_bnblue.png) no-repeat; display:inline-block; position: relative; z-index:1;}
+.pbn img{ width:100%;}
+.menulist2 .ON{ background: url(../images/020_author_bnred.png) no-repeat;}
+.pbn:hover{ background: url(../images/020_author_bnred.png) no-repeat; }
+.itemContent{ width:980px; height:944px; margin:0 auto; padding:14px 10px; box-sizing:border-box; background: url(../images/020_author_bg.png) no-repeat; text-align:center;}
+.allBOX{ margin:0 ;}
+.allBOX:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.itemBOX{ width:230px; height:295px; margin:5px; padding:5px; box-sizing:border-box; background:#fff; float:left; position: relative; overflow:hidden; }
+.itemBOX a{ text-decoration:none; }
+.itemBOX img{ width:auto; height:100%; -moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;-ms-transition: 0.3s;}
+.itemBOX .boxc{ width: 100%; margin:0 0 0 -5px; padding:8px; box-sizing:border-box; position:absolute; bottom:0; background: rgba(0,0,0,0.7); font-size:18px; line-height:1.25em; font-family: "微軟正黑體"; font-weight:bold; letter-spacing:0.05em; color:#fff; }
+.itemBOX:hover img{ -moz-transform: scale(1.2);-webkit-transform: scale(1.2);-o-transform: scale(1.2);-ms-transform: scale(1.2);}
+.itemBOX:hover .boxc{ background: rgba(231,0,130,0.8); }
+
+/* 投票區 */
+.Area1{ width:100%; margin:0 auto ; padding:1% 0; text-align:center; }
+.Area1 .voteArea{ width:980px; margin:0.5% auto 0; }
+.voteArea a{ text-decoration:none;}
+.voteArea .voteBOX{ width:100%; height:251px; margin:0 auto 1%; position:relative;}
+.voteBOX .groupPIC{ width:100%; position:absolute; bottom:0; left:0; right:0; z-index:0; }
+.groupPIC .num{ width:100px; position:absolute; right:0; top:0;}
+.num img{ width:100%;}
+.voteBOX .votecount{ width:173px; height:40px; line-height:40px; border-radius:10px; background:#fa5252; position:absolute; bottom:12px; left:569px; font-size:22px; font-family: Arial, Helvetica; font-weight:bold; color:#fff;}
+.votecount img{ height:17px; padding:0 2% 0 0;}
+.voteBOX .voteBN{ width:173px; height:40px; line-height:40px; border-radius:10px; background:#527efa; position:absolute; bottom:12px; left:753px; font-size:18px; font-family:"微軟正黑體"; font-weight:bold; color:#fff;}
+
+/* 遊戲區 */
+.Area2{ width:100%; margin:0 auto ; padding:1% 0 2%; text-align:center; }
+.Area2 .gameArea{ width:980px; margin:0.5% auto 0; }
+
+/* 日本夏番新作 */
+.Area3{ width:100%; margin:0 auto ; padding:1% 0; text-align:center; }
+.Area3:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+.Area3 .summer1{ width:980px; margin:1% auto 0; }
+.Area3 .summer2{ width:980px; margin:0 auto; }
+.summer1 li{ width:23.8%; margin:0 0.6% 2%; list-style-type:none; float:left;}
+.summer1 li.move1,.summer2 li.move1{ padding:2% 0 0; }
+.summer2 li{ width:19.2%; margin:0 0.4%;list-style-type:none; float:left;}
+.summer1 img,.summer2 img{ width:100%; -moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;-ms-transition: 0.3s;}
+.summer1 img:hover,.summer2 img:hover{ -moz-transform: translateY(-5px);-webkit-transform: translateY(-5px);-o-transform: translateY(-5px);-ms-transform: translateY(-5px); }
+
+/* 動漫神曲KTV大點播 */
+.Area4{ width:100%; margin:0 auto ; padding:1% 0 2%; text-align:center; background:url(../images/020_bg_starbig.png) fixed,url(../images/020_bg_pink.jpg) fixed;}
+.Area4 .ytArea{ width:980px; height:612px; margin:0.5% auto 0; padding:20px; box-sizing:border-box; background:rgba(255,255,255,0.85); text-align:left;}
+.ytArea .playING{ width:629px; float:left;}
+.ytArea .playLIST{ width:286px; margin:0 0 0 0px; float:right;}
+
+.playING .video { width:100%;/*影片寬度調這邊*/ margin:0; position:relative;}
+.aVideo { width:100%; height:0; padding:0 0 56.25% 0; position:relative;}
+.aVideo iframe { width:100%; height:100%; position:absolute; left:0; top:0;}
+.playING .mvName{ width:100%; margin:15px 0 13px; font-size:20px; line-height:1.5em;}
+.playING .count{ width:45%; font-size:16px; color:#707070; display:inline-block; vertical-align:top;}
+.count span{ font-family:"微軟正黑體";}
+.playING .iconlist{ width:54.2%; text-align:right; display:inline-block;}
+.iconlist img{ width:345px;}
+hr { width:100%; margin:-5px 0 0; border:0; height:1px; background-color:#d8d8d8;}
+.playING .introBOX{ width:100%; margin:3% auto 0;}
+.introBOX .cover{ width:48px; margin:0 15px 0 0; display:inline-block; vertical-align:top;}
+.introBOX .bookintro{ width:426px; margin:0 15px 0 0; display:inline-block; color:#4a4949; font-size:13px; line-height:1.45em; letter-spacing:0.03em;}
+.introBOX .link{ width:115px; height:42px; line-height:42px; display:inline-block; color:#fff; font-size:18px; text-align:center; background:#ff0000; border-radius:5px; vertical-align:top;}
+.introBOX a{ text-decoration:none; color:#fff;}
+
+.playLIST .autoplay{ width:100%; margin:0 0 12px;}
+.playLIST .listBOX{ width:100%; margin:0 0 10px; text-align:left; font-size:0;}
+.listBOX img{ width:143px; height:80px; display:inline-block; margin:0 9px 0 0; vertical-align:top;}
+.listBOX .mvName{ width: 134px; display:inline-block; color:#000; font-size:13px; line-height:1.3em; vertical-align:top;}
+.listBOX .mvName p{ color:#707070; margin:10px 0 0;}
+.listBOX a{ text-decoration:none; }
+.listBOX .ON img{ border-bottom:4px solid #F36;}
+.listBOX a:active > img { border-bottom:4px solid #F36; }
+
+/* 從名畫看動漫 */
+.Area5{ width:100%; margin:0 auto ; padding:1% 0; text-align:center; background:url(../images/020_bg_starbig.png) fixed,url(../images/020_bg_pink.jpg) fixed;}
+.Area5 .picArea{ width:980px; margin:0.5% auto 0; }
+.picArea .outBOX{ height:70px; overflow:hidden !important; margin:0 0 1.5%; cursor:pointer;}
+.picArea .picTitle{ width:100%; margin:0 auto;}
+.picTitle img{ width:100%;}
+.picArea .picBOX{ width:100%; height:350px; margin:0 auto 1.5%; }
+.b1{ background:url(../images/020_picbg_01.png) no-repeat;}
+.b2{ background:url(../images/020_picbg_02.png) no-repeat;}
+.b3{ background:url(../images/020_picbg_03.png) no-repeat;}
+.b4{ background:url(../images/020_picbg_04.png) no-repeat;}
+.b5{ background:url(../images/020_picbg_05.png) no-repeat;}
+.b6{ background:url(../images/020_picbg_06.png) no-repeat;}
+.picture{ width:352px; margin:0 0 0 21px; float:left;}
+.picture img{ width:100%; -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+.picture img:hover{ -moz-transform: scale(1.1);-webkit-transform: scale(1.1);-o-transform: scale(1.1);-ms-transform: scale(1.1);}
+.books{ width:595px; margin:0 ; float:left;}
+.books li{ width:187px; list-style-type:none; display:inline-block; margin:35px 6px 0 0;}
+.books li img{ width:100%; -moz-transition: 0.3s;-webkit-transition: 0.3s;-o-transition: 0.3s;-ms-transition: 0.3s;}
+.books img:hover{ -moz-transform: translateY(-5px);-webkit-transform: translateY(-5px);-o-transform: translateY(-5px);-ms-transform: translateY(-5px); }
+.source{ width:100%; margin:1% auto 0; font-family:"微軟正黑體"; font-size:13px; color:#f87cc1; letter-spacing:0.1em;}
+
+/* 出版社_BN */
+.Area6x7{ width:100%; height:1070px; margin:0 auto ; padding:1% 0; text-align:center; background:url(../images/020_bg_starbig.png) fixed,url(../images/020_bg_pink.jpg) fixed;}
+.center980{ width:980px; margin:0 auto ; }
+.Area6{ width:545px; margin:0 0 0 -13px; float:left;}
+.Area6 img.pcimg{ width:520px;}
+.bnZone{ width:100%; margin:1.5% 0 0; }
+.bnZone .bigBN{ width:500px; margin:0 auto 3%; text-align:center;}
+.bnZone .menulist{ width:93%; margin:0 auto; }
+.bnZone .menulist li{ list-style-type:none; float:left;}
+.bnZone .menulist img{ width:85px; height:auto; margin:0 4px 11px; border:solid 4px #68ddff; }
+.bnZone .menulist .ON img{ border:solid 4px #ff44a0;}
+.bnZone .menulist a:hover > img { border:solid 4px #ff44a0;}
+
+/* 排行榜 */
+.Area7{ width:425px; margin:0 0 0 18px; float:left;}
+.boradArea{ width:100%; margin:2% 0 0 0;}
+.boradArea .menulist{ width:100%; height:50px; margin:0 auto 10px ; }
+.boradArea .menulist img{ width:31%; border-bottom:solid 8px #ffebf6;}
+.boradArea .menulist .ON img{ border-bottom:solid 8px #fce206;}
+.boradArea .menulist a:hover > img{ border-bottom:solid 8px #fce206;}
+
+.boradArea .boardcontent{ width:100%; margin:0 0 0 4px;}
+.billboard1{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/020_board_bg_01.png) no-repeat;}
+.billboard2{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/020_board_bg_02.png) no-repeat;}
+.billboard3{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/020_board_bg_03.png) no-repeat;}
+.billboard4{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/020_board_bg_04.png) no-repeat;}
+.billboard5{ width:417px; height:147px; margin:0 0 11px 0; background:url(../images/020_board_bg_05.png) no-repeat;}
+.ordercolumn{ display:none;}
+.bookcolumn{ width:103px; height:147px; border:1px solid #555; background:#fff; margin:0 0 0 125px; float:left; -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s; }
+.bookcolumn img{ width:97px; height:auto; padding:3px; background:#fff; }
+.bookcolumn:hover,
+.more img:hover{ -moz-transform: scale(1.08);-webkit-transform: scale(1.08);-o-transform: scale(1.08);-ms-transform: scale(1.08);}
+.bookSet{ width:159px; height:76px; margin:0 0 0 246px; padding:32px 0 0; text-align:left;}
+.bookSet li{ list-style-type:none; font-family:"微軟正黑體"; font-size:18px; color:#fff;}
+.bookSet .bookname{ width:100%; height:48px; margin:0 0 8px; font-size:19px; color:#fffc08; line-height:1.3em; overflow:hidden;}
+.bookSet li a{ color:#fff;}
+li.bookname a{ color:#fffc08;}
+.bookSet a{ text-decoration:none;}
+.bookSet a:hover{ text-decoration: underline;}
+
+.boardcontent .more{ width:180px; margin:1% 0 0 236px; }
+.more img{ -moz-transition: 0.4s;-webkit-transition: 0.4s;-o-transition: 0.4s;-ms-transition: 0.4s;}
+
+
+
+
+
+/*====================================================================================================================================*/
+
+
+@media screen and (max-width:981px) {
+
+	.pcfloor { display:none;}
+	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+	.titleimg{ width:100%;}
+	.pcimg{ display:none;}
+	.mobileimg{ display: block; width:100%;}
+	
+	.wrapper { background-size:20% auto;}
+	
+	/*選單*/
+	.sideMenu{ width:100%; height:35px; z-index:1000; opacity:0.9; position:fixed; right:0; left:0; bottom:0; }
+	.sideMenu li{ float:left; margin:0; padding:1% 0 ; width:16%; height:35px; line-height:30px; text-align:center;border-right:1px solid #ff98cd;background-color:#ff6fba; box-sizing:border-box !important; }
+	.sideMenu li:nth-child(4){ width:22%; background-color:#fc41a3;} 
+	.sideMenu li:nth-child(5){ width:30%; background-color:#964de0;}
+	.sideMenu span{ display: block; font-size:16px; font-family: "Calibri","微軟正黑體"; color:#fff; }
+	.sideMenu a{ text-decoration:none; color:#fff;}
+	.sideMenu img{ width:auto; height:30px; margin:0 auto; }
+	
+	/* 刊頭 */
+	.pchead{ width:100%; height:auto; margin:0 auto; background:none; }
+	.headContent{ width:100%; height:auto; position:static; overflow:hidden;}
+	.headContent .date { position:static; margin:2% auto 0; font-size: 8px; }
+	.headContent .title_1{ position:static; margin:1% auto 0;}
+	.headContent .title_2{ position:static; margin:0 auto; }
+	.headContent .box1{ position:static; margin:2% auto 0; width:100%; text-align:center;}
+	.headContent .box2{ position:static; margin:0 auto -5%; width:100%; text-align:center; z-index:1;}
+	.headContent .mainPIC{ position:static; z-index:2;}
+	.title_1 img{ width:90%;}
+	.title_2 img{ width:90%;}
+	.box1 img{ width:75%; margin:0 0 0 10%;}
+	.box2 img{ width:75%; margin:0 0 0 20%;}
+	.mainPIC img{ width:110%; margin:0 0 0 -4%; }
+	
+	.headContent .fbLikeArea{ position: static; width:100%; argin:0 auto; padding:0 0 2% 0; background:url(../images/020_bg_s.png) #8ce4fd; text-align:center; display:none;}
+	.fbLikeArea:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.fbLikeArea .sharearea1{ margin:3% 0 0 3%; }
+	.fbLikeArea .fbpic{ width:53%; margin:0.5% 0 0 -6%; }
+	.fbpic img{ max-width:300px;}
+	
+	.giftContent{ width:100%; height:auto; padding:1.5% 0; border-top:6px solid #fe62a0; border-bottom:6px solid #fe62a0; background:none #ffb7d6; text-align:center; }
+	.giftContent .gift1{ width:48%; display:inline-block; margin:0 0.3%; position:relative;}
+	.gift1 .giftcode{ width:100%; position:absolute; z-index:1; left:0; right:0; bottom:4%; font-size: 11px; }
+	.giftContent .gift2{ display: none; }
+	.giftContent .gift3{ width:48%; display:inline-block; margin:0 0.3%; position:relative;}
+	.gift2m{ display: block; width:98%; margin:0 auto;}
+	
+	/* 簽名作家 */
+	.AreaAuthor{ width:100%; margin:0 auto; padding:1% 0 2%; background-size:20% auto;}
+	.AreaAuthor .menulist2{ width:99%; margin:1% auto 0; font-size:0; }
+	.menulist2 .pbn{ width:44%; display:inline-block; background-size:100% auto;}
+	.menulist2 .ON{ background-size:100% auto;}
+	.pbn:hover{ background-size:100% auto;}
+	.itemContent{width:97.3%; height:auto; margin:0 auto;padding:1.2%; box-sizing:border-box; border-radius:6px; background:none #f52e8c; text-align:center;}
+	.allBOX{ margin:0 auto;}
+	.itemBOX{ width:48%; height:160px; margin:1%; padding:3px;}
+	.itemBOX .boxc{ width: 100%; margin:0 0 0 -1.82%; padding:4px ; position:absolute; bottom:0; font-size:1em; line-height:1.2em;letter-spacing: normal;}
+	
+	/* 投票區 */
+	.Area1{ width:100%; margin:0 auto; padding:1% 0 2%; }
+	.Area1 .voteArea{ width:96%;}
+	.voteArea .voteBOX{ width:100%; height:auto; position: static;}
+	.voteBOX .groupPIC{ width:100%; position: relative; }
+	.groupPIC .num{ width:15%; position:absolute; right:0; top:0;}
+	.voteBOX .votecount{ width:46%; height:auto; margin:1% 1% 0; padding:2% 0; line-height: normal; border-radius:5px; display:inline-block; position:static; font-size:18px;}
+	.votecount img{ height:14px; padding:0 2% 0 0;}
+	.voteBOX .voteBN{ width:46%; height:auto; margin:1% 1% 0; padding:2% 0; line-height: normal; border-radius:5px; display:inline-block; position:static;  font-size:16px; }
+	
+	/* 遊戲區 */
+	.Area2{ width:100%; margin:0 auto; padding:2% 0; }
+	.Area2 .gameArea{ width:96%;}
+	
+	/* 日本夏番新作 */
+	.Area3{ width:100%; margin:0 auto ; padding:2% 0; }
+	.Area3 .summer1{ width:96%; margin:1% auto; }
+	.Area3 .summer2{ width:96%; margin:1.5% auto; }
+	.summer1 li{ width:47%; margin:0 1%; }
+	.summer2 li{ width:31%; margin:0 1% 1%; }
+	.summer1 li.move1{ padding:0; }
+	li#center{ padding:0 0 0 12%; margin:0 -5% 0 3%;}
+	
+	/* 動漫神曲KTV大點播 */
+	.Area4{ width:100%; margin:0 auto ; padding:2% 0 13%; background-size:20% auto;}
+	.Area4 .ytArea{ width:96%; height:auto; margin:0.5% auto 0; padding:1%; }
+	.ytArea .playING{ width:100%; float:none;}
+	.ytArea .playLIST{ width:100%; margin:2% 0 0; float:none; font-size:0;}
+	
+	.playING .mvName{ width:98%; height:1.5em; margin:1.5% 0 1% 2%; font-size:18px; line-height:1.4em; 
+	overflow: hidden; text-overflow: ellipsis; white-space: nowrap; !important/*文字溢出省略*/ }
+	.playING .count{ width:98%; font-size:14px; margin:0 0 1% 2%;}
+	.playING .iconlist{ width:100%; }
+	.iconlist img{ width: 100%;}
+	hr { margin:0 0 0; }
+	.playING .introBOX{ width:100%; margin:3% auto 0;}
+	.introBOX .cover{ width:48px; margin:0 5px 0 0; }
+	.introBOX .bookintro{ width:82%; height:55px; margin:0 0 1%; overflow: hidden; }
+	.introBOX .link{ width:100%; height:auto; padding:2% 0; line-height: normal; font-size:16px; }
+	
+	.playLIST .autoplay{ display:none;}
+	.playLIST .listBOX{ width:31%; margin:0 1% 1%; display:inline-block;}
+	.listBOX img{ width:100%; height:auto; }
+	.listBOX .mvName{ display:none; width:100%; padding:1% 0 0; font-size:13px; line-height:1.3em; }
+	
+	/* 從名畫看動漫 */
+	.Area5{ width:100%; margin:0 auto ; padding:2% 0; background-size:20% auto;}
+	.Area5 .picArea{ width:96%; margin:0.5% auto 0; font-size:0;}
+	.picArea .outBOX{ height:40px; overflow:hidden !important; }
+	.picArea .picTitle{ width:100%; height:40px; border-radius:10px 10px 0 0 ; overflow:hidden;}
+	.t1{ background:#29d890;}
+	.t2{ background:#bc6ff7;}
+	.t3{ background:#ff5ea9;}
+	.t4{ background:#40c9f0;}
+	.t5{ background:#ff921d;}
+	.t6{ background:#fc586b;}
+	.picTitle img{ width:auto; height:40px; margin:0 auto;}
+	.picArea .picBOX{ width:100%; height:350px; padding:1% 0; box-sizing:border-box; background:none rgba(255,255,255,0.8); border-radius:0 0 15px 15px; overflow:hidden;}
+	.b1{ border:4px solid #aef6ad;}
+	.b2{ border:4px solid #eac2fe;}
+	.b3{ border:4px solid #ffbaf1;}
+	.b4{ border:4px solid #9eeeff;}
+	.b5{ border:4px solid #ffd265;}
+	.b6{ border:4px solid #ffafc0;}
+	.picture{ width:100%; height:200px; margin:0 ; float:none; }
+	.picture img{ width:auto; height:200px;}
+	.books{ width:100%; margin:1% 0 0 ; float:none; vertical-align:top;}
+	.books li{ width:92px; height:130px; display:inline-block; margin:0 1%;}
+	.books img{ width:auto; height:130px;}
+	.source{ margin:1% auto 0; font-size:9px; letter-spacing:0.06em;}
+	
+	/* 出版社_BN */
+	.Area6x7{ width:100%; height:auto; margin:0 auto ; padding: 0; background:url(../images/020_bg_starbig.png) fixed,url(../images/020_bg_pink.jpg) fixed; background-size:20% auto;}
+	.center980{ width:100%;}
+	.Area6{ width:100%; margin:0 auto ; float:none; padding:2% 0; }
+	.bnZone:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.bnZone .bigBN{ width:67%; margin:0.5% 1.5% 0; float:left;}
+	.bnZone .menulist{ width:30%; margin:0.5% 0 0; float:left;}
+	.bnZone .menulist li{ width:47%; margin:0 1% 2% 0;}
+	.bnZone .menulist img{ width:100%; height:auto; margin:0 ; border:solid 3px #68ddff; box-sizing:border-box;}
+	.bnZone .menulist .ON img{ border:solid 3px #ff44a0;}
+	.bnZone .menulist a:hover > img { border:solid 3px #ff44a0;}
+	.bnZone .publish{ width:100%;}
+	
+	/* 排行榜 */
+	.Area7{ width:100%; margin:0 auto; float:none; padding:2% 0; }
+	.boradArea{ width:96%; margin:1% auto 0;}
+	.boradArea .menulist{ width:100%; height:auto; margin:0 auto 1.5%; }
+	.boradArea .menulist img{ width:31%; border-bottom:solid 6px #ffebf6;}
+	.boradArea .menulist .ON img{ border-bottom:solid 6px #fce206;}
+	.boradArea .menulist a:hover > img{ border-bottom:solid 6px #fce206;}
+	
+	.boradArea .boardcontent{ width:95%; margin:0 auto; }
+	.billboard1{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(255,62,144,0.7); border-radius:10px 0 10px 0;}
+	.billboard2{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(97,197,70,0.7); border-radius:10px 0 10px 0;}
+	.billboard3{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(160,92,212,0.7); border-radius:10px 0 10px 0;}
+	.billboard4{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(43,188,229,0.7); border-radius:10px 0 10px 0;}
+	.billboard5{ width:100%; height:auto; margin:0 0 2% 0; padding:2% 0; background:none rgba(255,107,18,0.7); border-radius:10px 0 10px 0;}
+	.ordercolumn{ display:block; width:10%; padding:5%; font-size:36px; font-family:Arial Black, Helvetica; color:#fff; text-align:center; display:inline-block; vertical-align:middle;}
+	.bookcolumn{ width:30%; height:auto; border:none; margin:0 ; float:none; display:inline-block; vertical-align: middle;}
+	.bookcolumn img{ width:98%; height:auto; padding:3px; border:1px solid #fff; }
+	.bookSet{ width:40%; height:auto; margin:0 0 0 3%; padding:0 ; float:none; display:inline-block; vertical-align:middle;}
+	.bookSet li{ font-size:14px; color:#fff;}
+	.bookSet .bookname{ width:100%; height:auto; margin:0 0 2%; font-size:16px; }
+	
+	.boardcontent .more{ width:45%; margin:1% 0 ; padding:0 ; }
+		
+	}
+
+@media screen and (min-width:320px) and (max-width:374px) { 
+	.fbLikeArea .fbpic{ width:45%; margin:2% 0 0 -8%;}
+
+}

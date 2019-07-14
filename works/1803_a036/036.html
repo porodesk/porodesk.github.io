@@ -22,10 +22,12 @@
 <link href="036.css" rel="stylesheet" type="text/css">
 <link href="ig.css" rel="stylesheet" type="text/css">
 <link href="swiper.css" rel="stylesheet" type="text/css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!---單元標_用這個回頭會再跑一次動態-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
+
 <!---燈箱-->
-<script src="jquery.blockUI.js"></script>
+<!--script src="jquery.blockUI.js"></script>
 <script type="text/javascript">
 function showPop(thisId){
   var poplink = thisId;
@@ -65,7 +67,7 @@ function showPop(thisId){
   });
 
 }
-</script>
+</script-->
 </head>
 <body>
 
@@ -148,13 +150,17 @@ function showPop(thisId){
 <div class="wrapper">
 
     <div class="Area1">
-        <img src="images/036_title_01.png" class="pcimg" alt="遊戲區"><img src="images/036_title_m01.png" class="mobileimg" alt="遊戲區">
+        <img src="images/036_title_01.png" class="pcimg" alt="遊戲區" data-aos="fade-down"><img src="images/036_title_m01.png" class="mobileimg" alt="遊戲區" data-aos="fade-down">
         <div class="gameArea"><a href="game.asp?actid=<%=ActID%>" target="_blank"><img src="images/036_game.gif" width="100%"></a></div>
     </div><!--Area1 end 遊戲區-->
 
 
     <div class="Area2">
-        <img src="images/036_title_02.png" class="pcimg" alt="青春關鍵字"><img src="images/036_title_m02.png" class="mobileimg" alt="青春關鍵字"><!--#include file="sharearea2.asp" -->
+        <img src="images/036_title_02.png" class="pcimg" alt="青春關鍵字" data-aos="fade-down"><img src="images/036_title_m02.png" class="mobileimg" alt="青春關鍵字" data-aos="fade-down">
+        <div class="sharearea2 clearfix">
+            <div class="share"><a href="#" class="fb"><img src="images/share_btn.png" width="100%"></a></div><!--share end-->
+            <div class="fbcount">5678</div><!--count end-->
+        </div><!--sharearea2 end-->
 
         <div class="menulist">
             <div class="swiperregion_week">
@@ -232,8 +238,6 @@ function showPop(thisId){
               </div><!--bookBOX end 手機不顯示這本-->
           </div><!--books end 書單-->
           
-          <div class="pic1"><img src="images/036_young_f1.png"></div>
-          <div class="pic2"><img src="images/036_young_f2.png"></div>
         </div><!--bookcontent end-->
 
         <!---------------------------------------------------------------->
@@ -242,21 +246,21 @@ function showPop(thisId){
 
 
     <div class="Area3">
-        <img src="images/036_title_03.png" class="pcimg" alt="作者生活大公開"><img src="images/036_title_m03.png" class="mobileimg" alt="作者生活大公開">
+        <img src="images/036_title_03.png" class="pcimg" alt="作者生活大公開" data-aos="fade-down"><img src="images/036_title_m03.png" class="mobileimg" alt="作者生活大公開" data-aos="fade-down">
 
         <div class="ig"> 
             <img src="images/036_ig_bar01.png" width="100%" style="display:inline-block"/>
             <a href="<%=wwwpath%>/event/activity/activity.asp?active=a1803036&cid=152792&actid=<%=ActID%>" target="_blank"><img src="images/036_ig_bar02.png" class="igbar02"></a>
             <div class="ig_all">
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_30.html');"><div class="ig_a"><img src="images/ig_30.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_29.html');"><div class="ig_a"><img src="images/ig_29.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_28.html');"><div class="ig_a"><img src="images/ig_28.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_27.html');"><div class="ig_a"><img src="images/ig_27.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_26.html');"><div class="ig_a"><img src="images/ig_26.jpg"></div></a>        
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_25.html');"><div class="ig_a"><img src="images/ig_25.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_24.html');"><div class="ig_a"><img src="images/ig_24.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_23.html');"><div class="ig_a"><img src="images/ig_23.jpg"></div></a>
-              <a href="javascript:void(0)" onclick="showPop('pop/pop_22.html');"><div class="ig_a"><img src="images/ig_00.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_30.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_29.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_28.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_27.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_26.jpg"></div></a>        
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_25.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_24.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_23.jpg"></div></a>
+              <a href="javascript:void(0)"><div class="ig_a"><img src="images/ig_00.jpg"></div></a>
 
               
               
@@ -268,7 +272,7 @@ function showPop(thisId){
 
 
     <div class="Area4">
-        <img src="images/036_title_04.png" class="pcimg" alt="忙著看動漫~不一起入坑嗎？"><img src="images/036_title_m04.png" class="mobileimg" alt="忙著看動漫~不一起入坑嗎？">
+        <img src="images/036_title_04.png" class="pcimg" alt="忙著看動漫~不一起入坑嗎？" data-aos="fade-down"><img src="images/036_title_m04.png" class="mobileimg" alt="忙著看動漫~不一起入坑嗎？" data-aos="fade-down">
         
         <div class="comment_area">
                 
@@ -300,7 +304,7 @@ function showPop(thisId){
     <div class="clearNO"></div><!--解決高度問題-->
 
     <div class="Area5">
-        <a name="time"></a><img src="images/036_title_05.png" class="pcimg" alt="青春時光隧道"><img src="images/036_title_m05.png" class="mobileimg" alt="青春時光隧道">
+        <a name="time"></a><img src="images/036_title_05.png" class="pcimg" alt="青春時光隧道" data-aos="fade-down"><img src="images/036_title_m05.png" class="mobileimg" alt="青春時光隧道" data-aos="fade-down">
 
         <div class="timeArea">
         
@@ -332,7 +336,7 @@ function showPop(thisId){
 
 
     <div class="Area6">
-        <img src="images/036_title_06.png" width="100%" alt="進擊的錢包">
+        <img src="images/036_title_06.png" width="100%" alt="進擊的錢包" data-aos="fade-down">
 
         <div class="bnZone">
 
@@ -365,7 +369,7 @@ function showPop(thisId){
 
 
     <div class="Area7">
-        <img src="images/036_title_07.png" width="100%" alt="現在最夯的他們最懂">
+        <img src="images/036_title_07.png" width="100%" alt="現在最夯的他們最懂" data-aos="fade-down">
 
         <div class="boardcontent">
             <div class="bookbox">
@@ -519,5 +523,13 @@ $(function() {                                 //移動一段距離後再出現�
 });
 </script>
 
+<!---單元標_用這個回頭會再跑一次動態-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+	AOS.init({
+	  easing: 'ease-in-out-sine',
+	  duration: 500,
+	});
+</script>
 </body>
 </html>
