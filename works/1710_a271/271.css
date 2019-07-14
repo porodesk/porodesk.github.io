@@ -292,6 +292,7 @@ hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
 	.date{ width:97%; margin:0 auto; padding:0.5% 0 0.5% 1%; font-size:0.5em; float:none; }
 	.pchead{ display:none;}
 	.mobilehead{ display: block;}
+	.mobilehead img{ vertical-align:bottom;}
 	.mobilehead:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
 	.mobilehead .headm{ width:34%; float:left; }
 	.mobilehead .headm2{ width:66%; float:left; position:relative; }
