@@ -165,116 +165,117 @@ a.more:active{color:#c30416; font-weight:bold;text-decoration:none;}
 
 /*====================================================================================================================================*/
 @media screen and (max-width:767px) {
-.pcfloor { display:none;}
-.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
-.pcimg{ display:none;}
-.mobileimg{ display: block; width:100%;}
-
-/* 手機版TOP鈕 ----------------------*/
-.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
-
-/* 刊頭 */
-.date{ width:100%; margin:0 auto; padding:0.5% 0 0; font-size:9px; background:#f1db6c; text-align:center; color: #c0961e; font-family: "微軟正黑體" , "Calibri";}
-.pchead{ display:none;}
-.mobilehead{ display: block; width:100%; margin:0 auto; }
-.headarea{ width:100%; margin:0 auto; font-size:0; position:relative;}
-.stage1 img.one{ width:34%; display:inline-block;}
-.stage1 img.three{ width:66%; display:inline-block;}
-.fb_m{ width:100%; background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto; }
-.headarea .sharearea1{ width:100px; height:auto; position:absolute; bottom:9%; right:10%; z-index:2;}
-.topmenu{ width:100%; margin:1% auto 3%; text-align:center; }
-.topmenu ul{ margin:0 ; padding:0; text-align:center; }
-li.cbn{ width:18vw; height:18vw; background:none; margin:0 0.2% 3% 0.6%; float:left; color:#fff; font-size:0.8em; line-height:1.2em; position:relative; z-index:3;}
-li.cbn:hover{ background: none; color: #FF6;}
-li.cbn p{position:relative; z-index:1; }
-li.cbn img{ width:100%; position:absolute; top:0; bottom:0; left:0; right:0; z-index:0;}
-
-
-/* sharearea站上FB分享---------------------- */
-.sharearea2{margin:0 0 2% 0 ;padding:0;width:110px;height:auto; float:right; z-index:2; position:relative; right:0; display:none;}
-.share{float:left;margin:0;padding:0;width:47%;height:auto;}
-.sharearea1 .fbcount{ padding:0 0 0 7%;}
-.fbcount{float:right;margin:0;padding:0 0 0 6%;width:46%;height:20px;font-size:12px;line-height:20px;color:#3b3938;text-align:left;}
-.share a{display:block; height:20px; width:100%;}
-
-/* wrapper */
-.wrapper { width:100%; margin:0 auto; }
-.castleBG{ display:none;}
-
-/* 遊戲區 */
-.Area1{ width:100%; margin:0 auto 2%;}
-.Area1 .gameArea{ width:96%; }
-
-/* 青春關鍵字 */
-.swiper-container_week{ width:90%; height: auto; margin:0 auto; padding:0 0 1%; overflow:hidden;}
-.swiperregion_week .swiper-slide{width:30% !important; height:auto; margin:0 1%; }
-.swiper-container_week .swiper-button-next{right:-1%;width:5%; height:45px; background-size:20px 33px; }
-.swiper-container_week .swiper-button-prev{left:-1%;width:5%; height:45px; background-size:20px 33px; }
-.Area2 .menulist{ width:98%; height:auto; margin:0 auto 2%; }
-.Area2 .menulist img{ width:100%; height:auto; float:left; }
-.Area2 .menulist .ON img{ border-bottom:5px dotted rgba(255,61,142,0.6); }
-.Area2 .menulist a:hover > img { border-bottom:5px dotted rgba(255,61,142,1); }
-.bookcontent{ width:96%; height:auto; margin:0 auto; padding:1% 0 2%; background:none #fff; border-radius:10px;}
-.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.bookcontent .pic1,.pic2{ display:none;}
-.bookcontent .intro4{ width:96%; height:2.55em; padding:2% 0 0 0; margin:0 auto 2%; overflow:hidden; font-size:0.9em; color:#743cdc; letter-spacing:0.05em; line-height:1.3em;}
-.bookcontent .books{ width:97%; margin:0 auto; }
-.books .bookBOX{ width:30%; margin:0 1.5% 2% 1.5%; float:left;}
-.bookBOX_no{ display:none;}
-.books .book_name{ width:100%; margin:3px auto 0 auto; font-size:0.8em; color:#fb4b9a; line-height:1.25em; height:2.4em; overflow:hidden;}
-
-/* 作者生活IG */
-.ig{width:98%; }
-img.igbar02{ width:90%;}
-.ig_all{ width:98%; padding:0 1%; margin:0 auto; text-align:left;}
-.ig_a{width:30.5%; height:auto; margin:2% 1.2% 2% 1.4%;}
-
-/* 書評 */
-.comment_area{ width:100%; height:auto;}
-.commentbox{float:none; width:97%; margin:0 1.5% 2%;}
-
-/* 青春時光隧道 */
-.timeArea{ height:auto; position: static;}
-.timeArea .alltime{ width:100%; position:static; }
-.alltime img{ width:100%; float:none;}
-.timeArea .tree{ display:none;}
-/*--------------收合------------*/
-.oneTheme { margin:0 auto;}
-.otPadd2 { padding:2% 2% 60px 2%; position:relative; }
-/*--收合效果--*/
-.toggle-input { display:none;}
-.toggle-label { display:block; cursor:pointer; padding:7px; font-weight:600; background-color:#ffffff; border:#FE7BA7 1px solid; border-radius:8px; width:120px; text-align:center; color:#FE7BA7; position:absolute; bottom:13px; left:0; right:0; margin:0 auto; font-family:"微軟正黑體";}
-.toggle-label:before { content:"★展開全部★";}
-.toggle-input:checked ~ .toggle-label:before { content:"★收合★";}
-.toggle-content { max-height:800px; height:800px;/*展開前高度*/ overflow:hidden; -moz-transition:ease 0.8s max-height; -o-transition:ease 0.8s max-height; 
--webkit-transition:ease 0.8s max-height; transition:ease 0.8s max-height;} 
-.toggle-input:checked ~ .fix > .toggle-content { max-height:100%;/*展開後高度*/ height:auto; }
+	.pcfloor { display:none;}
+	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+	.pcimg{ display:none;}
+	.mobileimg{ display: block; width:100%;}
 	
-/* 進擊的錢包_BN輪播 */
-.Area6{ width:100%; margin:0 auto 3%; float:none;}
-.bnZone .bigBN{ width:90%; margin:0 auto 2%;}
-.bnZone .menulist{ width:98%; margin:0 auto;}
-.bnZone .menulist img{ width:100%; height:auto; margin:0 4px; float:left; }
-.swiper-container_bn{ width:90%; height: auto; margin:0 auto; overflow:hidden;}
-.swiperregion_bn .swiper-slide{width:30% !important; height:auto; margin:0 1%; }
-.swiper-container_bn .swiper-button-next{right:-1%;width:5%; height:45px; background-size:20px 33px; }
-.swiper-container_bn .swiper-button-prev{left:-1%;width:5%; height:45px; background-size:20px 33px; }
-
-/* 排行榜 */
-.Area7{ width:100%; margin:0 auto 3%; float:none;}
-.boardcontent{ width:95%; margin:0 auto;}
-.bookbox .spicon{ position: absolute; top:-8px; left:65px; float:left; z-index:3; }
-.bookbox .spicon2{ position: absolute; top:70px; left:3%; float:left; z-index:0; }
-.spicon2 img{ width:100%;}
-.bookbox .bookcolumn{ width:auto; height:250px; margin:0 auto; padding:0; z-index:1; position:relative; text-align:center;}
-.bookbox .bookcolumn img{ width:auto; height:100%; border:7px solid rgba(255,255,255,0.7);}
-.boardcontent .booktitle{ margin:4% auto 0;}
-.billboard{margin:0 auto;padding:0;width:295px; height:auto; overflow:hidden;}
-.billboardunit1 .ordercolumn{float:left;margin:0 0 15px 0;padding:0 ;width:18px;height:18px;text-align: center;background:#39b5f5; border-radius:999em;}
-.billboardunit1 .maincolumn{float:left;margin:0 0 0 3%;padding:0;width:88%;height:auto;}
-
-/* freepik圖片來源 */
-.freepik{ width:100%; height:30px; padding:2% 0 ; }
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+	
+	/* 刊頭 */
+	.date{ width:100%; margin:0 auto; padding:0.5% 0 0; font-size:9px; background:#f1db6c; text-align:center; color: #c0961e; font-family: "微軟正黑體" , "Calibri";}
+	.pchead{ display:none;}
+	.mobilehead{ display: block; width:100%; margin:0 auto; }
+	.headarea{ width:100%; margin:0 auto; font-size:0; position:relative;}
+	.headarea img{ vertical-align:bottom;}
+	.stage1 img.one{ width:34%; display:inline-block;}
+	.stage1 img.three{ width:66%; display:inline-block;}
+	.fb_m{ width:100%; background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto; }
+	.headarea .sharearea1{ width:100px; height:auto; position:absolute; bottom:9%; right:10%; z-index:2;}
+	.topmenu{ width:100%; margin:1% auto 3%; text-align:center; }
+	.topmenu ul{ margin:0 ; padding:0; text-align:center; }
+	li.cbn{ width:18vw; height:18vw; background:none; margin:0 0.2% 3% 0.6%; float:left; color:#fff; font-size:0.8em; line-height:1.2em; position:relative; z-index:3;}
+	li.cbn:hover{ background: none; color: #FF6;}
+	li.cbn p{position:relative; z-index:1; }
+	li.cbn img{ width:100%; position:absolute; top:0; bottom:0; left:0; right:0; z-index:0;}
+	
+	
+	/* sharearea站上FB分享---------------------- */
+	.sharearea2{margin:0 0 2% 0 ;padding:0;width:110px;height:auto; float:right; z-index:2; position:relative; right:0; display:none;}
+	.share{float:left;margin:0;padding:0;width:47%;height:auto;}
+	.sharearea1 .fbcount{ padding:0 0 0 7%;}
+	.fbcount{float:right;margin:0;padding:0 0 0 6%;width:46%;height:20px;font-size:12px;line-height:20px;color:#3b3938;text-align:left;}
+	.share a{display:block; height:20px; width:100%;}
+	
+	/* wrapper */
+	.wrapper { width:100%; margin:0 auto; }
+	.castleBG{ display:none;}
+	
+	/* 遊戲區 */
+	.Area1{ width:100%; margin:0 auto 2%;}
+	.Area1 .gameArea{ width:96%; }
+	
+	/* 青春關鍵字 */
+	.swiper-container_week{ width:90%; height: auto; margin:0 auto; padding:0 0 1%; overflow:hidden;}
+	.swiperregion_week .swiper-slide{width:30% !important; height:auto; margin:0 1%; }
+	.swiper-container_week .swiper-button-next{right:-1%;width:5%; height:45px; background-size:20px 33px; }
+	.swiper-container_week .swiper-button-prev{left:-1%;width:5%; height:45px; background-size:20px 33px; }
+	.Area2 .menulist{ width:98%; height:auto; margin:0 auto 2%; }
+	.Area2 .menulist img{ width:100%; height:auto; float:left; }
+	.Area2 .menulist .ON img{ border-bottom:5px dotted rgba(255,61,142,0.6); }
+	.Area2 .menulist a:hover > img { border-bottom:5px dotted rgba(255,61,142,1); }
+	.bookcontent{ width:96%; height:auto; margin:0 auto; padding:1% 0 2%; background:none #fff; border-radius:10px;}
+	.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.bookcontent .pic1,.pic2{ display:none;}
+	.bookcontent .intro4{ width:96%; height:2.55em; padding:2% 0 0 0; margin:0 auto 2%; overflow:hidden; font-size:0.9em; color:#743cdc; letter-spacing:0.05em; line-height:1.3em;}
+	.bookcontent .books{ width:97%; margin:0 auto; }
+	.books .bookBOX{ width:30%; margin:0 1.5% 2% 1.5%; float:left;}
+	.bookBOX_no{ display:none;}
+	.books .book_name{ width:100%; margin:3px auto 0 auto; font-size:0.8em; color:#fb4b9a; line-height:1.25em; height:2.4em; overflow:hidden;}
+	
+	/* 作者生活IG */
+	.ig{width:98%; }
+	img.igbar02{ width:90%;}
+	.ig_all{ width:98%; padding:0 1%; margin:0 auto; text-align:left;}
+	.ig_a{width:30.5%; height:auto; margin:2% 1.2% 2% 1.4%;}
+	
+	/* 書評 */
+	.comment_area{ width:100%; height:auto;}
+	.commentbox{float:none; width:97%; margin:0 1.5% 2%;}
+	
+	/* 青春時光隧道 */
+	.timeArea{ height:auto; position: static;}
+	.timeArea .alltime{ width:100%; position:static; }
+	.alltime img{ width:100%; float:none;}
+	.timeArea .tree{ display:none;}
+	/*--------------收合------------*/
+	.oneTheme { margin:0 auto;}
+	.otPadd2 { padding:2% 2% 60px 2%; position:relative; }
+	/*--收合效果--*/
+	.toggle-input { display:none;}
+	.toggle-label { display:block; cursor:pointer; padding:7px; font-weight:600; background-color:#ffffff; border:#FE7BA7 1px solid; border-radius:8px; width:120px; text-align:center; color:#FE7BA7; position:absolute; bottom:13px; left:0; right:0; margin:0 auto; font-family:"微軟正黑體";}
+	.toggle-label:before { content:"★展開全部★";}
+	.toggle-input:checked ~ .toggle-label:before { content:"★收合★";}
+	.toggle-content { max-height:800px; height:800px;/*展開前高度*/ overflow:hidden; -moz-transition:ease 0.8s max-height; -o-transition:ease 0.8s max-height; 
+	-webkit-transition:ease 0.8s max-height; transition:ease 0.8s max-height;} 
+	.toggle-input:checked ~ .fix > .toggle-content { max-height:100%;/*展開後高度*/ height:auto; }
+		
+	/* 進擊的錢包_BN輪播 */
+	.Area6{ width:100%; margin:0 auto 3%; float:none;}
+	.bnZone .bigBN{ width:90%; margin:0 auto 2%;}
+	.bnZone .menulist{ width:98%; margin:0 auto;}
+	.bnZone .menulist img{ width:100%; height:auto; margin:0 4px; float:left; }
+	.swiper-container_bn{ width:90%; height: auto; margin:0 auto; overflow:hidden;}
+	.swiperregion_bn .swiper-slide{width:30% !important; height:auto; margin:0 1%; }
+	.swiper-container_bn .swiper-button-next{right:-1%;width:5%; height:45px; background-size:20px 33px; }
+	.swiper-container_bn .swiper-button-prev{left:-1%;width:5%; height:45px; background-size:20px 33px; }
+	
+	/* 排行榜 */
+	.Area7{ width:100%; margin:0 auto 3%; float:none;}
+	.boardcontent{ width:95%; margin:0 auto;}
+	.bookbox .spicon{ position: absolute; top:-8px; left:65px; float:left; z-index:3; }
+	.bookbox .spicon2{ position: absolute; top:70px; left:3%; float:left; z-index:0; }
+	.spicon2 img{ width:100%;}
+	.bookbox .bookcolumn{ width:auto; height:250px; margin:0 auto; padding:0; z-index:1; position:relative; text-align:center;}
+	.bookbox .bookcolumn img{ width:auto; height:100%; border:7px solid rgba(255,255,255,0.7);}
+	.boardcontent .booktitle{ margin:4% auto 0;}
+	.billboard{margin:0 auto;padding:0;width:295px; height:auto; overflow:hidden;}
+	.billboardunit1 .ordercolumn{float:left;margin:0 0 15px 0;padding:0 ;width:18px;height:18px;text-align: center;background:#39b5f5; border-radius:999em;}
+	.billboardunit1 .maincolumn{float:left;margin:0 0 0 3%;padding:0;width:88%;height:auto;}
+	
+	/* freepik圖片來源 */
+	.freepik{ width:100%; height:30px; padding:2% 0 ; }
 
 	
 }

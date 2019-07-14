@@ -140,124 +140,124 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 
 /*===================================================================================================================================*/
 @media screen and (min-width:768px) and (max-width:1023px) {
-.pcfloor { display:none;}
-/* 手機版TOP鈕 ----------------------*/
-.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+	.pcfloor { display:none;}
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
 }
 
 /*====================================================================================================================================*/
 @media screen and (max-width:767px) {
-.pcfloor { display:none;}
-.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
-.AreaTitle { width:100%; margin:3% auto 0.5%;}/*標題圖片*/
-.mobileimg{ display:block;}/*手機版圖片*/
-.pcimg{ display:none;}/*PC版圖片*/
-
-/* 手機版TOP鈕 ----------------------*/
-.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
-
-/* 刊頭 */
-.pchead{ display:none;}
-.mobilehead{ display: block; width:100%; margin:0 auto; }
-.headm{ width:100%; position:relative; font-size:0;}
-.headm img{ width:100%; vertical-align:bottom;}
-.stage1{ width:100%; position:relative;}
-.stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
-.stage2{ width:100%; position:relative;}
-.stage2 .gift{ font-size: 10px; margin:0; position:absolute; bottom:0; right:22%;}
-.headm .fb-like{ margin:0; position:absolute; bottom:3%; left:5%; }
-img.p34{ width:34%;}
-img.p16{ width:16%;}
-img.p50{ width:50%;}
-
-/*-----跑馬燈-------*/
-.runTitle{ width:60%; margin:0 auto;}
-#myDiv2{ width:96%; margin:0 auto 3% auto; cursor:hand; overflow:hidden; }
-.runner1 { margin:0; padding:0; width:100%;}
-.runner1 td { height:140px;}
-.runner1 img{ height:140px; margin:0 10px; }
-.runword { width:90%; height:2.45em; overflow:hidden; margin:3px auto 0; font-family: "新細明體"; font-size:0.8em; line-height:1.2em; text-align:center; color:#333;}
-
-/* 紅白名台詞大賞 */
-.Area1{ width:100%; margin:0 auto; }
-.voteContent{ width:100%; height:auto; margin:0 auto;}
-.Area1 .votepic{ display:none;}
-
-/* 這本最厲害 */
-.Area2{ width:100%; margin:0 auto; }
-.Area2 .menulist{ width:99%; height:auto; margin:1.5% 0 0 1%; }
-.Area2 .menulist img{ width:32.3%; margin:0 1% 0.5% 0; float:left; }
-.Area2 .menulist .ON img{ border-bottom:4px dotted rgba(255,61,142,0.6); }
-.Area2 .menulist a:hover > img { border-bottom:4px dotted rgba(255,61,142,1); }
-.boardcontent{ width:100%; height:auto; margin:2% auto; }
-.Leftbox{ width:45%; margin:0 1% 0 1%; float:left; }
-.Rightbox{ width:53%; margin:0 ; float:left; }
-.Leftbox .top1{ width:100%; margin:0 0 2% 0; padding:0 0 2% 0; border:1px solid #ffd3d6; box-sizing:border-box;}
-.top1 .cover{ width:90%; height:auto; margin:3% auto; overflow:hidden;}
-.top1 .book_name{ width:96%; margin:0 auto 3% auto; font-size:1em; font-weight:bold; color:#87122b; line-height:1.3em; height:2.58em; overflow:hidden;}
-.top1 .author{ width:96%; margin:0 auto 3% auto; font-size:0.9em; color:#3c3c3c; height:1.3em; overflow:hidden;}
-.top1 .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.9em; font-weight:bold; color:#ff5b85; line-height:1.3em; height:6.5em; overflow:hidden;}
-.more{ width:98%; margin:10px auto 0; text-align:center; }
-
-.Rightbox .topS{ width:49%; margin:0 1% 2% 0; padding:0 0 5px 0; float:left; border:1px solid #ffd3d6; box-sizing:border-box; text-align:center;}
-.topS .cover{ width:90%; height:auto; margin:1.5% auto 1%; overflow:hidden;}
-.topS .book_name{ width:96%; margin:0 auto 3% auto; font-size:0.9em; font-weight:bold; color:#87122b; line-height:1.2em; height:2.4em; overflow:hidden;}
-.topS .author{ width:96%; margin:0 auto 4% auto; font-size:0.8em; color:#3c3c3c; height:1.2em; overflow:hidden;}
-.topS .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.8em; color:#ff5b85; line-height:1.2em; height:3.5em; overflow:hidden;}
-#noshow{ display:none;}
-
-/* 世代最愛排行 */
-.Area3{ width:100%; margin:0 auto; }
-.Area3 .menulist{ width:98%; margin:1.5% auto; }
-.Area3 .menulist img{ width:20%; margin:0; float:left;}
-.Area3 .menulist .ON img{ border-bottom:4px solid rgba(255,252,4,1); }
-.Area3 .menulist a:hover > img { border-bottom:4px solid rgba(255,61,142,1); }
-.AgeContent{ width:98%; margin:-2% auto 0; padding:2% 1% ; border:6px solid rgba(255,172,189,0.7); border-radius:10px; }
-.AgeContent .ageBOX{ width:48%; margin:0 1% 4% 1%; float:left;}
-.txtBG{ display:block; width:100%; height:3.4em; margin:0 auto; background:url(../images/453_age_txt.png) no-repeat; background-size:100% 3.4em; overflow:hidden; position:relative;}
-.txtBG .txt{ width:100%; height:2.8em; margin:0 auto; padding:3% 3% 0; box-sizing:border-box; background:none; font-size:0.9em; line-height:1.25em; overflow:hidden; position:absolute; }
-.ageBOX .cover{ width:100%; padding:4px; border:1px solid #c0c0c0; margin:0 auto;}
-.ageBOX .book_name{ width:100%; height:2.9em; margin:0 auto; padding:4px 4px 4px 6px; font-size:0.9em; line-height:1.26em; overflow:hidden; }
-.ageBOX .author{ width:95%; height:1.2em; margin:1.5% auto 0; font-size:0.8em; }
-
-/* 出版社超低優惠 */
-.Area4{ width:100%; margin:0 auto; }
-.publishArea{ width:100%; height:auto; margin:0 auto; padding:0; text-align:center; }
-.pubBigBN { width: 98%; margin:1% auto 0;}
-.publishArea .btns{ width:100%; height: auto; margin:3px 0 0 0; padding:0 0 0 1%; font-size:0.9em; font-weight: normal; box-sizing:border-box; }
-.btns .pubBN{ width:24.2%; height:auto; margin:1px ; padding:7px 0; float:left; background:none #f13369; color:#fff; border-radius:4px; }
-a:hover .pubBN{background:none #1a73d7; color:#ffff00; }
-.btns .ON{background:none #1a73d7; color:#ffff00;}
-
-/* 動漫精品 */
-.Area5{ width:100%; margin:0 auto; }
-.productArea{ width:98%; margin:1.5% auto ; }
-.productbox{ width:48%; height: auto; float:left; margin: 0 1% 2% 1%; box-sizing:border-box; background: none #fff; border:3px solid #d4ba63; border-radius:10px;}
-.productbox .ptitle{ width:96%; height:2.1em; font-size:0.9em; font-family:微軟正黑體,新細明體; line-height:1.1em; margin:4.8% auto 1% ; padding:1.5%; background:#3271c6;}
-.productbox img{ width:95%; height:auto; border:0; margin:3px auto 5px auto;}
-.productbox .pname{ width:90%; height:2.45em; font-size:0.9em; font-family:微軟正黑體,新細明體; line-height:1.2em; font-weight: normal; text-align:center; margin:0 auto 2%; }
-/* 正方形上稿BN_bn ------------------------ */
-.swiperregion_bn{position:relative;margin:0 auto; width:95%; height:auto; text-align:center;}
-.swiper-container_bn .swiper-slide{width:50% !important;}/*BN大小*/
-.swiper-container_bn .bnslide{ margin:0 1.5%;}/*BN間距*/
-.swiper-container_bn .swiper-button-next
-{position:absolute;right:-2.5%;width:6%;height:60px;background:#fb4183 url(../images/icon-ar-right-w.png) center center no-repeat;background-size:9px 16px;}
-.swiper-container_bn .swiper-button-prev
-{position:absolute;left:-2.5%;width:6%;height:60px;background:#fb4183 url(../images/icon-ar-left-w.png) center center no-repeat;background-size:9px 16px;}
-
-/* 最新輕動漫 */
-.Area6{ width:100%; margin:0 auto; }
-.addlist{ width:96%; height:auto; margin:2% auto; position: static; }
-.addlist img{ width:100%;}
-.addlist .addbn1,
-.addlist .addbn2,
-.addlist .addbn3,
-.addlist .addbn4,
-.addlist .addbn5,
-.addlist .addbn6,
-.addlist .addbn7,
-.addlist .addbn8{ width:48%; position:static; float:left; margin:0 1% 2% 1%; }
-.addpic{ display:none;}
-
+	.pcfloor { display:none;}
+	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+	.AreaTitle { width:100%; margin:3% auto 0.5%;}/*標題圖片*/
+	.mobileimg{ display:block;}/*手機版圖片*/
+	.pcimg{ display:none;}/*PC版圖片*/
+	
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+	
+	/* 刊頭 */
+	.pchead{ display:none;}
+	.mobilehead{ display: block; width:100%; margin:0 auto; }
+	.headm{ width:100%; position:relative; font-size:0;}
+	.headm img{ width:100%; vertical-align:bottom;}
+	.stage1{ width:100%; position:relative;}
+	.stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
+	.stage2{ width:100%; position:relative;}
+	.stage2 .gift{ font-size: 10px; margin:0; position:absolute; bottom:0; right:22%;}
+	.headm .fb-like{ margin:0; position:absolute; bottom:3%; left:5%; }
+	img.p34{ width:34%; display:inline-block;}
+	img.p16{ width:16%; display:inline-block;}
+	img.p50{ width:50%; display:inline-block;}
+	
+	/*-----跑馬燈-------*/
+	.runTitle{ width:60%; margin:0 auto;}
+	#myDiv2{ width:96%; margin:0 auto 3% auto; cursor:hand; overflow:hidden; }
+	.runner1 { margin:0; padding:0; width:100%;}
+	.runner1 td { height:140px;}
+	.runner1 img{ height:140px; margin:0 10px; }
+	.runword { width:90%; height:2.45em; overflow:hidden; margin:3px auto 0; font-family: "新細明體"; font-size:0.8em; line-height:1.2em; text-align:center; color:#333;}
+	
+	/* 紅白名台詞大賞 */
+	.Area1{ width:100%; margin:0 auto; }
+	.voteContent{ width:100%; height:auto; margin:0 auto;}
+	.Area1 .votepic{ display:none;}
+	
+	/* 這本最厲害 */
+	.Area2{ width:100%; margin:0 auto; }
+	.Area2 .menulist{ width:99%; height:auto; margin:1.5% 0 0 1%; }
+	.Area2 .menulist img{ width:32.3%; margin:0 1% 0.5% 0; float:left; }
+	.Area2 .menulist .ON img{ border-bottom:4px dotted rgba(255,61,142,0.6); }
+	.Area2 .menulist a:hover > img { border-bottom:4px dotted rgba(255,61,142,1); }
+	.boardcontent{ width:100%; height:auto; margin:2% auto; }
+	.Leftbox{ width:45%; margin:0 1% 0 1%; float:left; }
+	.Rightbox{ width:53%; margin:0 ; float:left; }
+	.Leftbox .top1{ width:100%; margin:0 0 2% 0; padding:0 0 2% 0; border:1px solid #ffd3d6; box-sizing:border-box;}
+	.top1 .cover{ width:90%; height:auto; margin:3% auto; overflow:hidden;}
+	.top1 .book_name{ width:96%; margin:0 auto 3% auto; font-size:1em; font-weight:bold; color:#87122b; line-height:1.3em; height:2.58em; overflow:hidden;}
+	.top1 .author{ width:96%; margin:0 auto 3% auto; font-size:0.9em; color:#3c3c3c; height:1.3em; overflow:hidden;}
+	.top1 .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.9em; font-weight:bold; color:#ff5b85; line-height:1.3em; height:6.5em; overflow:hidden;}
+	.more{ width:98%; margin:10px auto 0; text-align:center; }
+	
+	.Rightbox .topS{ width:49%; margin:0 1% 2% 0; padding:0 0 5px 0; float:left; border:1px solid #ffd3d6; box-sizing:border-box; text-align:center;}
+	.topS .cover{ width:90%; height:auto; margin:1.5% auto 1%; overflow:hidden;}
+	.topS .book_name{ width:96%; margin:0 auto 3% auto; font-size:0.9em; font-weight:bold; color:#87122b; line-height:1.2em; height:2.4em; overflow:hidden;}
+	.topS .author{ width:96%; margin:0 auto 4% auto; font-size:0.8em; color:#3c3c3c; height:1.2em; overflow:hidden;}
+	.topS .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.8em; color:#ff5b85; line-height:1.2em; height:3.5em; overflow:hidden;}
+	#noshow{ display:none;}
+	
+	/* 世代最愛排行 */
+	.Area3{ width:100%; margin:0 auto; }
+	.Area3 .menulist{ width:98%; margin:1.5% auto; }
+	.Area3 .menulist img{ width:20%; margin:0; float:left;}
+	.Area3 .menulist .ON img{ border-bottom:4px solid rgba(255,252,4,1); }
+	.Area3 .menulist a:hover > img { border-bottom:4px solid rgba(255,61,142,1); }
+	.AgeContent{ width:98%; margin:-2% auto 0; padding:2% 1% ; border:6px solid rgba(255,172,189,0.7); border-radius:10px; }
+	.AgeContent .ageBOX{ width:48%; margin:0 1% 4% 1%; float:left;}
+	.txtBG{ display:block; width:100%; height:3.4em; margin:0 auto; background:url(../images/453_age_txt.png) no-repeat; background-size:100% 3.4em; overflow:hidden; position:relative;}
+	.txtBG .txt{ width:100%; height:2.8em; margin:0 auto; padding:3% 3% 0; box-sizing:border-box; background:none; font-size:0.9em; line-height:1.25em; overflow:hidden; position:absolute; }
+	.ageBOX .cover{ width:100%; padding:4px; border:1px solid #c0c0c0; margin:0 auto;}
+	.ageBOX .book_name{ width:100%; height:2.9em; margin:0 auto; padding:4px 4px 4px 6px; font-size:0.9em; line-height:1.26em; overflow:hidden; }
+	.ageBOX .author{ width:95%; height:1.2em; margin:1.5% auto 0; font-size:0.8em; }
+	
+	/* 出版社超低優惠 */
+	.Area4{ width:100%; margin:0 auto; }
+	.publishArea{ width:100%; height:auto; margin:0 auto; padding:0; text-align:center; }
+	.pubBigBN { width: 98%; margin:1% auto 0;}
+	.publishArea .btns{ width:100%; height: auto; margin:3px 0 0 0; padding:0 0 0 1%; font-size:0.9em; font-weight: normal; box-sizing:border-box; }
+	.btns .pubBN{ width:24.2%; height:auto; margin:1px ; padding:7px 0; float:left; background:none #f13369; color:#fff; border-radius:4px; }
+	a:hover .pubBN{background:none #1a73d7; color:#ffff00; }
+	.btns .ON{background:none #1a73d7; color:#ffff00;}
+	
+	/* 動漫精品 */
+	.Area5{ width:100%; margin:0 auto; }
+	.productArea{ width:98%; margin:1.5% auto ; }
+	.productbox{ width:48%; height: auto; float:left; margin: 0 1% 2% 1%; box-sizing:border-box; background: none #fff; border:3px solid #d4ba63; border-radius:10px;}
+	.productbox .ptitle{ width:96%; height:2.1em; font-size:0.9em; font-family:微軟正黑體,新細明體; line-height:1.1em; margin:4.8% auto 1% ; padding:1.5%; background:#3271c6;}
+	.productbox img{ width:95%; height:auto; border:0; margin:3px auto 5px auto;}
+	.productbox .pname{ width:90%; height:2.45em; font-size:0.9em; font-family:微軟正黑體,新細明體; line-height:1.2em; font-weight: normal; text-align:center; margin:0 auto 2%; }
+	/* 正方形上稿BN_bn ------------------------ */
+	.swiperregion_bn{position:relative;margin:0 auto; width:95%; height:auto; text-align:center;}
+	.swiper-container_bn .swiper-slide{width:50% !important;}/*BN大小*/
+	.swiper-container_bn .bnslide{ margin:0 1.5%;}/*BN間距*/
+	.swiper-container_bn .swiper-button-next
+	{position:absolute;right:-2.5%;width:6%;height:60px;background:#fb4183 url(../images/icon-ar-right-w.png) center center no-repeat;background-size:9px 16px;}
+	.swiper-container_bn .swiper-button-prev
+	{position:absolute;left:-2.5%;width:6%;height:60px;background:#fb4183 url(../images/icon-ar-left-w.png) center center no-repeat;background-size:9px 16px;}
+	
+	/* 最新輕動漫 */
+	.Area6{ width:100%; margin:0 auto; }
+	.addlist{ width:96%; height:auto; margin:2% auto; position: static; }
+	.addlist img{ width:100%;}
+	.addlist .addbn1,
+	.addlist .addbn2,
+	.addlist .addbn3,
+	.addlist .addbn4,
+	.addlist .addbn5,
+	.addlist .addbn6,
+	.addlist .addbn7,
+	.addlist .addbn8{ width:48%; position:static; float:left; margin:0 1% 2% 1%; }
+	.addpic{ display:none;}
+	
 	
 }
