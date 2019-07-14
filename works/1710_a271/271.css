@@ -44,8 +44,8 @@ map *:focus{outline:none; /* for Chrome 消除MAP藍框 */}
 .bookcontent .intro4{ width:90%; height:30px; padding:18px 0 0 0; margin:0 auto 18px; overflow:hidden; font-size:1.1em; color:#743cdc; letter-spacing:0.05em;}
 .intro4 span{ color:#fff; background:#743cdc; padding:3px 5px;}
 .bookcontent .books{ width:900px; margin:0 auto; }
-.books .bookBOX{ width:17.5%; margin:0 15px 2% 7px; float:left;}
-.books .bookBOX_no{ width:17.5%; margin:0 15px 2% 7px; float:left;}
+.books .bookBOX{ width:17.5%; margin:0 7px 2% 7px; display:inline-block;}
+.books .bookBOX_no{ width:17.5%; margin:0 7px 2% 7px; display:inline-block;}
 .books img{ width:95%; border:1px solid #d2d2d2; background-color:#fff; padding:5px;}
 .books .book_name{ width:100%; margin:3px auto 0 auto; font-size:1em; color:#fb4b9a; line-height:1.3em; height:2.5em; overflow:hidden;}
 .books a{text-decoration:none;}
@@ -167,229 +167,229 @@ hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
 
 /*===================================================================================================================================*/
 @media screen and (min-width:768px) and (max-width:1023px) {
-.pcfloor { display:none;}
-.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
-.titleimg { width:96%; margin:2% auto 1%; }/*標題圖片*/
-
-/* 手機版TOP鈕 ----------------------*/
-.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
-
-/* 刊頭 */
-.headArea{ width:100%; margin:0 auto; padding:0 0 1% 0; background:url(images/271_headbg.jpg) #f8ebf2;}
-.date{ width:97%; margin:0 auto; padding:0.5% 0 0 1%; font-size:0.9em; float:none; }
-.pchead{ display:none;}
-.mobilehead{ display: block; }
-.mobilehead:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.mobilehead .headm{ width:34%; float:left; }
-.mobilehead .headm2{ width:66%; float:left; position:relative; }
-.mobilehead .headm3{ width:34%; float:left; position:relative; }
-.mobilehead .headm4{ width:66%; float:left; }
-.headm4 img{ width:100%; max-width:100%;}
-.headm2 .headmtitle{ width:85%; position: absolute; right:3%; z-index:3;}
-.headm3 .headfb{ width:40%; position: absolute; left:8%; bottom:3%; z-index:3; }
-
-
-/* BL當代藝術館 */
-.Area1content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
-.Area1 .menulist{ width:98%; height:auto; margin:0 auto; background:none;}
-.Area1 .menulist img{ width:25%; height:auto; float:left; }
-.Area1 .menulist .ON img{ border-bottom:6px dotted rgba(255,61,142,0.6);  }
-.Area1 .menulist a:hover > img { border-bottom:6px dotted rgba(255,61,142,1); }
-.bookcontent{ width:96%; height:auto; background:none rgba(255,255,255,0.7); margin:0 auto;}
-.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.bookcontent .intro4{ width:96%; height:2.5em; padding:2% 0 0 0; margin:0 auto 0.5%; overflow:hidden; line-height:1.4em;}
-.bookcontent .books{ width:97%; margin:0 auto; }
-.books .bookBOX{ width:18%; margin:0 1% 2% 1%; float:left;}
-.books .bookBOX_no{ width:18%; margin:0 1% 2% 1%; float:left;}
-
-/* 遊戲區 */
-.Area2content{ width:100%; margin:0 auto; padding:0 0 1.5%;}
-.Area2content .gameArea{ width:96%;}
-
-/* 腐女聊天室 */
-.Area3content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; background:url(images/271_chatbg.png) center 15% no-repeat; background-size:100% auto; text-align:center; position: static;}
-.Area3content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.Area3 .menulist{ width:96%; margin:1% auto; position: static;}
-.Area3 .menulist img{ width:100%; }
-.Area3 .menulist .ON img{ -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
-.Area3 .menulist a:hover > img { -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
-.menulist .cbn1,.menulist .cbn2,.menulist .cbn3,.menulist .cbn4,.menulist .cbn5{ width:50%; float:left;}
-.menulist .cbn1 img,.menulist .cbn3 img,.menulist .cbn5 img{ margin:6px 0 0 -5%;}
-
-.Area3content .plurkArea{ width:97%; margin:1.5% auto; float:none;}
-.plurkArea .chatBOX{ width:86%; height:640px; float:right; background-color:#fff; padding:1% 0 0 1%; box-sizing:border-box; box-shadow:4px 4px 1px rgba(51,51,51,0.4);}
-.talkbox{ width:100%; font-size:15px; line-height:1.4em; padding:0 1.5% 0 0; margin:0 0 3%; box-sizing:border-box; text-align:left;}
-hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
-.scrollarea{ width:100%; height:300px; overflow-x:hidden; overflow-y:auto;}
-.icons2{ width:99%; text-align: center; margin:0 0 2% 0;}/*最下面的icon*/
-.morebn{ width:99%; text-align: center; margin:0 0 1% 0; padding:2% 0; color:#fff; font-size:1.2em; font-family:"微軟正黑體"; letter-spacing:0.05em;background-color:#ff5c41; border-radius:4px;}
-
-
-/* 關鍵字 */
-.Area4content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
-.Area4 .keylist{ width:98%; margin:0 auto; font-size:0;}
-.keylist .kbn,
-.keylist .kbn_no{ width:19%; height:auto; margin:1% 3px 0 3px ; display:inline-block; vertical-align: middle; }
-
-/* 這本BL不得了 */
-.Area5content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; text-align:center;}
-.Area5 .menulist{ width:98%; margin:0 auto; }
-.Area5 .menulist img{ width:25%; height:auto; float:left; }
-.Area5 .menulist .ON img{ border-bottom:6px dotted rgba(255,61,142,0.6);  }
-.Area5 .menulist a:hover > img { border-bottom:6px dotted rgba(255,61,142,1); }
-
-.boardcontent{ width:98%; height:auto; margin:0 auto; padding:2%; box-sizing:border-box; }
-.boardcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.Leftbox{ width:32%; margin:0 2% 0 2%; float:left; }
-.Rightbox{ width:64%; margin:0 ; float:left; }
-.Leftbox .top1{ width:100%; margin:0 0 2% 0; padding:0 0 3% 0;}
-.top1 .cover{ width:90%; height:auto; margin:2% auto; overflow:hidden;}
-.top1 .book_name{ width:95%; margin:0 auto 3% auto; font-size:18px; font-weight:bold; color:#87122b; line-height:1.4em; height:2.6em; overflow:hidden;}
-.top1 .author{ width:95%; margin:0 auto 3% auto; font-size:15px; color:#3c3c3c; height:1.3em; overflow:hidden;}
-.top1 .txt{ width:95%; margin:0 auto; padding:0; font-size:17px; font-weight:bold; color:#ff5b85; line-height:1.35em; height:4em; overflow:hidden;}
-.more{ width:98%; margin:15px auto 0; text-align:center; }
-
-.Rightbox .topS{ width:32%; margin:0 1% 2% 0; padding:0 0 10px 0; float:left; }
-.topS .cover{ width:90%; height:auto; margin:1.5% auto 1%; overflow:hidden;}
-.topS .book_name{ width:96%; margin:0 auto 3% auto; font-size:15px; font-weight:bold; color:#87122b; line-height:1.3em; height:2.45em; overflow:hidden;}
-.topS .author{ width:96%; margin:0 auto 3% auto; font-size:13px; color:#3c3c3c; height:1.2em; overflow:hidden;}
-.topS .txt{ width:96%; margin:0 auto; padding:0 ; font-size:15px; color:#ff5b85; line-height:1.3em; height:2.45em; overflow:hidden;}
-
-/* 為老師們瘋狂打CALL */
-.Area6content{ width:100%; margin:0 auto; padding:0 0 1.5%;  }
-
-/* 出版社區 */
-.Area7content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%;}
-.Area7 .publishlist{ width:98%; margin:0 auto; font-size:0;}
-.publishlist .pbn{ width:31%; margin:1% 1% 0 1%; display:inline-block; }
-
-/* 阿腐福利社 */
-.Area8content{ width:100%; height:auto; margin:0 auto; padding:0 0 3%; position:static; text-align:center;}
-.Area8content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.Area8content .addpic{ width:49%; position: static; z-index:1; float:left;}
-.Area8content .addlist{ width:48%; position: static; z-index:2; right:3%; float:left;}
-.addlist .addbn1,
-.addlist .addbn2,
-.addlist .addbn3{ position: static; margin:0 0 3%; }
-.addlist .addbn4{ position: static; margin:0 0 10%; }
-.addbn2 img,.addbn3 img,.addbn4 img{ width:80%;}
-/* freepik圖片來源 */
-.Area8content .freepik{ position: static; margin:0 auto ; width:100%; padding:0 0 1% 0; font-size:0.6em; }
+	.pcfloor { display:none;}
+	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+	.titleimg { width:96%; margin:2% auto 1%; }/*標題圖片*/
+	
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+	
+	/* 刊頭 */
+	.headArea{ width:100%; margin:0 auto; padding:0 0 1% 0; background:url(images/271_headbg.jpg) #f8ebf2;}
+	.date{ width:97%; margin:0 auto; padding:0.5% 0 0 1%; font-size:0.9em; float:none; }
+	.pchead{ display:none;}
+	.mobilehead{ display: block; }
+	.mobilehead:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.mobilehead .headm{ width:34%; float:left; }
+	.mobilehead .headm2{ width:66%; float:left; position:relative; }
+	.mobilehead .headm3{ width:34%; float:left; position:relative; }
+	.mobilehead .headm4{ width:66%; float:left; }
+	.headm4 img{ width:100%; max-width:100%;}
+	.headm2 .headmtitle{ width:85%; position: absolute; right:3%; z-index:3;}
+	.headm3 .headfb{ width:40%; position: absolute; left:8%; bottom:3%; z-index:3; }
+	
+	
+	/* BL當代藝術館 */
+	.Area1content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
+	.Area1 .menulist{ width:98%; height:auto; margin:0 auto; background:none;}
+	.Area1 .menulist img{ width:25%; height:auto; float:left; }
+	.Area1 .menulist .ON img{ border-bottom:6px dotted rgba(255,61,142,0.6);  }
+	.Area1 .menulist a:hover > img { border-bottom:6px dotted rgba(255,61,142,1); }
+	.bookcontent{ width:96%; height:auto; background:none rgba(255,255,255,0.7); margin:0 auto;}
+	.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.bookcontent .intro4{ width:96%; height:2.5em; padding:2% 0 0 0; margin:0 auto 0.5%; overflow:hidden; line-height:1.4em;}
+	.bookcontent .books{ width:97%; margin:0 auto; }
+	.books .bookBOX{ width:18%; margin:0 1% 2% 1%; float:left;}
+	.books .bookBOX_no{ width:18%; margin:0 1% 2% 1%; float:left;}
+	
+	/* 遊戲區 */
+	.Area2content{ width:100%; margin:0 auto; padding:0 0 1.5%;}
+	.Area2content .gameArea{ width:96%;}
+	
+	/* 腐女聊天室 */
+	.Area3content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; background:url(images/271_chatbg.png) center 15% no-repeat; background-size:100% auto; text-align:center; position: static;}
+	.Area3content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.Area3 .menulist{ width:96%; margin:1% auto; position: static;}
+	.Area3 .menulist img{ width:100%; }
+	.Area3 .menulist .ON img{ -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
+	.Area3 .menulist a:hover > img { -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
+	.menulist .cbn1,.menulist .cbn2,.menulist .cbn3,.menulist .cbn4,.menulist .cbn5{ width:50%; float:left;}
+	.menulist .cbn1 img,.menulist .cbn3 img,.menulist .cbn5 img{ margin:6px 0 0 -5%;}
+	
+	.Area3content .plurkArea{ width:97%; margin:1.5% auto; float:none;}
+	.plurkArea .chatBOX{ width:86%; height:640px; float:right; background-color:#fff; padding:1% 0 0 1%; box-sizing:border-box; box-shadow:4px 4px 1px rgba(51,51,51,0.4);}
+	.talkbox{ width:100%; font-size:15px; line-height:1.4em; padding:0 1.5% 0 0; margin:0 0 3%; box-sizing:border-box; text-align:left;}
+	hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
+	.scrollarea{ width:100%; height:300px; overflow-x:hidden; overflow-y:auto;}
+	.icons2{ width:99%; text-align: center; margin:0 0 2% 0;}/*最下面的icon*/
+	.morebn{ width:99%; text-align: center; margin:0 0 1% 0; padding:2% 0; color:#fff; font-size:1.2em; font-family:"微軟正黑體"; letter-spacing:0.05em;background-color:#ff5c41; border-radius:4px;}
+	
+	
+	/* 關鍵字 */
+	.Area4content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
+	.Area4 .keylist{ width:98%; margin:0 auto; font-size:0;}
+	.keylist .kbn,
+	.keylist .kbn_no{ width:19%; height:auto; margin:1% 3px 0 3px ; display:inline-block; vertical-align: middle; }
+	
+	/* 這本BL不得了 */
+	.Area5content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; text-align:center;}
+	.Area5 .menulist{ width:98%; margin:0 auto; }
+	.Area5 .menulist img{ width:25%; height:auto; float:left; }
+	.Area5 .menulist .ON img{ border-bottom:6px dotted rgba(255,61,142,0.6);  }
+	.Area5 .menulist a:hover > img { border-bottom:6px dotted rgba(255,61,142,1); }
+	
+	.boardcontent{ width:98%; height:auto; margin:0 auto; padding:2%; box-sizing:border-box; }
+	.boardcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.Leftbox{ width:32%; margin:0 2% 0 2%; float:left; }
+	.Rightbox{ width:64%; margin:0 ; float:left; }
+	.Leftbox .top1{ width:100%; margin:0 0 2% 0; padding:0 0 3% 0;}
+	.top1 .cover{ width:90%; height:auto; margin:2% auto; overflow:hidden;}
+	.top1 .book_name{ width:95%; margin:0 auto 3% auto; font-size:18px; font-weight:bold; color:#87122b; line-height:1.4em; height:2.6em; overflow:hidden;}
+	.top1 .author{ width:95%; margin:0 auto 3% auto; font-size:15px; color:#3c3c3c; height:1.3em; overflow:hidden;}
+	.top1 .txt{ width:95%; margin:0 auto; padding:0; font-size:17px; font-weight:bold; color:#ff5b85; line-height:1.35em; height:4em; overflow:hidden;}
+	.more{ width:98%; margin:15px auto 0; text-align:center; }
+	
+	.Rightbox .topS{ width:32%; margin:0 1% 2% 0; padding:0 0 10px 0; float:left; }
+	.topS .cover{ width:90%; height:auto; margin:1.5% auto 1%; overflow:hidden;}
+	.topS .book_name{ width:96%; margin:0 auto 3% auto; font-size:15px; font-weight:bold; color:#87122b; line-height:1.3em; height:2.45em; overflow:hidden;}
+	.topS .author{ width:96%; margin:0 auto 3% auto; font-size:13px; color:#3c3c3c; height:1.2em; overflow:hidden;}
+	.topS .txt{ width:96%; margin:0 auto; padding:0 ; font-size:15px; color:#ff5b85; line-height:1.3em; height:2.45em; overflow:hidden;}
+	
+	/* 為老師們瘋狂打CALL */
+	.Area6content{ width:100%; margin:0 auto; padding:0 0 1.5%;  }
+	
+	/* 出版社區 */
+	.Area7content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%;}
+	.Area7 .publishlist{ width:98%; margin:0 auto; font-size:0;}
+	.publishlist .pbn{ width:31%; margin:1% 1% 0 1%; display:inline-block; }
+	
+	/* 阿腐福利社 */
+	.Area8content{ width:100%; height:auto; margin:0 auto; padding:0 0 3%; position:static; text-align:center;}
+	.Area8content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.Area8content .addpic{ width:49%; position: static; z-index:1; float:left;}
+	.Area8content .addlist{ width:48%; position: static; z-index:2; right:3%; float:left;}
+	.addlist .addbn1,
+	.addlist .addbn2,
+	.addlist .addbn3{ position: static; margin:0 0 3%; }
+	.addlist .addbn4{ position: static; margin:0 0 10%; }
+	.addbn2 img,.addbn3 img,.addbn4 img{ width:80%;}
+	/* freepik圖片來源 */
+	.Area8content .freepik{ position: static; margin:0 auto ; width:100%; padding:0 0 1% 0; font-size:0.6em; }
 
 }
 
 /*====================================================================================================================================*/
 @media screen and (max-width:767px) {
-.pcfloor { display:none;}
-.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
-.titleimg { width:96%; margin:2% auto 1%;}/*標題圖片*/
-
-/* 手機版TOP鈕 ----------------------*/
-.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
-
-/* 刊頭 */
-.headArea{ width:100%; margin:0 auto; padding:0 0 1% 0; background:url(images/271_headbg.jpg) fixed #f8ebf2;}
-.date{ width:97%; margin:0 auto; padding:0.5% 0 0.5% 1%; font-size:0.5em; float:none; }
-.pchead{ display:none;}
-.mobilehead{ display: block;}
-.mobilehead:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.mobilehead .headm{ width:34%; float:left; }
-.mobilehead .headm2{ width:66%; float:left; position:relative; }
-.mobilehead .headm3{ width:34%; float:left; position:relative; }
-.mobilehead .headm4{ width:66%; float:left; }
-.headm4 img{ width:100%; max-width:100%;}
-.headm2 .headmtitle{ width:85%; position: absolute; right:3%; z-index:3;}
-.headm3 .headfb{ width:40%; position: absolute; left:8%; bottom:3%; z-index:3; }
-
-/* BL當代藝術館 */
-.Area1content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
-.Area1 .menulist{ width:98%; height:auto; margin:0 auto; background:none;}
-.Area1 .menulist img{ width:25%; height:auto; float:left; }
-.Area1 .menulist .ON img{ border-bottom:5px dotted rgba(255,61,142,0.6);  }
-.Area1 .menulist a:hover > img { border-bottom:5px dotted rgba(255,61,142,1); }
-.bookcontent{ width:96%; height:auto; background:none rgba(255,255,255,0.7); margin:0 auto;}
-.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.bookcontent .intro4{ width:96%; height:2.55em; padding:2% 0 0 0; margin:0 auto 2%; overflow:hidden; font-size:0.9em; color:#743cdc; letter-spacing:0.05em; line-height:1.3em;}
-.bookcontent .books{ width:97%; margin:0 auto; }
-.books .bookBOX{ width:30%; margin:0 1.5% 2% 1.5%; float:left;}
-.bookBOX_no{ display:none;}
-.books .book_name{ width:100%; margin:3px auto 0 auto; font-size:0.8em; color:#fb4b9a; line-height:1.25em; height:2.4em; overflow:hidden;}
-
-/* 遊戲區 */
-.Area2content{ width:100%; margin:0 auto; padding:0 0 1.5%;}
-.Area2content .gameArea{ width:96%; }
-
-/* 腐女聊天室 */
-.Area3content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; background:url(images/271_chatbg.png) center 15% no-repeat; background-size:100% auto; text-align:center; position: static;}
-.Area3content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.Area3 .menulist{ width:96%; margin:1% auto; position: static;}
-.Area3 .menulist img{ width:100%; }
-.Area3 .menulist .ON img{ -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
-.Area3 .menulist a:hover > img { -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
-.menulist .cbn1,.menulist .cbn2,.menulist .cbn3,.menulist .cbn4,.menulist .cbn5{ width:50%; float:left;}
-.menulist .cbn1 img,.menulist .cbn3 img,.menulist .cbn5 img{ margin:0 0 0 -7%;}
-
-.Area3content .plurkArea{ width:96%; margin:1.5% 0 0 1%; float:none;}
-.plurkArea .chatBOX{ width:86%; height:auto; float:right; background-color:#fff; padding:1% 0 0 1%; box-sizing:border-box; box-shadow:4px 4px 1px rgba(51,51,51,0.4);}
-.talkbox{ width:100%; font-size:13px; line-height:1.3em; padding:0.5% 1.5% 0 0; margin:0 0 3%; box-sizing:border-box; text-align:left;}
-hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
-.scrollarea{ width:100%; height:150px; overflow-x:hidden; overflow-y:auto;}
-.icons2{ width:99%; text-align: center; margin:0 0 2% 0;}/*最下面的icon*/
-.morebn{ width:99%; text-align: center; margin:0 0 1% 0; padding:3% 0; color:#fff; font-size:1em; letter-spacing:0.05em;}
-
-
-/* 關鍵字 */
-.Area4content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
-.Area4 .keylist{ width:98%; margin:0 auto; font-size:0;}
-.keylist .kbn{ width:32%; height:auto; margin:1% 2px 0 2px ; display:inline-block; vertical-align: middle; }
-.keylist .kbn_no{ display:none; }
-
-/* 這本BL不得了 */
-.Area5content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; text-align:center;}
-.Area5 .menulist{ width:98%; margin:0 auto; }
-.Area5 .menulist img{ width:25%; height:auto; float:left; }
-.Area5 .menulist .ON img{ border-bottom:6px dotted rgba(255,61,142,0.6);  }
-.Area5 .menulist a:hover > img { border-bottom:6px dotted rgba(255,61,142,1); }
-
-.boardcontent{ width:98%; height:auto; margin:0 auto; padding:2% 1%; box-sizing:border-box; }
-.boardcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.Leftbox{ width:45%; margin:0 1% 0 1%; float:left; }
-.Rightbox{ width:53%; margin:0 ; float:left; }
-.Leftbox .top1{ width:100%; margin:0 0 2% 0; padding:0 0 2% 0; }
-.top1 .cover{ width:90%; height:auto; margin:3% auto; overflow:hidden;}
-.top1 .book_name{ width:96%; margin:0 auto 3% auto; font-size:1em; font-weight:bold; color:#87122b; line-height:1.3em; height:2.58em; overflow:hidden;}
-.top1 .author{ width:96%; margin:0 auto 3% auto; font-size:0.9em; color:#3c3c3c; height:1.3em; overflow:hidden;}
-.top1 .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.9em; font-weight:bold; color:#ff5b85; line-height:1.3em; height:6.5em; overflow:hidden;}
-.more{ width:98%; margin:15px auto 0; text-align:center; }
-
-.Rightbox .topS{ width:49%; margin:0 1% 2% 0; padding:0 0 5px 0; float:left; }
-.topS .cover{ width:90%; height:auto; margin:1.5% auto 1%; overflow:hidden;}
-.topS .book_name{ width:96%; margin:0 auto 3% auto; font-size:0.9em; font-weight:bold; color:#87122b; line-height:1.2em; height:2.4em; overflow:hidden;}
-.topS .author{ width:96%; margin:0 auto 4% auto; font-size:0.8em; color:#3c3c3c; height:1.2em; overflow:hidden;}
-.topS .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.8em; color:#ff5b85; line-height:1.2em; height:3.5em; overflow:hidden;}
-#noshow{ display:none;}
-
-/* 為老師們瘋狂打CALL */
-.Area6content{ width:100%; margin:0 auto; padding:0 0 1.5%;  }
-
-/* 出版社區 */
-.Area7content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%;}
-.Area7 .publishlist{ width:96%; margin:0 auto; font-size:0;}
-.publishlist .pbn{ width:49%; margin:1% 0.5% ; display:inline-block; }
-.pbn_m{ display:block; width:49%; margin:1% 0.5% ; display:inline-block;  }
-
-/* 阿腐福利社 */
-.Area8content{ width:100%; height:auto; margin:0 auto; padding:0 0 5%; position:static; text-align:center;}
-.Area8content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
-.Area8content .addpic{ width:47%; position: static; z-index:1; float:left; margin:5% 0 0 0;}
-.Area8content .addlist{ width:51%; position: static; z-index:2; right:2%; float:left;}
-.addlist .addbn1,
-.addlist .addbn2,
-.addlist .addbn3{ position: static; margin:0 0 3%; }
-.addlist .addbn4{ position: static; margin:0 0 10%; }
-.addbn2 img,.addbn3 img,.addbn4 img{ width:85%;}
-/* freepik圖片來源 */
-.Area8content .freepik{ position: static; margin:0 auto ; width:100%; padding:0 ; font-size:1px; }
-.freepik a{color:#bad891; }
+	.pcfloor { display:none;}
+	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
+	.titleimg { width:96%; margin:2% auto 1%;}/*標題圖片*/
+	
+	/* 手機版TOP鈕 ----------------------*/
+	.topBtn { display:block; width:40px; height:40px; position:fixed; right:2%; bottom:2.5%; background-color:rgba(4,64,186,0.7); border-radius:100px; z-index:99; font-family:Arial; font-size:1em; color:#fff; padding:0; text-align:center; line-height:40px /*垂直置中*/;}
+	
+	/* 刊頭 */
+	.headArea{ width:100%; margin:0 auto; padding:0 0 1% 0; background:url(images/271_headbg.jpg) fixed #f8ebf2;}
+	.date{ width:97%; margin:0 auto; padding:0.5% 0 0.5% 1%; font-size:0.5em; float:none; }
+	.pchead{ display:none;}
+	.mobilehead{ display: block;}
+	.mobilehead:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.mobilehead .headm{ width:34%; float:left; }
+	.mobilehead .headm2{ width:66%; float:left; position:relative; }
+	.mobilehead .headm3{ width:34%; float:left; position:relative; }
+	.mobilehead .headm4{ width:66%; float:left; }
+	.headm4 img{ width:100%; max-width:100%;}
+	.headm2 .headmtitle{ width:85%; position: absolute; right:3%; z-index:3;}
+	.headm3 .headfb{ width:40%; position: absolute; left:8%; bottom:3%; z-index:3; }
+	
+	/* BL當代藝術館 */
+	.Area1content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
+	.Area1 .menulist{ width:98%; height:auto; margin:0 auto; background:none;}
+	.Area1 .menulist img{ width:25%; height:auto; float:left; }
+	.Area1 .menulist .ON img{ border-bottom:5px dotted rgba(255,61,142,0.6);  }
+	.Area1 .menulist a:hover > img { border-bottom:5px dotted rgba(255,61,142,1); }
+	.bookcontent{ width:96%; height:auto; background:none rgba(255,255,255,0.7); margin:0 auto;}
+	.bookcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.bookcontent .intro4{ width:96%; height:2.55em; padding:2% 0 0 0; margin:0 auto 2%; overflow:hidden; font-size:0.9em; color:#743cdc; letter-spacing:0.05em; line-height:1.3em;}
+	.bookcontent .books{ width:97%; margin:0 auto; }
+	.books .bookBOX{ width:30%; margin:0 1.5% 2% 1.5%; float:left;}
+	.books .bookBOX_no{ display:none;}
+	.books .book_name{ width:100%; margin:3px auto 0 auto; font-size:0.8em; color:#fb4b9a; line-height:1.25em; height:2.4em; overflow:hidden;}
+	
+	/* 遊戲區 */
+	.Area2content{ width:100%; margin:0 auto; padding:0 0 1.5%;}
+	.Area2content .gameArea{ width:96%; }
+	
+	/* 腐女聊天室 */
+	.Area3content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; background:url(images/271_chatbg.png) center 15% no-repeat; background-size:100% auto; text-align:center; position: static;}
+	.Area3content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.Area3 .menulist{ width:96%; margin:1% auto; position: static;}
+	.Area3 .menulist img{ width:100%; }
+	.Area3 .menulist .ON img{ -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
+	.Area3 .menulist a:hover > img { -webkit-filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8)); filter: drop-shadow(6px 6px 5px rgba(63, 163, 144, 0.8))}
+	.menulist .cbn1,.menulist .cbn2,.menulist .cbn3,.menulist .cbn4,.menulist .cbn5{ width:50%; float:left;}
+	.menulist .cbn1 img,.menulist .cbn3 img,.menulist .cbn5 img{ margin:0 0 0 -7%;}
+	
+	.Area3content .plurkArea{ width:96%; margin:1.5% 0 0 1%; float:none;}
+	.plurkArea .chatBOX{ width:86%; height:auto; float:right; background-color:#fff; padding:1% 0 0 1%; box-sizing:border-box; box-shadow:4px 4px 1px rgba(51,51,51,0.4);}
+	.talkbox{ width:100%; font-size:13px; line-height:1.3em; padding:0.5% 1.5% 0 0; margin:0 0 3%; box-sizing:border-box; text-align:left;}
+	hr { border:0; height:1px; background-color:#d4d4d4; margin:0 0 2% -2.5%;}
+	.scrollarea{ width:100%; height:150px; overflow-x:hidden; overflow-y:auto;}
+	.icons2{ width:99%; text-align: center; margin:0 0 2% 0;}/*最下面的icon*/
+	.morebn{ width:99%; text-align: center; margin:0 0 1% 0; padding:3% 0; color:#fff; font-size:1em; letter-spacing:0.05em;}
+	
+	
+	/* 關鍵字 */
+	.Area4content{ width:100%; margin:0 auto; padding:0 0 1.5%; }
+	.Area4 .keylist{ width:98%; margin:0 auto; font-size:0;}
+	.keylist .kbn{ width:32%; height:auto; margin:1% 2px 0 2px ; display:inline-block; vertical-align: middle; }
+	.keylist .kbn_no{ display:none; }
+	
+	/* 這本BL不得了 */
+	.Area5content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%; text-align:center;}
+	.Area5 .menulist{ width:98%; margin:0 auto; }
+	.Area5 .menulist img{ width:25%; height:auto; float:left; }
+	.Area5 .menulist .ON img{ border-bottom:6px dotted rgba(255,61,142,0.6);  }
+	.Area5 .menulist a:hover > img { border-bottom:6px dotted rgba(255,61,142,1); }
+	
+	.boardcontent{ width:98%; height:auto; margin:0 auto; padding:2% 1%; box-sizing:border-box; }
+	.boardcontent:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.Leftbox{ width:45%; margin:0 1% 0 1%; float:left; }
+	.Rightbox{ width:53%; margin:0 ; float:left; }
+	.Leftbox .top1{ width:100%; margin:0 0 2% 0; padding:0 0 2% 0; }
+	.top1 .cover{ width:90%; height:auto; margin:3% auto; overflow:hidden;}
+	.top1 .book_name{ width:96%; margin:0 auto 3% auto; font-size:1em; font-weight:bold; color:#87122b; line-height:1.3em; height:2.58em; overflow:hidden;}
+	.top1 .author{ width:96%; margin:0 auto 3% auto; font-size:0.9em; color:#3c3c3c; height:1.3em; overflow:hidden;}
+	.top1 .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.9em; font-weight:bold; color:#ff5b85; line-height:1.3em; height:6.5em; overflow:hidden;}
+	.more{ width:98%; margin:15px auto 0; text-align:center; }
+	
+	.Rightbox .topS{ width:49%; margin:0 1% 2% 0; padding:0 0 5px 0; float:left; }
+	.topS .cover{ width:90%; height:auto; margin:1.5% auto 1%; overflow:hidden;}
+	.topS .book_name{ width:96%; margin:0 auto 3% auto; font-size:0.9em; font-weight:bold; color:#87122b; line-height:1.2em; height:2.4em; overflow:hidden;}
+	.topS .author{ width:96%; margin:0 auto 4% auto; font-size:0.8em; color:#3c3c3c; height:1.2em; overflow:hidden;}
+	.topS .txt{ width:96%; margin:0 auto; padding:0 ; font-size:0.8em; color:#ff5b85; line-height:1.2em; height:3.5em; overflow:hidden;}
+	#noshow{ display:none;}
+	
+	/* 為老師們瘋狂打CALL */
+	.Area6content{ width:100%; margin:0 auto; padding:0 0 1.5%;  }
+	
+	/* 出版社區 */
+	.Area7content{ width:100%; height:auto; margin:0 auto; padding:0 0 1.5%;}
+	.Area7 .publishlist{ width:96%; margin:0 auto; font-size:0;}
+	.publishlist .pbn{ width:49%; margin:1% 0.5% ; display:inline-block; }
+	.pbn_m{ display:block; width:49%; margin:1% 0.5% ; display:inline-block;  }
+	
+	/* 阿腐福利社 */
+	.Area8content{ width:100%; height:auto; margin:0 auto; padding:0 0 5%; position:static; text-align:center;}
+	.Area8content:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden; !important} /*高度填滿*/
+	.Area8content .addpic{ width:47%; position: static; z-index:1; float:left; margin:5% 0 0 0;}
+	.Area8content .addlist{ width:51%; position: static; z-index:2; right:2%; float:left;}
+	.addlist .addbn1,
+	.addlist .addbn2,
+	.addlist .addbn3{ position: static; margin:0 0 3%; }
+	.addlist .addbn4{ position: static; margin:0 0 10%; }
+	.addbn2 img,.addbn3 img,.addbn4 img{ width:85%;}
+	/* freepik圖片來源 */
+	.Area8content .freepik{ position: static; margin:0 auto ; width:100%; padding:0 ; font-size:1px; }
+	.freepik a{color:#bad891; }
 	
 }
