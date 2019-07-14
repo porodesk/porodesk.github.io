@@ -8,7 +8,7 @@ a{
 .mapImg { max-width:100%; height:auto; }/*RWD MAP*/
 map *:focus{outline:none; /* for Chrome 消除MAP藍框 */}
 .clearNO{ clear:both; display: none;}
-img{border:0;}
+img{border:0; vertical-align：bottom；}
 .mobileimg{ display:none;}/*手機版圖片*/
 .AreaTitle { width:980px; margin:1% auto 0.3% auto; }/*標題圖片*/
 
