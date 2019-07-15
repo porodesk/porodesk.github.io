@@ -181,7 +181,7 @@ a.more:active{color:#c30416; font-weight:bold;text-decoration:none;}
 	.headarea .stage1{ width:34%; margin:0; display:inline-block; }
 	.headarea .stage2{ width:66%; margin:0; display:inline-block; }
 	.headarea img{ width:100%; vertical-align:bottom; border:0;}
-	.fb_m{ width:100%; /*background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto;*/ position:relative;}
+	.fb_m{ width:100%; /*background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto;*/ position:relative; display:block;}
 	.fb_m .sharearea1{ width:100px; height:auto; position:absolute; top:0; right:10%; z-index:2;}
 	.topmenu{ width:100%; margin:1% auto 3%; text-align:center; }
 	.topmenu ul{ margin:0 ; padding:0; text-align:center; }
