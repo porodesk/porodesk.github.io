@@ -179,10 +179,10 @@ a.more:active{color:#c30416; font-weight:bold;text-decoration:none;}
 	.mobilehead{ display: block; width:100%; margin:0 auto; }
 	.headarea{ width:100%; margin:0 auto; display: block; font-size:0;}
 	.headarea .stage1{ width:34%; display:inline-block;}
-	.headarea .stage2{ width:66%; display:inline-block;}
+	.headarea .stage2{ width:66%; display:inline-block; position:relative;}
 	.stage1 img, .stage2 img{ width:100%; vertical-align:bottom; border:none;}
 	.fb_m{ width:100%; background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto; position:relative; }
-	.fb_m .sharearea1{ width:100px; height:auto; position:absolute; top:0%; right:10%; z-index:2;}
+	.stage2 .sharearea1{ width:100px; height:auto; position:absolute; bottom:9%; right:10%; z-index:2;}
 	.topmenu{ width:100%; margin:1% auto 3%; text-align:center; }
 	.topmenu ul{ margin:0 ; padding:0; text-align:center; }
 	li.cbn{ width:18vw; height:18vw; background:none; margin:0 0.2% 3% 0.6%; float:left; color:#fff; font-size:0.8em; line-height:1.2em; position:relative; z-index:3;}
