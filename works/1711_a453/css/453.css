@@ -160,9 +160,9 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 	.pchead{ display:none;}
 	.mobilehead{ display: block; width:100%; margin:0 auto; }
 	.headm{ width:100%; position:relative; font-size:0;}
-	.stage1{ width:34%; display:inline-block;}
-	.stage2{ width:16%; display:inline-block; }
-	.stage3{ width:50%; display:inline-block; position:relative;}
+	.stage1{ width:34%; display:inline-block; font-size:0;}
+	.stage2{ width:16%; display:inline-block; font-size:0;}
+	.stage3{ width:50%; display:inline-block; position:relative; font-size:0;}
 	.stage1 img, .stage2 img, .stage3 img{ width:100%; vertical-align:bottom; border:0;}
 	
 	.stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
