@@ -159,16 +159,16 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 	/* 刊頭 */
 	.pchead{ display:none;}
 	.mobilehead{ display: block; width:100%; margin:0 auto; }
-	.headm{ width:100%; position:relative; font-size:0;}
-	.headm img{ width:100%; vertical-align:bottom;}
-	.stage1{ width:100%; position:relative;}
+	.headm{ width:100%; position:relative; }
+	.stage1{ width:100%; position:relative; font-size:0;}
 	.stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
-	.stage2{ width:100%; position:relative;}
+	.stage2{ width:100%; position:relative; font-size:0;}
 	.stage2 .gift{ font-size: 10px; margin:0; position:absolute; bottom:0; right:22%;}
+	.stage3{ width:100%; font-size:0;}
 	.headm .fb-like{ margin:0; position:absolute; bottom:3%; left:5%; }
-	img.p34{ width:34%; display:inline-block;}
-	img.p16{ width:16%; display:inline-block;}
-	img.p50{ width:50%; display:inline-block;}
+	img.p34{ width:34%; display:inline-block; vertical-align:bottom;}
+	img.p16{ width:16%; display:inline-block; vertical-align:bottom;}
+	img.p50{ width:50%; display:inline-block; vertical-align:bottom;}
 	
 	/*-----跑馬燈-------*/
 	.runTitle{ width:60%; margin:0 auto;}
