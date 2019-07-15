@@ -178,9 +178,9 @@ a.more:active{color:#c30416; font-weight:bold;text-decoration:none;}
 	.mobilehead{ display: block; width:100%; margin:0 auto; }
 	.headarea{ width:100%; margin:0 auto; position:relative; font-size:0;}
 	.date{ width:100%; margin:0 auto; padding:0.5% 0 0; font-size:9px; background:#f1db6c; text-align:center; color: #c0961e; font-family: "微軟正黑體" , "Calibri";display: block;}	
-	.stage1{ width:34%; display:inline-block;}
-	.stage2{ width:66%; display:inline-block;}
-	.stage1 img, .stage2 img{ width:100%; border:0;}
+	.stage1{ width:34%; margin:0; display:inline-block;}
+	.stage2{ width:66%; margin:0; display:inline-block;}
+	.stage1 img, .stage2 img{ width:100%; vertical-align:bottom; border:0;}
 	.fb_m{ width:100%; background:url(images/036_headm_bm.jpg) no-repeat; background-size:100% auto; }
 	.headarea .sharearea1{ width:100px; height:auto; position:absolute; bottom:9%; right:10%; z-index:2;}
 	.topmenu{ width:100%; margin:1% auto 3%; text-align:center; }
