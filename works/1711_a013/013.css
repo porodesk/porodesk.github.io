@@ -124,8 +124,9 @@ li.wON a{ color:#f72867; border-bottom:5px solid #f72867;}
 .wishContent a{ text-decoration:none;}
 .wishContent .wishTxt{ width:215px; height:120px; font-size:20px; color:#f65599; line-height:1.5em; letter-spacing:0.06em; font-weight:bold; position:absolute; top:40px; left:164px;}
 .wishContent .wishBOOK{ width:300px; height:190px; position:absolute; top:17px; right:280px; font-size:0;}
-.pic-cover { width:46%; background-color:#fff; margin:0 0.5%; padding:4px; display:inline-block; text-align:center;}
-.pic-cover img{ width:98%;}
+.pic-cover { width:96%; background-color:#fff; margin:0 0.5%; padding:4px 0; display:inline-block; text-align:center;}
+.pic-cover img{ width:auto; height:190px;}
+.mopen{ display:none;}
 
 /*-----180x140 BN區---------*/
 .Area5{ width:100%; margin:0 auto; position:relative; font-size:0;}
@@ -233,7 +234,10 @@ li.wON a{ color:#fff; border:2px solid #f72867; background-color:#f72867;}
 
 .wishContent{ width:96%; height:auto; margin:0 auto; background:url(images/013_boardbg.png) repeat rgba(255,255,255,0.6); border-radius:6px; padding:2% 1.5%; box-sizing: border-box; position: static;}
 .wishContent .wishTxt{ width:98%; height:auto; font-size:1em; color:#f65599; line-height:1.3em; letter-spacing:0.06em; font-weight:bold; position: static; margin:0 auto 1%;}
-.wishContent .wishBOOK{ width:100%; height:auto; position: static; font-size:0; }
+.wishContent .wishBOOK{ width:100%; height:auto; position: static; font-size:0; text-align:center;}
+.pic-cover { width:46%; height:auto; padding:0.5%;}
+.pic-cover img{ width:98%; height:auto;}
+.mopen{ display:inline-block;}
 
 /*-----180x140 BN區---------*/
 .bnpic { width:100%; padding:0 1% ; box-sizing: border-box/*解決padding溢出*/;margin:0 auto 1% auto; font-size:0;}
