@@ -4,12 +4,22 @@
 <title>web Design</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="web.css" rel="stylesheet" type="text/css" />
+<link href="nav.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
 
 <body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="https://issuu.com/gokiya/docs/working" target="_blank">[ 平面作品 ]</a>
+  </div>
+</div>
+<div class="navIcon" onClick="openNav()">&#9776;</div>
+
 
 <div class="wrapper">
 
@@ -172,7 +182,15 @@
 			$(this).find(".darkGradual").stop().animate({"bottom":0});
 	})
 })	
-</script>
 
+
+	function openNav() {                  //NAV選單
+		document.getElementById("myNav").style.height = "100%";
+	}
+	
+	function closeNav() {
+		document.getElementById("myNav").style.height = "0%";
+}
+</script>
 </body>
 </html>
