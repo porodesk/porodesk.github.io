@@ -12,9 +12,9 @@ img{ border:0; vertical-align:bottom;}
 
 .box{ width:250px; margin:0 2%; display:inline-block; font-family: "微軟正黑體"; font-size:13px; letter-spacing:0.5em; line-height:1.3em; text-align:center;}
 .box h1{ font-weight:normal;}
-.box a{ text-decoration:none; color:#666; opacity:0.4;
+.box a{ text-decoration:none; color:#666; opacity:0.8;
 -moz-transition: .4s;-webkit-transition: .4s;-o-transition: .4s;-ms-transition: .4s;}
-.box a:hover{ opacity:0.8;}
+.box a:hover{ opacity:0.4;}
 .box img{ width:100%;}
 
 
