@@ -184,13 +184,17 @@
 })	
 
 
-	function openNav() {                  //NAV選單
+	function openNav() {                         //NAV選單
 		document.getElementById("myNav").style.height = "100%";
 	}
-	
 	function closeNav() {
 		document.getElementById("myNav").style.height = "0%";
-}
+    }
+	$(function(){ 
+		$('#myNav a').on('click', function(){    //NAV選單+點連結後自動收合
+		document.getElementById("myNav").style.height = "0%";
+	})
+})	
 </script>
 </body>
 </html>
