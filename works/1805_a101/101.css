@@ -23,9 +23,9 @@ img.mobileimg{ display:none;}
 .head .headContent{ width:1028px; height:100%; margin:0 auto; position:absolute; left:0; right:0; z-index:1; text-align:center; }
 .headContent .date{ position:absolute; left:0; right:0; top:18%;}
 .headContent .titleH{ position:absolute; left:0; right:0; top:25%;}
-.headContent .slogan{ position:absolute; right:12%; top:52%;}
-.headContent .discount{ position:absolute; right:21%; top:62%; z-index:2;}
-.headContent .txt{ position:absolute; left:10%; top:60%; z-index:1;}
+.headContent .slogan{ position:absolute; right:12%; top:55%;}
+.headContent .discount{ position:absolute; right:21%; top:65%; z-index:2;}
+.headContent .txt{ position:absolute; left:8%; top:63%; z-index:1;}
 .headContent .menu{ width:100%; position:absolute; left:0; right:0; bottom:6%;}
 .menu img{ width:22%;}
 img.menu3{ margin:0 0 0 54px;}
@@ -234,7 +234,7 @@ img.mobileimg{ display:block; width:100%;}
 .headContent .titleH{ margin:2% auto 0; position:static;}
 .headContent .slogan{ margin:4% 13% 0 0; text-align:right; position:static;}
 .headContent .discount{ margin:1% 23% 0 0; text-align:right; position:static;}
-.headContent .txt{ margin:-3% 0 0 10%; text-align:left; position:static;}
+.headContent .txt{ margin:-3% 0 0 10%; padding-bottom:5%; text-align:left; position:static;}
 .headContent .menu{ margin:10% auto 5%; position:static;}
 .date img,.titleH img{ width:96%;}
 .slogan img{ width:70%;}
