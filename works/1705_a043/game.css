@@ -63,8 +63,9 @@ ul.gkeyword {  width:150px; height:auto;}
 .gFBbtn02 { display:none;}
 
 
+
 /*----------------------------------------------------------------------------------------------------*/
-@media screen and (max-width:767px) {
+@media screen and (max-width:979px) {
 	.fadeoutcolor{ width:100%; height:100%; background-color:#e2cfc0; position:absolute; top:0; left:0; z-index:10; opacity:0.9;}/*淡出色塊*/
 	.fadeoutcolor:after{ content: "."; display: block; height: 0; clear: both; visibility: hidden;}/*高度填滿*/
 	.gameWrapper { width:100%; height:auto; margin:0 auto; padding:0; /*background-color:#e2cfc0;*/ position:relative; overflow:hidden; font-family:Arial, Verdana, "微軟正黑體", sans-serif; z-index:4;}

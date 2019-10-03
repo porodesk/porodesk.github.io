@@ -128,56 +128,83 @@ img.fb02{ width:179px;}
 #a4_area .bnArea{ width:540px; height:250px; position: absolute; right:35px; top:355px; z-index:3; }
 
 
+/*====================================================================================================================================*/
+@media screen and (max-width:979px) {
+	.wrapperbg { padding:0; width:100%; height:auto; background:none;}
+	.wrapper { width:100%; margin:0 auto; height:auto; position:relative; background:#e2cfc0; }
+	.ksdown_pc { display:none;}
+	/*高度填滿*/
+	.wrapper:after{display: none;}
+	
+	/*TOP鈕*/
+	#back-top {	position: fixed; bottom: 2%;right: 3%; z-index:99;}
+	#back-top a { width: 40px; height:40px; border-radius: 5px; display: block; text-align: center;	background:#7a513a; opacity:0.8;}
+	
+	/*------------------- 刊頭 ----------------------*/
+	.head{ height:auto; position: relative;}
+	.headbg { background:none;}
+	.headbg img { display:block; width:100%;}
+	.datearea{ width:100%; margin:0 auto; position: absolute; top:0.5%; left:0; text-align:center;}
+	img.headtitle{ position:absolute; top:8%; left:5%; margin:0 auto; width:90%;}
+	
+	.headmenu{ width:40%; margin:0 auto ; position:absolute; bottom:7%; left:30%; }
+	.headmenu img{ margin:2% 2%; float:left; width:95%;}
+	
+	/*------------------------------- a2_area 推理情報交換 ------------------------------------*/
+	#a2_area{ width:100%; height:100%; margin:3% auto; position: relative; }
+	img.title01{ width:98%;}
+	img.themepic1{ opacity:0.9; width:90%;}
+	/*------------------- 主題x10 -------------------*/
+	.themeMenu{ position: relative; width:98%; margin:2% 0 0 2%; float:none; clear:both; z-index:4;}
+	#a2_area .themebg{ position: absolute; top:5%; left:0; z-index:1; width:100%; overflow:hidden; }
+	.tpicAll{ position: static; }
+	.tpic01 img{ float:left; -webkit-transition: 0.5s; margin:0 3px 9px 0;}
+	/*---------------- 排行榜 ---------------------*/
+	.boardArea{ position: relative; margin:4% auto 0 auto; text-align:center; float:none; clear:both; width:100%; z-index:4;}
+	.boardArea .board01 { position: static; width:43%; border:2px solid #333; background-color:#f9f3ef; margin:0 0.7%; padding:1%; display:inline-block;}
+	.boardArea .board02 { position: static; width:43%; border:2px solid #333; background-color:#f9f3ef; margin:0 0.7%; padding:1%; display:inline-block;}
+	img.boardbg01{ display:none;}
+	.billboard{ width: 100%; margin:1% auto 0; padding:0 1% 0 3%; font-family:"微軟正黑體"; position: static; text-align:left;}
+	.billboard h3{ display:block; margin:0 auto 1% auto; color:#b71740; text-align:center;}
+	.coverregion img{width:90%;height:auto;}
+	/*--------------------------------------------------------------------------------------*/
+	
+	
+	/*------------------------------- a3_area 情報提供者 ------------------------------------*/
+	#a3_area{ width:100%; height:100%; margin:3% auto; position: relative; top:0; overflow:hidden;}
+	#a3_area .title02{ display: none;}
+	#a3_area .title02_m{ display: block; position: relative; left:1.5%; z-index:3;}
+	img.title02_m{  width:98%; }
+	#a3_area .compic1{ position: absolute; right:-45%; top:-15%; z-index:1; }
+	#a3_area .compic2{ position: absolute; left:35%; top:40px; z-index:1;}
+	/*---------------- 書評 -------------------*/
+	.comment_area{ width:98%; margin:1% auto 0 auto; padding:0; font-family:"微軟正黑體"; position: relative; z-index:3;}
+	.commentbox .bookcolumn{margin:0 3% 3% 0;padding:0;width:36%;float:left;}
+	.book_data { width: 61%; float:left; margin:0 0 3% 0;}
+	.book_data .booktitle{font-size:1em;}
+	/*--------------------------------------------------------------------------------------*/
+	
+	
+	/*------------------------------- a4_area 無料情報放送 -----------------------------------*/
+	#a4_area{ height:100%; margin:3% auto 0; padding-bottom:3%; position: relative; top:0;}
+	#a4_area .title03{ display: none;}
+	#a4_area .title03_m{ display: block; position: relative; left:1.5%; z-index:3;}
+	img.title03_m{ width:98%; }
+	#a4_area .fbpic1{ position: absolute; left:0; top:-10%; z-index:1; width:90%; }
+	img.fbpic1{ opacity:0.7;}
+	#a4_area .fbpic2{ display: none;}
+	
+	#a4_area .fb01{ display: none;}
+	#a4_area .fb01_m{ display: block; position: relative; width:98%; margin:0 auto; z-index:3;}
+	#a4_area .fb02{ position: static; width:96%; margin:0 1% 2% 2%; }
+	#a4_area .bnArea{ width:95%; height:auto; border:3px solid #333; background-color:#f9f3ef; padding:4px; position: static; margin:0 auto; }
+
+}
 
 /*====================================================================================================================================*/
 @media screen and (max-width:767px) {
-.wrapperbg { padding:0; width:100%; height:auto; background:none;}
-.wrapper { width:100%; margin:0 auto; height:auto; position:relative; background:#e2cfc0; }
-.ksdown_pc { display:none;}
-/*高度填滿*/
-.wrapper:after{display: none;}
-
-/*TOP鈕*/
-#back-top {	position: fixed; bottom: 2%;right: 3%; z-index:99;}
-#back-top a { width: 40px; height:40px; border-radius: 5px; display: block; text-align: center;	background:#7a513a; opacity:0.8;}
-
-/*------------------- 刊頭 ----------------------*/
-.head{ height:auto; position: relative;}
-.headbg { background:none;}
-.headbg img { display:block; width:100%;}
-.datearea{ width:100%; margin:0 auto; position: absolute; top:0.5%; left:0; text-align:center;}
-img.headtitle{ position:absolute; top:8%; left:5%; margin:0 auto; width:90%;}
-
-.headmenu{ width:40%; margin:0 auto ; position:absolute; bottom:7%; left:30%; }
-.headmenu img{ margin:2% 2%; float:left; width:95%;}
-
-/*------------------------------- a2_area 推理情報交換 ------------------------------------*/
-#a2_area{ width:100%; height:100%; margin:3% auto; position: relative; }
-img.title01{ width:98%;}
-img.themepic1{ opacity:0.9; width:90%;}
-/*------------------- 主題x10 -------------------*/
-.themeMenu{ position: relative; width:98%; margin:2% 0 0 2%; float:none; clear:both; z-index:4;}
-#a2_area .themebg{ position: absolute; top:5%; left:0; z-index:1; width:100%; overflow:hidden; }
-.tpicAll{ position: static; }
-.tpic01 img{ float:left; -webkit-transition: 0.5s; margin:0 3px 9px 0;}
-/*---------------- 排行榜 ---------------------*/
-.boardArea{ position: relative; margin:4% auto 0 auto; text-align:center; float:none; clear:both; width:100%; z-index:4;}
-.boardArea .board01 { position: static; width:43%; border:2px solid #333; background-color:#f9f3ef; margin:0 0.7%; padding:1%; display:inline-block;}
-.boardArea .board02 { position: static; width:43%; border:2px solid #333; background-color:#f9f3ef; margin:0 0.7%; padding:1%; display:inline-block;}
-img.boardbg01{ display:none;}
-.billboard{ width: 100%; margin:1% auto 0; padding:0 1% 0 3%; font-family:"微軟正黑體"; position: static; text-align:left;}
-.billboard h3{ display:block; margin:0 auto 1% auto; color:#b71740; text-align:center;}
-.coverregion img{width:90%;height:auto;}
-/*--------------------------------------------------------------------------------------*/
-
 
 /*------------------------------- a3_area 情報提供者 ------------------------------------*/
-#a3_area{ width:100%; height:100%; margin:3% auto; position: relative; top:0; overflow:hidden;}
-#a3_area .title02{ display: none;}
-#a3_area .title02_m{ display: block; position: relative; left:1.5%; z-index:3;}
-img.title02_m{  width:98%; }
-#a3_area .compic1{ position: absolute; right:-45%; top:-15%; z-index:1; }
-#a3_area .compic2{ position: absolute; left:35%; top:40px; z-index:1;}
 /*---------------- 書評 -------------------*/
 .comment_area{ width:98%; margin:1% auto 0 auto; padding:0; font-family:"微軟正黑體"; position: relative; z-index:3;}
 .commentbox{float:none; clear:both; width:97%; margin:0 1.5% 0 1.5%;}
@@ -187,18 +214,5 @@ img.title02_m{  width:98%; }
 /*--------------------------------------------------------------------------------------*/
 
 
-/*------------------------------- a4_area 無料情報放送 -----------------------------------*/
-#a4_area{ height:100%; margin:3% auto 0; padding-bottom:3%; position: relative; top:0;}
-#a4_area .title03{ display: none;}
-#a4_area .title03_m{ display: block; position: relative; left:1.5%; z-index:3;}
-img.title03_m{ width:98%; }
-#a4_area .fbpic1{ position: absolute; left:0; top:-10%; z-index:1; width:90%; }
-img.fbpic1{ opacity:0.7;}
-#a4_area .fbpic2{ display: none;}
-
-#a4_area .fb01{ display: none;}
-#a4_area .fb01_m{ display: block; position: relative; width:98%; margin:0 auto; z-index:3;}
-#a4_area .fb02{ position: static; width:96%; margin:0 1% 2% 2%; }
-#a4_area .bnArea{ width:95%; height:auto; border:3px solid #333; background-color:#f9f3ef; padding:4px; position: static; margin:0 auto; }
 
 }
