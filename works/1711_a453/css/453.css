@@ -142,7 +142,7 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 @media screen and (max-width:979px) {
 	.pcfloor { display:none;}
 	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
-	.AreaTitle { width:100%; margin:3% auto 0.5%;}/*標題圖片*/
+	.AreaTitle { width:100%; margin:4% auto 0.5%;}/*標題圖片*/
 	.mobileimg{ display:block;}/*手機版圖片*/
 	.pcimg{ display:none;}/*PC版圖片*/	
 	/* 手機版TOP鈕 ----------------------*/
@@ -158,7 +158,7 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 	.stage1 img, .stage2 img, .stage3 img{ width:100%; vertical-align:bottom; border:0;}
 	
 	.stage1 .date{ width:50%; margin:0 auto; font-size:8px; position:absolute; top:0.5%; left:18%;}
-	.stage3 .gift{ font-size: 16px; margin:0; position:absolute; bottom:10%; right:35%;}
+	.stage3 .gift{ font-size: 16px; margin:0; position:absolute; bottom:10%; right:45%;}
 	.headm .fb-like{ margin:0; position:absolute; bottom:3%; left:5%; }
 	
 	/*-----跑馬燈-------*/
@@ -253,7 +253,7 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 @media screen and (max-width:767px) {
 	.pcfloor { display:none;}
 	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
-	.AreaTitle { width:100%; margin:3% auto 0.5%;}/*標題圖片*/
+	.AreaTitle { width:100%; margin:4% auto 0.5%;}/*標題圖片*/
 	.mobileimg{ display:block;}/*手機版圖片*/
 	.pcimg{ display:none;}/*PC版圖片*/
 	
