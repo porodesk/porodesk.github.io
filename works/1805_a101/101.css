@@ -216,7 +216,7 @@ overflow: hidden; text-overflow: ellipsis; white-space: nowrap; /*文字溢出�
 
 
 /*====================================================================================================================================*/
-@media screen and (max-width:767px) {
+@media screen and (max-width:979px) {
 .pcfloor { display:none;}
 .clearNO{ display:block; clear:both;}
 img.pcimg{ display:none;}
