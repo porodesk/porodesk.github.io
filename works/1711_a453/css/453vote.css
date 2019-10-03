@@ -122,10 +122,130 @@ a{text-decoration:none;}
 	font-size: 18px;
 	color: #3d310f;
 }
-@media screen and (max-width:1024px){}
+
 /* ↓↓平板範圍↓↓ */
-@media screen and (min-width:768px) and (max-width:979px) {
+@media screen and (max-width:979px) {
+a{text-decoration:none;}
+/* 第二區域左-編輯 */
+.all_content_edit{ width:49%; float:left; margin:0 1% 0 0;}
+.content_edit_r{ background:url(../images/edit_02_r.png);height:430px;background-repeat:repeat;background-position:center;overflow:hidden;}
+.edit{ height:505px;overflow:hidden;}
+.title_edit_r{
+	background: url(../images/edit_01_r_m.gif);
+	height: 80px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size:100% auto;
 }
+.txt_edit{	
+	font-family: "微軟正黑體";
+	font-size: 19px;
+	font-weight: bold;
+	padding-top:35px;
+	padding-left:2%;
+	width:100%;
+}
+.p1_r{
+	height:20px;
+	line-height:20px;
+	width:79%;
+	/*white-space: nowrap;*/ /*字數過多...*/
+	overflow:hidden;
+	text-overflow:ellipsis;
+	color: #FFF;
+}
+.p2{
+	height:26px;
+	line-height:3px;
+	width:100%;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	padding-left:2%;
+	padding-top:5%;
+}
+.book_cover img{ width:75%;	display: flex;
+	align-items: center;
+	justify-content: center;}
+.lines_r{
+	width: 95%;
+	float: left;
+	padding-left: 3%;
+	font-family: "微軟正黑體";
+	font-size: 16px;
+	height: 110px;
+	overflow: hidden;
+	font-weight: bold;
+	color: #C00;
+	padding-top:5%;
+}
+.fb_icon{ margin-top:20px; float:left; width:150px;margin-left: 20px;}
+.bottom_edit_r{ background:url(../images/edit_03_r.png);height:24px;background-repeat: no-repeat;background-position:center;}
+/* 第三區域-讀者 */
+.all_content_reader{ width:50%; float:left;}
+.reader{width:98%;}
+.title_reader_r{ background:url(../images/zone3_reader_01_r.png);height: 85px;background-repeat: no-repeat;background-position: center;}
+.txt_reader{	
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	font-weight: bold;
+	padding-left:0px;
+	width:98%;
+}
+.p1_r_reader{
+	height:26px;
+	line-height:26px;
+	width:100%;
+	/*white-space: nowrap;*/ /*字數過多...*/
+	/*overflow:hidden;*/
+	text-overflow:ellipsis;
+}
+.p2_reader{
+	height:26px;
+	line-height:26px;
+	width:60%;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-family: "微軟正黑體";
+	font-size: 18px;
+	padding-left:2%;
+	color: white;
+	padding-top:3%;
+
+}
+.content_reader_r{ background:url(../images/zone3_reader_02_r.png);height: 140px;background-repeat: no-repeat;background-position: center;}
+.p3_reader_r{
+	padding-left: 2%;
+	padding-top: 2%;
+	height: 120px;
+	overflow: hidden;
+	width: 98%;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #C00;
+	
+}
+.bottom_reader_r{ background:url(../images/zone3_reader_03_r.png);height: 22px;background-repeat: no-repeat;background-position: center;}
+/*白隊*/
+.title_reader_w{ background:url(../images/zone3_reader_01_w.png);height: 85px;background-repeat: no-repeat;background-position: center;}
+.content_reader_w{ background:url(../images/zone3_reader_02_w.png);height: 140px;background-repeat: no-repeat;background-position: center;}
+.bottom_reader_w{ background:url(../images/zone3_reader_03_w.png);height: 22px;background-repeat: no-repeat;background-position: center;}
+.p3_reader_w{
+	padding-left: 2%;
+	padding-top: 2%;
+	height: 120px;
+	overflow: hidden;
+	width: 98%;
+	font-family: "微軟正黑體";
+	font-size: 15px;
+	color: #3d310f;
+}
+	
+}
+
 /* ↓↓手機範圍↓↓ */
 @media screen and (max-width:767px) {
 a{text-decoration:none;}
