@@ -163,7 +163,7 @@ a.more:active{color:#c30416; font-weight:bold;text-decoration:none;}
 
 
 /*====================================================================================================================================*/
-@media screen and (max-width:979px) {
+@media screen and (max-width:1023px) {
 	.pcfloor { display:none;}
 	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
 	.pcimg{ display:none;}

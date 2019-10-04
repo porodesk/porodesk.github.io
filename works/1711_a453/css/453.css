@@ -139,7 +139,7 @@ a:active .pname{ text-decoration:none; color:#16a7fa;}
 
 
 /*===================================================================================================================================*/
-@media screen and (max-width:979px) {
+@media screen and (max-width:1023px) {
 	.pcfloor { display:none;}
 	.clearNO{ clear:both; display:block; !important}/*解決高度問題*/
 	.AreaTitle { width:100%; margin:4% auto 0.5%;}/*標題圖片*/

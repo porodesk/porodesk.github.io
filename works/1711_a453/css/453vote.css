@@ -124,7 +124,7 @@ a{text-decoration:none;}
 }
 
 /* ↓↓平板範圍↓↓ */
-@media screen and (max-width:979px) {
+@media screen and (max-width:1023px) {
 a{text-decoration:none;}
 /* 第二區域左-編輯 */
 .all_content_edit{ width:49%; float:left; margin:0 1% 0 0;}
